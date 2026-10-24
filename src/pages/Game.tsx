@@ -6,6 +6,7 @@ import { BlobPhoto } from '../components/BlobPhoto';
 import { Burst } from '../components/Burst';
 import { animals, photoUrl, noseUrl } from '../lib/content';
 import { say, blip, animalSound } from '../lib/audio';
+import { useNavigate } from 'react-router-dom';
 
 const shuffle = <T,>(a: T[]) => [...a].sort(() => Math.random() - .5);
 
@@ -15,6 +16,7 @@ export default function Game() {
   const [score, setScore] = useState(0);
   const [won, setWon] = useState(0);
   const [wrong, setWrong] = useState<string | null>(null);
+  const nav = useNavigate();
 
   const { answer, options } = useMemo(() => {
     const answer = shuffle(animals)[0];
@@ -76,6 +78,11 @@ export default function Game() {
             </motion.button>
           ))}
         </div>
+
+        <button className="btn btn--quiet" style={{ marginTop: 30 }}
+          onClick={() => { blip(560); nav('/sort'); }}>
+          Другая игра: отнеси носик домой
+        </button>
       </div>
     </div>
   );

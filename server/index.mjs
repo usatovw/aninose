@@ -9,14 +9,20 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..', 'dist');
-const DATA = process.env.DATA_DIR || path.join(__dirname, '..', '.data');
+// Container Apps запускает контейнер от UID 1000: писать в /app нельзя.
+const DATA = process.env.DATA_DIR || '/tmp/aninose-data';
 const FILE = path.join(DATA, 'progress.json');
-fs.mkdirSync(DATA, { recursive: true });
+let canWrite = true;
+try { fs.mkdirSync(DATA, { recursive: true }); }
+catch { canWrite = false; }   // прогресс останется только в памяти и в localStorage у клиента
 
 const app = Fastify({ logger: { level: process.env.LOG_LEVEL || 'info' } });
 
-const read = () => { try { return JSON.parse(fs.readFileSync(FILE, 'utf8')); } catch { return { ids: [] }; } };
-const write = d => { try { fs.writeFileSync(FILE, JSON.stringify(d)); } catch (e) { app.log.error(e); } };
+let mem = null;
+const read = () => { if (mem) return mem;
+  try { return JSON.parse(fs.readFileSync(FILE, 'utf8')); } catch { return { ids: [] }; } };
+const write = d => { mem = d; if (!canWrite) return;
+  try { fs.writeFileSync(FILE, JSON.stringify(d)); } catch (e) { app.log.warn(e.message); } };
 
 await app.register(fastifyStatic, { root: ROOT, index: false });
 
