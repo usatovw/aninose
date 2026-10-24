@@ -6,45 +6,45 @@
 
 | Животное | Файл | Автор | Лицензия |
 |---|---|---|---|
-| Собака | [German_Shepherd_Dog_(close_up).jpg](https://commons.wikimedia.org/wiki/File:German_Shepherd_Dog_(close_up).jpg) | User:Monika | CC BY-SA 3.0 |
-| Кошка | [Cat_face_1.jpg](https://commons.wikimedia.org/wiki/File:Cat_face_1.jpg) | Love Krittaya | Public domain |
-| Корова | [Close-up_photograph_of_a_calf's_head_looking_at_the_viewer_at_golden_hour_in_Don_Det_Laos.jpg](https://commons.wikimedia.org/wiki/File:Close-up_photograph_of_a_calf%27s_head_looking_at_the_viewer_at_golden_hour_in_Don_Det_Laos.jpg) | Basile Morin | CC BY-SA 4.0 |
-| Лошадка | [Close-up_on_a_skewbald_horse_(Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Close-up_on_a_skewbald_horse_(Unsplash).jpg) | Ivan Bertona ibrt | CC0 |
-| Свинка | [GT_parshas.jpg](https://commons.wikimedia.org/wiki/File:GT_parshas.jpg) | Elias Bröms | CC BY-SA 3.0 |
-| Овечка | [Coburger_Fuchs_head_(cropped).JPG](https://commons.wikimedia.org/wiki/File:Coburger_Fuchs_head_(cropped).JPG) | Madeleine73 | CC BY-SA 3.0 |
-| Козочка | [Goat_Anatomy_Head.jpg](https://commons.wikimedia.org/wiki/File:Goat_Anatomy_Head.jpg) | Sumbria.vikramaditya | CC0 |
-| Курочка | [Chicken_close_up.jpg](https://commons.wikimedia.org/wiki/File:Chicken_close_up.jpg) | Amit Moscovich | Public domain |
+| Собака | [DogNose01](https://www.flickr.com/photos/41774931@N00/109543598) | hickr | BY |
+| Кошка | [Cat's eyes and nose by iezalel williams IMG_1175-001](https://www.flickr.com/photos/181765699@N08/48093569333) | iezalel7williams | CC0 1.0 |
+| Корова | [Cow's nose closeup, farming animal](https://www.rawpixel.com/image/6039322/photo-image-public-domain-nature-free) | unknown | CC0 1.0 |
+| Лошадка | [Free horse's nose closeup background](https://www.rawpixel.com/image/5924727/photo-image-background-face-public-domain) | unknown | CC0 1.0 |
+| Свинка | [A close-up of a brown pig looking through a rusty wire fence, surrounded by fallen leaves on the ground.](https://wordpress.org/photos/photo/84769e10f0/) | lrodriguez20765 | CC0 1.0 |
+| Овечка | [Close-up of a sheep with a muddy nose and curious expression. The background shows grass, dirt, and another sheep, conveying a rustic farm setting.](https://wordpress.org/photos/photo/99169638fa/) | Tawhid Sadman | CC0 1.0 |
+| Козочка | [Goat to be kidding me](https://www.flickr.com/photos/58411470@N00/54226942443) | kewl | BY 2.0 |
+| Курочка | [Close-up profile view of a rooster head showcasing a textured, bright red comb and wattle, white and grey neck feathers, and a yellow beak against a blurred green background](https://wordpress.org/photos/photo/5016a265c7/) | Mutebi Ivan Junior | CC0 1.0 |
 | Уточка | [Flickr_-_law_keven_-_I'm_ready_for_my_close_up....jpg](https://commons.wikimedia.org/wiki/File:Flickr_-_law_keven_-_I%27m_ready_for_my_close_up....jpg) | Keven Law from Los Angeles, USA | CC BY-SA 2.0 |
 | Зайчик | [Conejo_astronomo.png](https://commons.wikimedia.org/wiki/File:Conejo_astronomo.png) | derivative work: Photohound (talk) Conejo_astronomo1.jpg: Masteruk | CC BY 3.0 |
-| Хомячок | [A_pet_hamster_named_Peach.jpg](https://commons.wikimedia.org/wiki/File:A_pet_hamster_named_Peach.jpg) | TetraHydroCannabinol | CC BY-SA 3.0 |
+| Хомячок | [Hamster Mike](https://www.flickr.com/photos/25413002@N05/2763842992) | MarinaAvila | BY 2.0 |
 | Морская свинка | [Guinea_Pig_Close_Up_of_Nose.jpg](https://commons.wikimedia.org/wiki/File:Guinea_Pig_Close_Up_of_Nose.jpg) | Tcr25 | CC BY-SA 4.0 |
 | Медведь | [Himalayan_black_bear_close_up_(8085661203).jpg](https://commons.wikimedia.org/wiki/File:Himalayan_black_bear_close_up_(8085661203).jpg) | flowcomm | CC BY 2.0 |
 | Волк | [Farkas_2.jpg](https://commons.wikimedia.org/wiki/File:Farkas_2.jpg) | Pilgab | CC BY-SA 3.0 |
 | Лисичка | [Red_fox_face_mammal_vulpes_vulpes.jpg](https://commons.wikimedia.org/wiki/File:Red_fox_face_mammal_vulpes_vulpes.jpg) | U.S. Fish and Wildlife Service | Public domain |
 | Ёжик | [South_African_hedgehog_lying_close_up_-_DPLA_-_99f194ab3746fbc43835fd7d3a0616a6.jpg](https://commons.wikimedia.org/wiki/File:South_African_hedgehog_lying_close_up_-_DPLA_-_99f194ab3746fbc43835fd7d3a0616a6.jpg) | Garst, Warren, 1922-2016, photographer | CC BY-SA 4.0 |
-| Белочка | [Close_up_(4003548018).jpg](https://commons.wikimedia.org/wiki/File:Close_up_(4003548018).jpg) | Vincent Lock from Houston, United States | CC BY 2.0 |
-| Оленёнок | [Råbock_i_närbild.jpg](https://commons.wikimedia.org/wiki/File:R%C3%A5bock_i_n%C3%A4rbild.jpg) | Tjustorparn | CC BY-SA 4.0 |
+| Белочка | [1050](https://www.flickr.com/photos/44189714@N03/4411393349) | Eduardo S3 | BY 2.0 |
+| Оленёнок | [Baby deer](https://www.flickr.com/photos/78341140@N00/5673714658) | waitscm | BY 2.0 |
 | Лось | [Alces_alces_qtl1.jpg](https://commons.wikimedia.org/wiki/File:Alces_alces_qtl1.jpg) | Quartl | CC BY-SA 3.0 |
 | Кабан | [Bache001.jpg](https://commons.wikimedia.org/wiki/File:Bache001.jpg) | dontworry | CC BY-SA 3.0 |
 | Кротик | [Talpa_europaea_MHNT_Tete.jpg](https://commons.wikimedia.org/wiki/File:Talpa_europaea_MHNT_Tete.jpg) | Didier Descouens | CC BY-SA 3.0 |
 | Мышка | [Kletterkünstler_Hausmaus.JPG](https://commons.wikimedia.org/wiki/File:Kletterk%C3%BCnstler_Hausmaus.JPG) | 4028mdk09 | CC BY-SA 3.0 |
 | Бобр | [European_beaver_sitting_in_snow_close_up_-_DPLA_-_91ceee45dcf84a61a16e556c881ac667.jpg](https://commons.wikimedia.org/wiki/File:European_beaver_sitting_in_snow_close_up_-_DPLA_-_91ceee45dcf84a61a16e556c881ac667.jpg) | Garst, Warren, 1922-2016, photographer | CC BY-SA 4.0 |
-| Слон | [Elephant_Close-up_(2404539621).jpg](https://commons.wikimedia.org/wiki/File:Elephant_Close-up_(2404539621).jpg) | William Warby from London, England | CC BY 2.0 |
-| Жираф | [Masai_Giraffe_Close_Up.jpg](https://commons.wikimedia.org/wiki/File:Masai_Giraffe_Close_Up.jpg) | Ltshears | CC BY-SA 3.0 |
-| Лев | [Lazy_sunday!_(10505647704).jpg](https://commons.wikimedia.org/wiki/File:Lazy_sunday!_(10505647704).jpg) | Subharnab Majumdar from Bangalore, India | CC BY 2.0 |
+| Слон | [Elephant Trunk](https://www.flickr.com/photos/31884519@N00/255942923) | Greg George | BY-SA 2.0 |
+| Жираф | [SEDONA AZ](https://www.flickr.com/photos/77890596@N04/7655974560) | shock264 | BY 2.0 |
+| Лев | [White lion head](https://www.flickr.com/photos/136371668@N06/21718431626) | DJM Photos | BY 2.0 |
 | Тигр | [Tiger_Face_(10971343685).jpg](https://commons.wikimedia.org/wiki/File:Tiger_Face_(10971343685).jpg) | Steve Wilson - over 6 million views Thanks !! from Chester, UK | CC BY 2.0 |
 | Зебра | [Zebra_Close-up.jpg](https://commons.wikimedia.org/wiki/File:Zebra_Close-up.jpg) | Eric Kilby | CC BY-SA 2.0 |
 | Бегемот | [Pygmy_hippo.jpg](https://commons.wikimedia.org/wiki/File:Pygmy_hippo.jpg) | Scott Sandars from Melbourne, Australia | CC BY-SA 2.0 |
 | Носорог | [Ceratotherium_simum-portrait-Lisbon_02.JPG](https://commons.wikimedia.org/wiki/File:Ceratotherium_simum-portrait-Lisbon_02.JPG) | Salix | CC BY-SA 3.0 |
-| Обезьянка | [Common_langur_sitting_on_ground_close_up_-_DPLA_-_17de1991470bd0308812e57227394dd2.jpg](https://commons.wikimedia.org/wiki/File:Common_langur_sitting_on_ground_close_up_-_DPLA_-_17de1991470bd0308812e57227394dd2.jpg) | Garst, Warren, 1922-2016, photographer | CC BY-SA 4.0 |
+| Обезьянка | [Mandrill face](https://www.flickr.com/photos/26811962@N05/9075805380) | Steve Wilson - over 10 million views Thanks !! | BY 2.0 |
 | Горилла | [A_Gorilla_Good_Morning_(63683883).jpeg](https://commons.wikimedia.org/wiki/File:A_Gorilla_Good_Morning_(63683883).jpeg) | Dylan Colon | CC BY 3.0 |
-| Носач | [Proboscis_monkey_(Nasalis_larvatus)_male_head.jpg](https://commons.wikimedia.org/wiki/File:Proboscis_monkey_(Nasalis_larvatus)_male_head.jpg) | Charles J. Sharp | CC BY-SA 4.0 |
+| Носач | [This female came pretty close](https://www.flickr.com/photos/77742560@N06/11113513706) | shankar s. | BY 2.0 |
 | Верблюд | [Camel_face.jpg](https://commons.wikimedia.org/wiki/File:Camel_face.jpg) | Self | Public domain |
 | Крокодил | [Close_up_front_of_adult_alligator_reptile_alligator_mississippiensis.jpg](https://commons.wikimedia.org/wiki/File:Close_up_front_of_adult_alligator_reptile_alligator_mississippiensis.jpg) | U.S. Fish and Wildlife Service | Public domain |
-| Страус | [Struthio_camelus_(captive)_in_Jardim_Zoológico_de_Curitiba.jpg](https://commons.wikimedia.org/wiki/File:Struthio_camelus_(captive)_in_Jardim_Zool%C3%B3gico_de_Curitiba.jpg) | Wilfredor | CC0 |
+| Страус | [Ostrich Close-up](https://www.flickr.com/photos/26782864@N00/3303408046) | wwarby | BY 2.0 |
 | Звездонос | [Condylura_cristata_(Ontario,_Canada)_1.jpg](https://commons.wikimedia.org/wiki/File:Condylura_cristata_(Ontario,_Canada)_1.jpg) | Dan MacNeal | CC BY 4.0 |
 | Тапир | [Anta_na_RPPN_Cristalino.jpg](https://commons.wikimedia.org/wiki/File:Anta_na_RPPN_Cristalino.jpg) | Fábio Mitsuka Paschoal | CC BY-SA 4.0 |
-| Муравьед | [Giant_anteater_close_up_-_DPLA_-_4db12bfad08b08998b41be7170ad4775.jpg](https://commons.wikimedia.org/wiki/File:Giant_anteater_close_up_-_DPLA_-_4db12bfad08b08998b41be7170ad4775.jpg) | Garst, Warren, 1922-2016, photographer | CC BY-SA 4.0 |
+| Муравьед | [Giant Anteater](https://www.flickr.com/photos/7326810@N08/3050076599) | Just chaos | BY 2.0 |
 | Сайгак | [Saiga_tartarica_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Saiga_tartarica_(cropped).jpg) | Navinder Singh | CC BY-SA 4.0 |
 | Утконос | [Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale_2.jpg](https://commons.wikimedia.org/wiki/File:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale_2.jpg) | Charles J. Sharp | CC BY-SA 4.0 |
 | Ехидна | [Close-up_of_a_short-beaked_echidna_(Tachyglossus_aculeatus),_photographed_in_Wilks_Park_Wildlife_Restoration_Area_(1).jpg](https://commons.wikimedia.org/wiki/File:Close-up_of_a_short-beaked_echidna_(Tachyglossus_aculeatus),_photographed_in_Wilks_Park_Wildlife_Restoration_Area_(1).jpg) | Bidgee | CC BY-SA 3.0 au |
@@ -57,7 +57,7 @@
 | Киви | [Apteryx_mantelli_-Rotorua,_North_Island,_New_Zealand-8a.jpg](https://commons.wikimedia.org/wiki/File:Apteryx_mantelli_-Rotorua,_North_Island,_New_Zealand-8a.jpg) | The.Rohit | CC BY 2.0 |
 | Змейка | [Close-up_photo_of_Anerythristic_Type_A_corn_snake_head.jpg](https://commons.wikimedia.org/wiki/File:Close-up_photo_of_Anerythristic_Type_A_corn_snake_head.jpg) | EthanPo | CC0 |
 | Бабочка | [Fesoj_-_Papilio_machaon_(by).jpg](https://commons.wikimedia.org/wiki/File:Fesoj_-_Papilio_machaon_(by).jpg) | fesoj | CC BY 2.0 |
-| Пчёлка | [2001078_009_70_132_002ac_(20333788303).jpg](https://commons.wikimedia.org/wiki/File:2001078_009_70_132_002ac_(20333788303).jpg) | Texas State Archives from Austin, Texas, USA | No restrictions |
+| Пчёлка | [Sweat bee, Nomia species, face](https://www.rawpixel.com/image/8752494/sweat-bee-nomia-species-face) | usgsbee | CC0 1.0 |
 | Улитка | [2015-09-15-1206_(21411761176).jpg](https://commons.wikimedia.org/wiki/File:2015-09-15-1206_(21411761176).jpg) | teteria sonnna from Obukhiv, Ukraine | CC BY 2.0 |
 
 ## Звуки — живые записи

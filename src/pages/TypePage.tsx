@@ -1,65 +1,90 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useParams, useNavigate } from 'react-router-dom';
-import { TopBar } from '../components/Chrome';
-import { typeById, animalsOfType, photoUrl, noseUrl, gradient } from '../lib/content';
-import { say, blip } from '../lib/audio';
+import { Nav } from '../components/Chrome';
+import { Scene } from '../components/Scene';
+import { BlobPhoto } from '../components/BlobPhoto';
+import { IconSound } from '../components/Icon';
+import { typeById, animalsOfType, photoUrl, noseUrl } from '../lib/content';
+import { say, blip, animalSound } from '../lib/audio';
 
 export default function TypePage() {
   const { id } = useParams();
   const nav = useNavigate();
   const t = typeById(id);
-  useEffect(() => { if (t) say(`t-${t.id}-kid`); }, [t?.id]);
-  if (!t) return <div className="page">Не нашли такой носик</div>;
+  // «Вертелка»: карусель носиков этого типа — ребёнок крутит и слушает
+  const [k, setK] = useState(0);
+  useEffect(() => { if (t) { setK(0); say(`t-${t.id}-kid`); } }, [t?.id]);
+  if (!t) return <div className="screen"><div className="wrap">Не нашли такой носик</div></div>;
   const pets = animalsOfType(t.id);
+  const cur = pets[k % pets.length];
 
   return (
-    <div className="page">
-      <div className="hero-bg" style={{ background: gradient(t.palette), opacity: .35 }} />
+    <div className="screen">
+      <Scene from={t.palette.from} to={t.palette.to} accent="#FFFFFF" />
       <div className="wrap">
-        <TopBar />
+        <Nav light />
 
-        <motion.div initial={{ scale: .9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: 'spring', bounce: .4 }}
-          style={{ background: gradient(t.palette), borderRadius: 'var(--r-lg)', padding: '30px 32px',
-                   color: '#fff', marginBottom: 22, boxShadow: 'var(--shadow-pop)' }}>
-          <motion.div animate={{ rotate: [0, -8, 8, 0], scale: [1, 1.08, 1] }}
-            transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-            style={{ fontSize: 74, lineHeight: 1 }}>{t.emoji}</motion.div>
-          <h1 style={{ textShadow: '0 3px 14px rgba(0,0,0,.25)' }}>{t.name}</h1>
-          <p style={{ fontSize: 'clamp(21px,2vw,29px)', fontWeight: 700, maxWidth: '36ch' }}>{t.kid}</p>
+        <div style={{ display: 'grid', gap: 'clamp(20px,3.5vw,58px)',
+                      gridTemplateColumns: 'minmax(280px,420px) minmax(290px,1fr)',
+                      alignItems: 'center', marginBottom: 'clamp(26px,4vh,54px)' }}>
+          <motion.div
+            drag="x" dragConstraints={{ left: 0, right: 0 }} dragElastic={.45}
+            onDragEnd={(_, info) => {
+              if (Math.abs(info.offset.x) < 50) return;
+              setK(v => (v + (info.offset.x < 0 ? 1 : pets.length - 1)) % pets.length);
+              blip(620); animalSound(cur.id);
+            }}
+            initial={{ scale: .82, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
+            transition={{ type: 'spring', stiffness: 160, damping: 17 }}
+            style={{ cursor: 'grab' }}>
+            <motion.div animate={{ y: [0, -14, 0] }} transition={{ duration: 6.5, repeat: Infinity, ease: 'easeInOut' }}>
+              <BlobPhoto key={cur.id} src={noseUrl(cur.id)} lens={false} />
+            </motion.div>
+            <div style={{ textAlign: 'center', marginTop: 14, color: '#fff', fontWeight: 800,
+                          textShadow: '0 2px 12px rgba(0,0,0,.32)' }}>
+              Это носик: {cur.ru} · тяни вбок
+            </div>
+          </motion.div>
 
-          <button className="pill" style={{ marginTop: 10, color: 'var(--ink)' }}
-            onClick={() => { blip(600); say(`t-${t.id}-why`); }}>
-            🔊 Почему так?
-          </button>
-        </motion.div>
+          <div>
+            <motion.div initial={{ x: 24, opacity: 0 }} animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: .12, type: 'spring', stiffness: 170, damping: 18 }}>
+              <h1 style={{ color: '#fff', textShadow: '0 4px 22px rgba(0,0,0,.26)' }}>{t.name}</h1>
+            </motion.div>
+            <motion.p className="lead"
+              initial={{ y: 18, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: .24 }}
+              style={{ color: '#fff', textShadow: '0 2px 16px rgba(0,0,0,.3)', margin: '16px 0 24px' }}>
+              {t.kid}
+            </motion.p>
+            <motion.button className="btn btn--quiet"
+              initial={{ y: 14, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: .34 }}
+              onClick={() => { blip(600); say(`t-${t.id}-why`); }}>
+              <IconSound size={26} /> Почему так?
+            </motion.button>
+          </div>
+        </div>
 
-        <h2>Кто такой носик носит</h2>
-        <div className="grid-animals" style={{ marginBottom: 28 }}>
+        <div className="beasts">
           {pets.map((a, i) => (
-            <motion.button key={a.id} className="card"
-              initial={{ opacity: 0, scale: .9 }} animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: i * .04, type: 'spring', bounce: .4 }}
-              whileHover={{ y: -5 }} whileTap={{ scale: .95 }}
-              onClick={() => { blip(520); nav(`/animal/${a.id}`); }}>
-              <img className="card-photo" src={photoUrl(a.id)} alt={a.ru} loading="lazy" />
-              <img src={noseUrl(a.id)} alt="" loading="lazy"
-                style={{ position: 'absolute', right: 8, top: 8, width: 58, height: 58,
-                         borderRadius: '50%', objectFit: 'cover', border: '3px solid #fff',
-                         boxShadow: '0 4px 14px rgba(0,0,0,.3)' }} />
-              <div className="card-label">{a.ru}</div>
+            <motion.button key={a.id} className="beast"
+              initial={{ opacity: 0, scale: .9, y: 18 }} animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ delay: .05 + i * .035, type: 'spring', stiffness: 200, damping: 20 }}
+              whileHover={{ y: -7 }} whileTap={{ scale: .95 }}
+              onClick={() => { blip(540); nav(`/animal/${a.id}`); }}>
+              <img src={photoUrl(a.id)} alt={a.ru} loading="lazy" />
+              <span>{a.ru}</span>
             </motion.button>
           ))}
         </div>
 
-        <div className="parent-box">
+        <div className="note" style={{ marginTop: 28 }}>
           <h4>Для взрослых</h4>
-          <p style={{ fontSize: 17 }}>{t.parent}</p>
-          <div className="src">
-            Источник:{' '}
-            {t.sources.map((s, i) => (
-              <span key={s.url}>{i > 0 && ' · '}<a href={s.url} target="_blank" rel="noreferrer">{s.title}</a></span>
+          <p style={{ margin: 0 }}>{t.parent}</p>
+          <div className="note__src">
+            Источник: {t.sources.map((s, i) => (
+              <span key={s.url}>{i > 0 && ' · '}
+                <a href={s.url} target="_blank" rel="noreferrer">{s.title}</a></span>
             ))}
           </div>
         </div>

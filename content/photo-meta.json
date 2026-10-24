@@ -1,74 +1,82 @@
 {
  "dog": {
   "file": "dog.jpg",
-  "commons": "German_Shepherd_Dog_(close_up).jpg",
-  "license": "CC BY-SA 3.0",
-  "author": "User:Monika",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:German_Shepherd_Dog_(close_up).jpg",
+  "commons": "DogNose01",
+  "license": "BY",
+  "author": "hickr",
+  "descUrl": "https://www.flickr.com/photos/41774931@N00/109543598",
+  "source": "flickr",
   "wikipedia": "https://en.wikipedia.org/wiki/Dog",
   "attributionRequired": true
  },
  "cat": {
   "file": "cat.jpg",
-  "commons": "Cat_face_1.jpg",
-  "license": "Public domain",
-  "author": "Love Krittaya",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Cat_face_1.jpg",
+  "commons": "Cat's eyes and nose by iezalel williams IMG_1175-001",
+  "license": "CC0 1.0",
+  "author": "iezalel7williams",
+  "descUrl": "https://www.flickr.com/photos/181765699@N08/48093569333",
   "wikipedia": "https://en.wikipedia.org/wiki/Cat",
+  "source": "flickr",
   "attributionRequired": false
  },
  "cow": {
   "file": "cow.jpg",
-  "commons": "Close-up_photograph_of_a_calf's_head_looking_at_the_viewer_at_golden_hour_in_Don_Det_Laos.jpg",
-  "license": "CC BY-SA 4.0",
-  "author": "Basile Morin",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Close-up_photograph_of_a_calf%27s_head_looking_at_the_viewer_at_golden_hour_in_Don_Det_Laos.jpg",
+  "commons": "Cow's nose closeup, farming animal",
+  "license": "CC0 1.0",
+  "author": "unknown",
+  "descUrl": "https://www.rawpixel.com/image/6039322/photo-image-public-domain-nature-free",
   "wikipedia": "https://en.wikipedia.org/wiki/Cattle",
-  "attributionRequired": true
+  "source": "rawpixel",
+  "attributionRequired": false
  },
  "horse": {
   "file": "horse.jpg",
-  "commons": "Close-up_on_a_skewbald_horse_(Unsplash).jpg",
-  "license": "CC0",
-  "author": "Ivan Bertona ibrt",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Close-up_on_a_skewbald_horse_(Unsplash).jpg",
+  "commons": "Free horse's nose closeup background",
+  "license": "CC0 1.0",
+  "author": "unknown",
+  "descUrl": "https://www.rawpixel.com/image/5924727/photo-image-background-face-public-domain",
   "wikipedia": "https://en.wikipedia.org/wiki/Horse",
+  "source": "rawpixel",
   "attributionRequired": false
  },
  "pig": {
   "file": "pig.jpg",
-  "commons": "GT_parshas.jpg",
-  "license": "CC BY-SA 3.0",
-  "author": "Elias Bröms",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:GT_parshas.jpg",
+  "commons": "A close-up of a brown pig looking through a rusty wire fence, surrounded by fallen leaves on the ground.",
+  "license": "CC0 1.0",
+  "author": "lrodriguez20765",
+  "descUrl": "https://wordpress.org/photos/photo/84769e10f0/",
   "wikipedia": "https://en.wikipedia.org/wiki/Pig",
-  "attributionRequired": true
+  "source": "wordpress",
+  "attributionRequired": false
  },
  "sheep": {
   "file": "sheep.jpg",
-  "commons": "Coburger_Fuchs_head_(cropped).JPG",
-  "license": "CC BY-SA 3.0",
-  "author": "Madeleine73",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Coburger_Fuchs_head_(cropped).JPG",
+  "commons": "Close-up of a sheep with a muddy nose and curious expression. The background shows grass, dirt, and another sheep, conveying a rustic farm setting.",
+  "license": "CC0 1.0",
+  "author": "Tawhid Sadman",
+  "descUrl": "https://wordpress.org/photos/photo/99169638fa/",
   "wikipedia": "https://en.wikipedia.org/wiki/Sheep",
-  "attributionRequired": true
+  "source": "wordpress",
+  "attributionRequired": false
  },
  "goat": {
   "file": "goat.jpg",
-  "commons": "Goat_Anatomy_Head.jpg",
-  "license": "CC0",
-  "author": "Sumbria.vikramaditya",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Goat_Anatomy_Head.jpg",
+  "commons": "Goat to be kidding me",
+  "license": "BY 2.0",
+  "author": "kewl",
+  "descUrl": "https://www.flickr.com/photos/58411470@N00/54226942443",
   "wikipedia": "https://en.wikipedia.org/wiki/Goat",
-  "attributionRequired": false
+  "source": "flickr",
+  "attributionRequired": true
  },
  "chicken": {
   "file": "chicken.jpg",
-  "commons": "Chicken_close_up.jpg",
-  "license": "Public domain",
-  "author": "Amit Moscovich",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Chicken_close_up.jpg",
+  "commons": "Close-up profile view of a rooster head showcasing a textured, bright red comb and wattle, white and grey neck feathers, and a yellow beak against a blurred green background",
+  "license": "CC0 1.0",
+  "author": "Mutebi Ivan Junior",
+  "descUrl": "https://wordpress.org/photos/photo/5016a265c7/",
   "wikipedia": "https://en.wikipedia.org/wiki/Chicken",
+  "source": "wordpress",
   "attributionRequired": false
  },
  "duck": {
@@ -91,11 +99,12 @@
  },
  "hamster": {
   "file": "hamster.jpg",
-  "commons": "A_pet_hamster_named_Peach.jpg",
-  "license": "CC BY-SA 3.0",
-  "author": "TetraHydroCannabinol",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:A_pet_hamster_named_Peach.jpg",
+  "commons": "Hamster Mike",
+  "license": "BY 2.0",
+  "author": "MarinaAvila",
+  "descUrl": "https://www.flickr.com/photos/25413002@N05/2763842992",
   "wikipedia": "https://en.wikipedia.org/wiki/Hamster",
+  "source": "flickr",
   "attributionRequired": true
  },
  "guineapig": {
@@ -145,20 +154,22 @@
  },
  "squirrel": {
   "file": "squirrel.jpg",
-  "commons": "Close_up_(4003548018).jpg",
-  "license": "CC BY 2.0",
-  "author": "Vincent Lock from Houston, United States",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Close_up_(4003548018).jpg",
+  "commons": "1050",
+  "license": "BY 2.0",
+  "author": "Eduardo S3",
+  "descUrl": "https://www.flickr.com/photos/44189714@N03/4411393349",
   "wikipedia": "https://en.wikipedia.org/wiki/Squirrel",
+  "source": "flickr",
   "attributionRequired": true
  },
  "deer": {
   "file": "deer.jpg",
-  "commons": "Råbock_i_närbild.jpg",
-  "license": "CC BY-SA 4.0",
-  "author": "Tjustorparn",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:R%C3%A5bock_i_n%C3%A4rbild.jpg",
+  "commons": "Baby deer",
+  "license": "BY 2.0",
+  "author": "waitscm",
+  "descUrl": "https://www.flickr.com/photos/78341140@N00/5673714658",
   "wikipedia": "https://en.wikipedia.org/wiki/Deer",
+  "source": "flickr",
   "attributionRequired": true
  },
  "moose": {
@@ -208,29 +219,32 @@
  },
  "elephant": {
   "file": "elephant.jpg",
-  "commons": "Elephant_Close-up_(2404539621).jpg",
-  "license": "CC BY 2.0",
-  "author": "William Warby from London, England",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Elephant_Close-up_(2404539621).jpg",
+  "commons": "Elephant Trunk",
+  "license": "BY-SA 2.0",
+  "author": "Greg George",
+  "descUrl": "https://www.flickr.com/photos/31884519@N00/255942923",
   "wikipedia": "https://en.wikipedia.org/wiki/Elephant",
+  "source": "flickr",
   "attributionRequired": true
  },
  "giraffe": {
   "file": "giraffe.jpg",
-  "commons": "Masai_Giraffe_Close_Up.jpg",
-  "license": "CC BY-SA 3.0",
-  "author": "Ltshears",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Masai_Giraffe_Close_Up.jpg",
+  "commons": "SEDONA AZ",
+  "license": "BY 2.0",
+  "author": "shock264",
+  "descUrl": "https://www.flickr.com/photos/77890596@N04/7655974560",
   "wikipedia": "https://en.wikipedia.org/wiki/Giraffe",
+  "source": "flickr",
   "attributionRequired": true
  },
  "lion": {
   "file": "lion.jpg",
-  "commons": "Lazy_sunday!_(10505647704).jpg",
-  "license": "CC BY 2.0",
-  "author": "Subharnab Majumdar from Bangalore, India",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Lazy_sunday!_(10505647704).jpg",
+  "commons": "White lion head",
+  "license": "BY 2.0",
+  "author": "DJM Photos",
+  "descUrl": "https://www.flickr.com/photos/136371668@N06/21718431626",
   "wikipedia": "https://en.wikipedia.org/wiki/Lion",
+  "source": "flickr",
   "attributionRequired": true
  },
  "tiger": {
@@ -271,11 +285,12 @@
  },
  "monkey": {
   "file": "monkey.jpg",
-  "commons": "Common_langur_sitting_on_ground_close_up_-_DPLA_-_17de1991470bd0308812e57227394dd2.jpg",
-  "license": "CC BY-SA 4.0",
-  "author": "Garst, Warren, 1922-2016, photographer",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Common_langur_sitting_on_ground_close_up_-_DPLA_-_17de1991470bd0308812e57227394dd2.jpg",
+  "commons": "Mandrill face",
+  "license": "BY 2.0",
+  "author": "Steve Wilson - over 10 million views Thanks !!",
+  "descUrl": "https://www.flickr.com/photos/26811962@N05/9075805380",
   "wikipedia": "https://en.wikipedia.org/wiki/Monkey",
+  "source": "flickr",
   "attributionRequired": true
  },
  "gorilla": {
@@ -289,11 +304,12 @@
  },
  "proboscismonkey": {
   "file": "proboscismonkey.jpg",
-  "commons": "Proboscis_monkey_(Nasalis_larvatus)_male_head.jpg",
-  "license": "CC BY-SA 4.0",
-  "author": "Charles J. Sharp",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Proboscis_monkey_(Nasalis_larvatus)_male_head.jpg",
+  "commons": "This female came pretty close",
+  "license": "BY 2.0",
+  "author": "shankar s.",
+  "descUrl": "https://www.flickr.com/photos/77742560@N06/11113513706",
   "wikipedia": "https://en.wikipedia.org/wiki/Proboscis_monkey",
+  "source": "flickr",
   "attributionRequired": true
  },
  "camel": {
@@ -316,12 +332,13 @@
  },
  "ostrich": {
   "file": "ostrich.jpg",
-  "commons": "Struthio_camelus_(captive)_in_Jardim_Zoológico_de_Curitiba.jpg",
-  "license": "CC0",
-  "author": "Wilfredor",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Struthio_camelus_(captive)_in_Jardim_Zool%C3%B3gico_de_Curitiba.jpg",
+  "commons": "Ostrich Close-up",
+  "license": "BY 2.0",
+  "author": "wwarby",
+  "descUrl": "https://www.flickr.com/photos/26782864@N00/3303408046",
   "wikipedia": "https://en.wikipedia.org/wiki/Common_ostrich",
-  "attributionRequired": false
+  "source": "flickr",
+  "attributionRequired": true
  },
  "starnosedmole": {
   "file": "starnosedmole.jpg",
@@ -343,11 +360,12 @@
  },
  "anteater": {
   "file": "anteater.jpg",
-  "commons": "Giant_anteater_close_up_-_DPLA_-_4db12bfad08b08998b41be7170ad4775.jpg",
-  "license": "CC BY-SA 4.0",
-  "author": "Garst, Warren, 1922-2016, photographer",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Giant_anteater_close_up_-_DPLA_-_4db12bfad08b08998b41be7170ad4775.jpg",
+  "commons": "Giant Anteater",
+  "license": "BY 2.0",
+  "author": "Just chaos",
+  "descUrl": "https://www.flickr.com/photos/7326810@N08/3050076599",
   "wikipedia": "https://en.wikipedia.org/wiki/Anteater",
+  "source": "flickr",
   "attributionRequired": true
  },
  "saiga": {
@@ -460,12 +478,13 @@
  },
  "bee": {
   "file": "bee.jpg",
-  "commons": "2001078_009_70_132_002ac_(20333788303).jpg",
-  "license": "No restrictions",
-  "author": "Texas State Archives from Austin, Texas, USA",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:2001078_009_70_132_002ac_(20333788303).jpg",
+  "commons": "Sweat bee, Nomia species, face",
+  "license": "CC0 1.0",
+  "author": "usgsbee",
+  "descUrl": "https://www.rawpixel.com/image/8752494/sweat-bee-nomia-species-face",
   "wikipedia": "https://en.wikipedia.org/wiki/Bee",
-  "attributionRequired": true
+  "source": "rawpixel",
+  "attributionRequired": false
  },
  "snail": {
   "file": "snail.jpg",

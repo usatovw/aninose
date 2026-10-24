@@ -158,5 +158,10 @@
   "prompt": "a very soft wet slithering sound, tiny and gentle",
   "seconds": 2,
   "source": "ElevenLabs sound effects"
+ },
+ "crocodile": {
+  "prompt": "a low soft crocodile hiss and gentle water ripple, calm",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
  }
 }

@@ -1,122 +1,124 @@
+/* ──────────────────────────────────────────────────────────────
+   «Носики». Макет: одна крупная вещь на экран — большое фото в
+   органической форме на сплошной тёплой заливке. Воздух вместо сетки
+   из мелких карточек: трёхлетке нужно одно понятное пятно, а не витрина.
+   ────────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,800;1,600&display=swap');
+
 :root {
-  /* Шрифт один на всё: ребёнку важнее крупно и округло, чем разнообразно */
-  --font: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --display: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  --body: 'Nunito', system-ui, -apple-system, sans-serif;
 
-  --ink: #2C2340;
-  --ink-soft: #6B5F86;
-  --paper: #FFF9F0;
-  --card: #FFFFFF;
+  /* Тёплая кремовая база и один акцент — как на детских книжных разворотах */
+  --cream: #FFF4E0;
+  --cream-deep: #FFE8C4;
+  --ink: #3B2A1E;
+  --ink-soft: #8A7260;
+  --accent: #F2603C;
+  --accent-ink: #FFFFFF;
 
-  /* Минимальная зона нажатия: палец трёхлетки неточный */
-  --tap: 92px;
-  --r-lg: 40px;
-  --r-md: 28px;
-  --r-sm: 18px;
-
-  --shadow-soft: 0 10px 30px rgba(70,50,110,.10), 0 2px 8px rgba(70,50,110,.06);
-  --shadow-pop: 0 18px 50px rgba(70,50,110,.18), 0 4px 12px rgba(70,50,110,.10);
+  --tap: 86px;              /* палец трёхлетки неточный */
+  --r-blob: 46% 54% 52% 48% / 48% 44% 56% 52%;
+  --shadow: 0 18px 44px rgba(90, 58, 30, .16);
+  --shadow-lift: 0 26px 64px rgba(90, 58, 30, .24);
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body, #root { height: 100%; }
 body {
-  margin: 0; font-family: var(--font); color: var(--ink);
-  background: var(--paper);
-  font-size: 20px; line-height: 1.45;
-  overflow-x: hidden;
-  /* Ребёнок будет возить пальцем — не даём случайно выделять текст */
-  user-select: none; -webkit-user-select: none;
+  margin: 0; background: var(--cream); color: var(--ink);
+  font-family: var(--body); font-size: 20px; line-height: 1.5;
+  overflow-x: hidden; user-select: none; -webkit-user-select: none;
 }
 img { display: block; max-width: 100%; }
-button { font-family: inherit; border: none; background: none; cursor: pointer; color: inherit; }
+button { font: inherit; color: inherit; border: none; background: none; cursor: pointer; }
 
-h1 { font-size: clamp(34px, 5vw, 64px); font-weight: 900; margin: 0 0 .2em; letter-spacing: -.02em; }
-h2 { font-size: clamp(26px, 3.4vw, 42px); font-weight: 900; margin: 0 0 .3em; letter-spacing: -.01em; }
-p  { font-size: clamp(19px, 1.5vw, 24px); margin: 0 0 .7em; }
+h1 { font-family: var(--display); font-weight: 600; letter-spacing: -.015em;
+     font-size: clamp(44px, 7vw, 104px); line-height: .98; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--display); font-weight: 600; letter-spacing: -.01em;
+     font-size: clamp(28px, 3.6vw, 48px); line-height: 1.05; margin: 0; text-wrap: balance; }
 
-.page { min-height: 100%; padding: 22px clamp(16px, 4vw, 48px) 120px; }
-.wrap { max-width: 1320px; margin: 0 auto; }
+.screen { min-height: 100%; display: flex; flex-direction: column; justify-content: center;
+          padding-block: 14px 28px;
+          padding-left: max(20px, env(safe-area-inset-left, 0px));
+          padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.wrap { width: 100%; max-width: 1240px; margin: 0 auto; }
 
-/* ——— большая круглая кнопка: основной способ взаимодействия ——— */
-.big-btn {
-  min-width: var(--tap); min-height: var(--tap);
-  border-radius: 999px; background: #fff; box-shadow: var(--shadow-soft);
-  display: inline-flex; align-items: center; justify-content: center;
-  font-size: 38px; transition: transform .16s cubic-bezier(.3,1.4,.5,1);
+/* ——— навигация: только то, без чего нельзя ——— */
+.nav { display: flex; align-items: center; gap: 12px; margin-bottom: clamp(14px, 3vh, 40px); }
+.nav .spacer { flex: 1; }
+.round {
+  width: var(--tap); height: var(--tap); border-radius: 50%;
+  display: grid; place-items: center; background: rgba(255,255,255,.76);
+  color: var(--ink); box-shadow: 0 6px 18px rgba(90,58,30,.12);
+  transition: transform .18s cubic-bezier(.3,1.5,.5,1), background .18s;
 }
-.big-btn:active { transform: scale(.9); }
+.round:active { transform: scale(.88); }
+.round:focus-visible, .btn:focus-visible { outline: 4px solid var(--accent); outline-offset: 4px; }
 
-.pill {
-  display: inline-flex; align-items: center; gap: 12px;
-  min-height: var(--tap); padding: 0 34px; border-radius: 999px;
-  background: #fff; box-shadow: var(--shadow-soft);
-  font-weight: 900; font-size: clamp(20px, 2vw, 28px);
+.btn {
+  display: inline-flex; align-items: center; gap: 14px;
+  min-height: var(--tap); padding: 0 40px; border-radius: 999px;
+  font-family: var(--display); font-weight: 600; font-size: clamp(21px, 2.1vw, 30px);
+  background: var(--accent); color: var(--accent-ink);
+  box-shadow: 0 14px 30px rgba(242, 96, 60, .34);
+  transition: transform .18s cubic-bezier(.3,1.5,.5,1);
 }
+.btn:active { transform: scale(.94); }
+.btn--quiet { background: #fff; color: var(--ink); box-shadow: var(--shadow); }
 
-.topbar {
-  position: sticky; top: 0; z-index: 50;
-  display: flex; align-items: center; gap: 14px;
-  padding: 10px 0 16px;
-  background: linear-gradient(180deg, var(--paper) 72%, rgba(255,249,240,0));
+/* ——— фото в органической форме ——— */
+.blob { border-radius: var(--r-blob); overflow: hidden; background: #fff; box-shadow: var(--shadow-lift); }
+.blob--soft { border-radius: 42% 58% 55% 45% / 52% 42% 58% 48%; }
+
+.lead { font-size: clamp(21px, 2.1vw, 30px); font-weight: 600; max-width: 24ch; margin: 0; }
+
+/* ——— «домики» типов: фото заполняет карточку, текст поверх ——— */
+.types { display: grid; gap: clamp(16px, 2vw, 30px);
+         grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); }
+.type-card {
+  position: relative; aspect-ratio: 4/3; border-radius: 34px; overflow: hidden;
+  box-shadow: var(--shadow); text-align: left; isolation: isolate;
+  transition: transform .22s cubic-bezier(.3,1.3,.5,1);
 }
-.spacer { flex: 1; }
-
-/* ——— сетки ——— */
-.grid-types {
-  display: grid; gap: clamp(14px, 1.6vw, 26px);
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+.type-card:active { transform: scale(.965); }
+.type-card__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.type-card__veil { position: absolute; inset: 0; mix-blend-mode: multiply; opacity: .42; }
+.type-card__name {
+  position: absolute; left: 22px; right: 22px; bottom: 20px; color: #fff;
+  font-family: var(--display); font-weight: 600; font-size: clamp(24px, 2.2vw, 33px);
+  line-height: 1.05; text-shadow: 0 3px 18px rgba(0,0,0,.42);
 }
-.grid-animals {
-  display: grid; gap: clamp(12px, 1.4vw, 22px);
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-}
+.type-card__count { position: absolute; top: 18px; right: 20px; color: #fff; font-weight: 800;
+                    font-size: 17px; background: rgba(0,0,0,.26); border-radius: 999px; padding: 6px 15px;
+                    backdrop-filter: blur(3px); }
 
-.card {
-  position: relative; border-radius: var(--r-md); overflow: hidden;
-  box-shadow: var(--shadow-soft); background: var(--card);
-  transition: transform .2s cubic-bezier(.3,1.3,.5,1), box-shadow .2s;
-}
-.card:active { transform: scale(.96); }
-
-.card-photo { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
-.card-label {
-  position: absolute; left: 0; right: 0; bottom: 0;
-  padding: 26px 14px 12px; font-weight: 900; font-size: 21px; color: #fff;
-  background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.6));
-  text-shadow: 0 2px 10px rgba(0,0,0,.4);
-}
-
-/* ——— фон страницы животного ——— */
-.hero-bg { position: fixed; inset: 0; z-index: -1; transition: background .5s ease; }
-
-.sticker {
-  border-radius: 34px; overflow: hidden;
-  box-shadow: 0 24px 60px rgba(0,0,0,.22), 0 0 0 10px rgba(255,255,255,.9);
-  background: #fff;
-}
-
-/* нос-хотспот поверх фото */
-.nose-dot {
-  position: absolute; width: 86px; height: 86px; margin: -43px 0 0 -43px;
-  border-radius: 999px; border: 5px solid rgba(255,255,255,.95);
-  box-shadow: 0 0 0 5px rgba(0,0,0,.14), 0 8px 24px rgba(0,0,0,.25);
-  display: grid; place-items: center; font-size: 30px;
-  background: rgba(255,255,255,.18); backdrop-filter: blur(2px);
-}
-
-.parent-box {
-  background: #fff; border-radius: var(--r-md); padding: 20px 24px;
-  box-shadow: var(--shadow-soft); font-size: 17px; line-height: 1.55; color: var(--ink-soft);
-}
-.parent-box h4 { margin: 0 0 8px; font-size: 16px; letter-spacing: .08em; text-transform: uppercase; color: #A294BD; }
-.parent-box a { color: #7A5FD3; }
-.src { font-size: 14px; color: #9C8FB5; margin-top: 10px; }
-
-.visually-hidden {
-  position: absolute; width: 1px; height: 1px; overflow: hidden;
-  clip: rect(0 0 0 0); white-space: nowrap;
+/* ——— сетка зверей ——— */
+.beasts { display: grid; gap: clamp(14px, 1.6vw, 24px);
+          grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)); }
+.beast { position: relative; border-radius: 28px; overflow: hidden; box-shadow: var(--shadow);
+         transition: transform .2s cubic-bezier(.3,1.3,.5,1); background: #fff; }
+.beast:active { transform: scale(.95); }
+.beast img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+.beast span {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 30px 14px 13px; color: #fff;
+  font-family: var(--display); font-weight: 500; font-size: 20px;
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,.62));
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+.note {
+  background: rgba(255,255,255,.72); border-radius: 26px; padding: 22px 26px;
+  font-size: 17px; line-height: 1.6; color: var(--ink-soft);
+}
+.note h4 { margin: 0 0 10px; font-family: var(--display); font-weight: 500; font-size: 15px;
+           letter-spacing: .1em; text-transform: uppercase; color: #B59C85; }
+.note a { color: var(--accent); }
+.note__src { font-size: 14px; color: #B09A86; margin-top: 12px; }
+
+@media (prefers-reduced-motion: reduce) { * { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
+@media (max-width: 860px) {
+  .screen > .wrap > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+  h1 { font-size: clamp(38px, 11vw, 60px) !important; margin-left: 0 !important; }
+  .lead { font-size: 20px; }
 }
