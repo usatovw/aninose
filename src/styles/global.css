@@ -38,7 +38,7 @@ h1 { font-family: var(--display); font-weight: 600; letter-spacing: -.015em;
 h2 { font-family: var(--display); font-weight: 600; letter-spacing: -.01em;
      font-size: clamp(28px, 3.6vw, 48px); line-height: 1.05; margin: 0; text-wrap: balance; }
 
-.screen { min-height: 100%; display: flex; flex-direction: column; justify-content: center;
+.screen { flex: 1; min-height: 100%; display: flex; flex-direction: column; justify-content: center;
           padding-block: 14px 28px;
           padding-left: max(20px, env(safe-area-inset-left, 0px));
           padding-right: max(20px, env(safe-area-inset-right, 0px)); }
