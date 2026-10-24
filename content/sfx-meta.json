@@ -1,0 +1,162 @@
+{
+ "chicken": {
+  "prompt": "a single gentle chicken cluck, farmyard hen, clean recording",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "rabbit": {
+  "prompt": "soft rabbit thumping and quiet sniffing, small animal",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "hamster": {
+  "prompt": "a gentle short natural sound of a Hamster, soft and child friendly",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "bear": {
+  "prompt": "a low soft bear huff and grunt, calm not aggressive",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "wolf": {
+  "prompt": "a short gentle wolf howl, distant and soft",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "fox": {
+  "prompt": "a short fox bark call in a quiet forest",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "deer": {
+  "prompt": "a soft deer bleat call, gentle",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "moose": {
+  "prompt": "a low soft moose grunt call",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "boar": {
+  "prompt": "wild boar snuffling and rooting in soil, soft grunts",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "mole": {
+  "prompt": "a small mole digging in soil, soft snuffling",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "beaver": {
+  "prompt": "a beaver gnawing wood softly and a small water splash",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "giraffe": {
+  "prompt": "a soft giraffe hum and snort, gentle breathing",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "zebra": {
+  "prompt": "a short zebra bark bray call",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "hippo": {
+  "prompt": "a deep soft hippo grunt, playful not scary",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "monkey": {
+  "prompt": "a gentle monkey chatter call, soft and playful",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "gorilla": {
+  "prompt": "a soft gorilla chest hum and grunt, calm",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "proboscismonkey": {
+  "prompt": "a soft honking monkey call, nasal and funny",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "ostrich": {
+  "prompt": "a low soft ostrich boom call",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "starnosedmole": {
+  "prompt": "tiny mole snuffling and scratching in wet soil, very soft",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "tapir": {
+  "prompt": "a soft high tapir whistle call, short",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "anteater": {
+  "prompt": "an anteater sniffing with long snout, soft snuffling",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "saiga": {
+  "prompt": "a short soft antelope snort through the nose",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "platypus": {
+  "prompt": "a small aquatic animal gently splashing water",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "echidna": {
+  "prompt": "a small spiny animal snuffling in dirt, soft",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "whale": {
+  "prompt": "a distant gentle whale blow, spout of air, soft",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "seal": {
+  "prompt": "a soft seal bark call, gentle",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "walrus": {
+  "prompt": "a soft walrus grunt, deep and gentle",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "shark": {
+  "prompt": "a smooth underwater whoosh of a large fish swimming past",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "fish": {
+  "prompt": "gentle underwater bubbles, soft and calm",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "kiwi": {
+  "prompt": "a small bird snuffling in soil, soft sniffing",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "butterfly": {
+  "prompt": "very soft delicate fluttering of butterfly wings",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "snail": {
+  "prompt": "a very soft wet slithering sound, tiny and gentle",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ }
+}

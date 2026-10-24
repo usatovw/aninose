@@ -1,0 +1,191 @@
+{
+ "dog": {
+  "file": "dog.mp3",
+  "title": "Small dog bark",
+  "license": "cc0",
+  "creator": "giddster",
+  "source": "freesound",
+  "url": "https://freesound.org/people/giddster/sounds/484297",
+  "duration": 1991
+ },
+ "cat": {
+  "file": "cat.mp3",
+  "title": "Cat Meow",
+  "license": "cc0",
+  "creator": "d.n.audio.uk",
+  "source": "freesound",
+  "url": "https://freesound.org/people/d.n.audio.uk/sounds/264507",
+  "duration": 1960
+ },
+ "cow": {
+  "file": "cow.mp3",
+  "title": "Cow - Moo 2 - 96kHz.wav",
+  "license": "cc0",
+  "creator": "JarredGibb",
+  "source": "freesound",
+  "url": "https://freesound.org/people/JarredGibb/sounds/233129",
+  "duration": 2177
+ },
+ "horse": {
+  "file": "horse.mp3",
+  "title": "Horse",
+  "license": "cc0",
+  "creator": "poodaddy69",
+  "source": "freesound",
+  "url": "https://freesound.org/people/poodaddy69/sounds/521246",
+  "duration": 2275
+ },
+ "pig": {
+  "file": "pig.mp3",
+  "title": "Pig - Snort 8 - 96kHz.wav",
+  "license": "cc0",
+  "creator": "JarredGibb",
+  "source": "freesound",
+  "url": "https://freesound.org/people/JarredGibb/sounds/233159",
+  "duration": 1995
+ },
+ "sheep": {
+  "file": "sheep.mp3",
+  "title": "sheep 2.mp3",
+  "license": "cc0",
+  "creator": "esperar",
+  "source": "freesound",
+  "url": "https://freesound.org/people/esperar/sounds/171151",
+  "duration": 1144
+ },
+ "goat": {
+  "file": "goat.mp3",
+  "title": "goat.mp3",
+  "license": "cc0",
+  "creator": "saha213131",
+  "source": "freesound",
+  "url": "https://freesound.org/people/saha213131/sounds/683259",
+  "duration": 2459
+ },
+ "duck": {
+  "file": "duck.mp3",
+  "title": "Duck quacking.mp3",
+  "license": "cc0",
+  "creator": "DigPro120",
+  "source": "freesound",
+  "url": "https://freesound.org/people/DigPro120/sounds/558858",
+  "duration": 1748
+ },
+ "guineapig": {
+  "file": "guineapig.mp3",
+  "title": "Guinea pig is running again",
+  "license": "cc0",
+  "creator": "16FVolejnikovaA",
+  "source": "freesound",
+  "url": "https://freesound.org/people/16FVolejnikovaA/sounds/498392",
+  "duration": 1776
+ },
+ "hedgehog": {
+  "file": "hedgehog.mp3",
+  "title": "Angry hedgehog huffing snorting 2",
+  "license": "cc0",
+  "creator": "fthgurdy",
+  "source": "freesound",
+  "url": "https://freesound.org/people/fthgurdy/sounds/528178",
+  "duration": 5949
+ },
+ "squirrel": {
+  "file": "squirrel.mp3",
+  "title": "Ground Squirrel First Chirp",
+  "license": "cc0",
+  "creator": "burgersmoke",
+  "source": "freesound",
+  "url": "https://freesound.org/people/burgersmoke/sounds/640992",
+  "duration": 1795
+ },
+ "mouse": {
+  "file": "mouse.mp3",
+  "title": "squeak.wav",
+  "license": "cc0",
+  "creator": "semccab",
+  "source": "freesound",
+  "url": "https://freesound.org/people/semccab/sounds/154381",
+  "duration": 1266
+ },
+ "elephant": {
+  "file": "elephant.mp3",
+  "title": "Elephant Trumpets Growls.flac",
+  "license": "cc0",
+  "creator": "D.jones",
+  "source": "freesound",
+  "url": "https://freesound.org/people/D.jones/sounds/527845",
+  "duration": 2000
+ },
+ "lion": {
+  "file": "lion.mp3",
+  "title": "Roar.m4a",
+  "license": "cc0",
+  "creator": "tahirahg1991",
+  "source": "freesound",
+  "url": "https://freesound.org/people/tahirahg1991/sounds/420466",
+  "duration": 1856
+ },
+ "tiger": {
+  "file": "tiger.mp3",
+  "title": "Roar.m4a",
+  "license": "cc0",
+  "creator": "tahirahg1991",
+  "source": "freesound",
+  "url": "https://freesound.org/people/tahirahg1991/sounds/420466",
+  "duration": 1856
+ },
+ "rhino": {
+  "file": "rhino.mp3",
+  "title": "Rhinoceros Trumpet Joyful",
+  "license": "cc0",
+  "creator": "bevibeldesign",
+  "source": "freesound",
+  "url": "https://freesound.org/people/bevibeldesign/sounds/350421",
+  "duration": 1371
+ },
+ "camel": {
+  "file": "camel.mp3",
+  "title": "void - 808 .wav",
+  "license": "cc0",
+  "creator": "rorymceachan",
+  "source": "freesound",
+  "url": "https://freesound.org/people/rorymceachan/sounds/516736",
+  "duration": 1738
+ },
+ "crocodile": {
+  "file": "crocodile.ogx",
+  "title": "Crocodile in Vezo",
+  "license": "cc0",
+  "creator": "Gasybeaugosse2020",
+  "source": "wikimedia_audio",
+  "url": "https://commons.wikimedia.org/w/index.php?curid=165096266",
+  "duration": 1322
+ },
+ "dolphin": {
+  "file": "dolphin.mp3",
+  "title": "Dolphin Noise-.wav",
+  "license": "cc0",
+  "creator": "jfournier18",
+  "source": "freesound",
+  "url": "https://freesound.org/people/jfournier18/sounds/456151",
+  "duration": 2580
+ },
+ "snake": {
+  "file": "snake.mp3",
+  "title": "rattlesnake",
+  "license": "cc0",
+  "creator": "bjelicvuk",
+  "source": "freesound",
+  "url": "https://freesound.org/people/bjelicvuk/sounds/733002",
+  "duration": 1322
+ },
+ "bee": {
+  "file": "bee.mp3",
+  "title": "Bee Buzzing",
+  "license": "cc0",
+  "creator": "JonCon_Library",
+  "source": "freesound",
+  "url": "https://freesound.org/people/JonCon_Library/sounds/481647",
+  "duration": 2521
+ }
+}

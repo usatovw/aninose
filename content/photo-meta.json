@@ -1,0 +1,479 @@
+{
+ "dog": {
+  "file": "dog.jpg",
+  "commons": "German_Shepherd_Dog_(close_up).jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "User:Monika",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:German_Shepherd_Dog_(close_up).jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Dog",
+  "attributionRequired": true
+ },
+ "cat": {
+  "file": "cat.jpg",
+  "commons": "Cat_face_1.jpg",
+  "license": "Public domain",
+  "author": "Love Krittaya",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Cat_face_1.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Cat",
+  "attributionRequired": false
+ },
+ "cow": {
+  "file": "cow.jpg",
+  "commons": "Close-up_photograph_of_a_calf's_head_looking_at_the_viewer_at_golden_hour_in_Don_Det_Laos.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Basile Morin",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Close-up_photograph_of_a_calf%27s_head_looking_at_the_viewer_at_golden_hour_in_Don_Det_Laos.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Cattle",
+  "attributionRequired": true
+ },
+ "horse": {
+  "file": "horse.jpg",
+  "commons": "Close-up_on_a_skewbald_horse_(Unsplash).jpg",
+  "license": "CC0",
+  "author": "Ivan Bertona ibrt",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Close-up_on_a_skewbald_horse_(Unsplash).jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Horse",
+  "attributionRequired": false
+ },
+ "pig": {
+  "file": "pig.jpg",
+  "commons": "GT_parshas.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Elias Bröms",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:GT_parshas.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Pig",
+  "attributionRequired": true
+ },
+ "sheep": {
+  "file": "sheep.jpg",
+  "commons": "Coburger_Fuchs_head_(cropped).JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Madeleine73",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Coburger_Fuchs_head_(cropped).JPG",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sheep",
+  "attributionRequired": true
+ },
+ "goat": {
+  "file": "goat.jpg",
+  "commons": "Goat_Anatomy_Head.jpg",
+  "license": "CC0",
+  "author": "Sumbria.vikramaditya",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Goat_Anatomy_Head.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Goat",
+  "attributionRequired": false
+ },
+ "chicken": {
+  "file": "chicken.jpg",
+  "commons": "Chicken_close_up.jpg",
+  "license": "Public domain",
+  "author": "Amit Moscovich",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Chicken_close_up.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Chicken",
+  "attributionRequired": false
+ },
+ "duck": {
+  "file": "duck.jpg",
+  "commons": "Flickr_-_law_keven_-_I'm_ready_for_my_close_up....jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Keven Law from Los Angeles, USA",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Flickr_-_law_keven_-_I%27m_ready_for_my_close_up....jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Duck",
+  "attributionRequired": true
+ },
+ "rabbit": {
+  "file": "rabbit.jpg",
+  "commons": "Conejo_astronomo.png",
+  "license": "CC BY 3.0",
+  "author": "derivative work: Photohound (talk) Conejo_astronomo1.jpg: Masteruk",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Conejo_astronomo.png",
+  "wikipedia": "https://en.wikipedia.org/wiki/Rabbit",
+  "attributionRequired": true
+ },
+ "hamster": {
+  "file": "hamster.jpg",
+  "commons": "A_pet_hamster_named_Peach.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "TetraHydroCannabinol",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:A_pet_hamster_named_Peach.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Hamster",
+  "attributionRequired": true
+ },
+ "guineapig": {
+  "file": "guineapig.jpg",
+  "commons": "Guinea_Pig_Close_Up_of_Nose.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Tcr25",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Guinea_Pig_Close_Up_of_Nose.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Guinea_pig",
+  "attributionRequired": true
+ },
+ "bear": {
+  "file": "bear.jpg",
+  "commons": "Himalayan_black_bear_close_up_(8085661203).jpg",
+  "license": "CC BY 2.0",
+  "author": "flowcomm",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Himalayan_black_bear_close_up_(8085661203).jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Bear",
+  "attributionRequired": true
+ },
+ "wolf": {
+  "file": "wolf.jpg",
+  "commons": "Farkas_2.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Pilgab",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Farkas_2.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Wolf",
+  "attributionRequired": true
+ },
+ "fox": {
+  "file": "fox.jpg",
+  "commons": "Red_fox_face_mammal_vulpes_vulpes.jpg",
+  "license": "Public domain",
+  "author": "U.S. Fish and Wildlife Service",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Red_fox_face_mammal_vulpes_vulpes.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Red_fox",
+  "attributionRequired": false
+ },
+ "hedgehog": {
+  "file": "hedgehog.jpg",
+  "commons": "South_African_hedgehog_lying_close_up_-_DPLA_-_99f194ab3746fbc43835fd7d3a0616a6.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Garst, Warren, 1922-2016, photographer",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:South_African_hedgehog_lying_close_up_-_DPLA_-_99f194ab3746fbc43835fd7d3a0616a6.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Hedgehog",
+  "attributionRequired": true
+ },
+ "squirrel": {
+  "file": "squirrel.jpg",
+  "commons": "Close_up_(4003548018).jpg",
+  "license": "CC BY 2.0",
+  "author": "Vincent Lock from Houston, United States",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Close_up_(4003548018).jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Squirrel",
+  "attributionRequired": true
+ },
+ "deer": {
+  "file": "deer.jpg",
+  "commons": "Råbock_i_närbild.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Tjustorparn",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:R%C3%A5bock_i_n%C3%A4rbild.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Deer",
+  "attributionRequired": true
+ },
+ "moose": {
+  "file": "moose.jpg",
+  "commons": "Alces_alces_qtl1.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Quartl",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Alces_alces_qtl1.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Moose",
+  "attributionRequired": true
+ },
+ "boar": {
+  "file": "boar.jpg",
+  "commons": "Bache001.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "dontworry",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Bache001.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Wild_boar",
+  "attributionRequired": true
+ },
+ "mole": {
+  "file": "mole.jpg",
+  "commons": "Talpa_europaea_MHNT_Tete.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Didier Descouens",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Talpa_europaea_MHNT_Tete.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mole_(animal)",
+  "attributionRequired": true
+ },
+ "mouse": {
+  "file": "mouse.jpg",
+  "commons": "Kletterkünstler_Hausmaus.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "4028mdk09",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Kletterk%C3%BCnstler_Hausmaus.JPG",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mouse",
+  "attributionRequired": true
+ },
+ "beaver": {
+  "file": "beaver.jpg",
+  "commons": "European_beaver_sitting_in_snow_close_up_-_DPLA_-_91ceee45dcf84a61a16e556c881ac667.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Garst, Warren, 1922-2016, photographer",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:European_beaver_sitting_in_snow_close_up_-_DPLA_-_91ceee45dcf84a61a16e556c881ac667.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Beaver",
+  "attributionRequired": true
+ },
+ "elephant": {
+  "file": "elephant.jpg",
+  "commons": "Elephant_Close-up_(2404539621).jpg",
+  "license": "CC BY 2.0",
+  "author": "William Warby from London, England",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Elephant_Close-up_(2404539621).jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Elephant",
+  "attributionRequired": true
+ },
+ "giraffe": {
+  "file": "giraffe.jpg",
+  "commons": "Masai_Giraffe_Close_Up.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Ltshears",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Masai_Giraffe_Close_Up.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Giraffe",
+  "attributionRequired": true
+ },
+ "lion": {
+  "file": "lion.jpg",
+  "commons": "Lazy_sunday!_(10505647704).jpg",
+  "license": "CC BY 2.0",
+  "author": "Subharnab Majumdar from Bangalore, India",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Lazy_sunday!_(10505647704).jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Lion",
+  "attributionRequired": true
+ },
+ "tiger": {
+  "file": "tiger.jpg",
+  "commons": "Tiger_Face_(10971343685).jpg",
+  "license": "CC BY 2.0",
+  "author": "Steve Wilson - over 6 million views Thanks !! from Chester, UK",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Tiger_Face_(10971343685).jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Tiger",
+  "attributionRequired": true
+ },
+ "zebra": {
+  "file": "zebra.jpg",
+  "commons": "Zebra_Close-up.jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Eric Kilby",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Zebra_Close-up.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Zebra",
+  "attributionRequired": true
+ },
+ "hippo": {
+  "file": "hippo.jpg",
+  "commons": "Pygmy_hippo.jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Scott Sandars from Melbourne, Australia",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Pygmy_hippo.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Hippopotamus",
+  "attributionRequired": true
+ },
+ "rhino": {
+  "file": "rhino.jpg",
+  "commons": "Ceratotherium_simum-portrait-Lisbon_02.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Salix",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Ceratotherium_simum-portrait-Lisbon_02.JPG",
+  "wikipedia": "https://en.wikipedia.org/wiki/Rhinoceros",
+  "attributionRequired": true
+ },
+ "monkey": {
+  "file": "monkey.jpg",
+  "commons": "Common_langur_sitting_on_ground_close_up_-_DPLA_-_17de1991470bd0308812e57227394dd2.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Garst, Warren, 1922-2016, photographer",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Common_langur_sitting_on_ground_close_up_-_DPLA_-_17de1991470bd0308812e57227394dd2.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Monkey",
+  "attributionRequired": true
+ },
+ "gorilla": {
+  "file": "gorilla.jpg",
+  "commons": "A_Gorilla_Good_Morning_(63683883).jpeg",
+  "license": "CC BY 3.0",
+  "author": "Dylan Colon",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:A_Gorilla_Good_Morning_(63683883).jpeg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Gorilla",
+  "attributionRequired": true
+ },
+ "proboscismonkey": {
+  "file": "proboscismonkey.jpg",
+  "commons": "Proboscis_monkey_(Nasalis_larvatus)_male_head.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Charles J. Sharp",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Proboscis_monkey_(Nasalis_larvatus)_male_head.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Proboscis_monkey",
+  "attributionRequired": true
+ },
+ "camel": {
+  "file": "camel.jpg",
+  "commons": "Camel_face.jpg",
+  "license": "Public domain",
+  "author": "Self",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Camel_face.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Camel",
+  "attributionRequired": false
+ },
+ "crocodile": {
+  "file": "crocodile.jpg",
+  "commons": "Close_up_front_of_adult_alligator_reptile_alligator_mississippiensis.jpg",
+  "license": "Public domain",
+  "author": "U.S. Fish and Wildlife Service",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Close_up_front_of_adult_alligator_reptile_alligator_mississippiensis.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Crocodile",
+  "attributionRequired": false
+ },
+ "ostrich": {
+  "file": "ostrich.jpg",
+  "commons": "Struthio_camelus_(captive)_in_Jardim_Zoológico_de_Curitiba.jpg",
+  "license": "CC0",
+  "author": "Wilfredor",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Struthio_camelus_(captive)_in_Jardim_Zool%C3%B3gico_de_Curitiba.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Common_ostrich",
+  "attributionRequired": false
+ },
+ "starnosedmole": {
+  "file": "starnosedmole.jpg",
+  "commons": "Condylura_cristata_(Ontario,_Canada)_1.jpg",
+  "license": "CC BY 4.0",
+  "author": "Dan MacNeal",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Condylura_cristata_(Ontario,_Canada)_1.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Star-nosed_mole",
+  "attributionRequired": true
+ },
+ "tapir": {
+  "file": "tapir.jpg",
+  "commons": "Anta_na_RPPN_Cristalino.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Fábio Mitsuka Paschoal",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Anta_na_RPPN_Cristalino.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Tapir",
+  "attributionRequired": true
+ },
+ "anteater": {
+  "file": "anteater.jpg",
+  "commons": "Giant_anteater_close_up_-_DPLA_-_4db12bfad08b08998b41be7170ad4775.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Garst, Warren, 1922-2016, photographer",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Giant_anteater_close_up_-_DPLA_-_4db12bfad08b08998b41be7170ad4775.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Anteater",
+  "attributionRequired": true
+ },
+ "saiga": {
+  "file": "saiga.jpg",
+  "commons": "Saiga_tartarica_(cropped).jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Navinder Singh",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Saiga_tartarica_(cropped).jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Saiga_antelope",
+  "attributionRequired": true
+ },
+ "platypus": {
+  "file": "platypus.jpg",
+  "commons": "Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale_2.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Charles J. Sharp",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale_2.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Platypus",
+  "attributionRequired": true
+ },
+ "echidna": {
+  "file": "echidna.jpg",
+  "commons": "Close-up_of_a_short-beaked_echidna_(Tachyglossus_aculeatus),_photographed_in_Wilks_Park_Wildlife_Restoration_Area_(1).jpg",
+  "license": "CC BY-SA 3.0 au",
+  "author": "Bidgee",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_short-beaked_echidna_(Tachyglossus_aculeatus),_photographed_in_Wilks_Park_Wildlife_Restoration_Area_(1).jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Echidna",
+  "attributionRequired": true
+ },
+ "whale": {
+  "file": "whale.jpg",
+  "commons": "Baleia_Jubarte_Fêmea.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Jonathan Wilkins",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Baleia_Jubarte_F%C3%AAmea.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Whale",
+  "attributionRequired": true
+ },
+ "dolphin": {
+  "file": "dolphin.jpg",
+  "commons": "Bottle-nose_dolphin_close_up_-_DPLA_-_2b26c5d03e30ed9fd6000d1fad487e73.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Garst, Warren, 1922-2016, photographer",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Bottle-nose_dolphin_close_up_-_DPLA_-_2b26c5d03e30ed9fd6000d1fad487e73.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Dolphin",
+  "attributionRequired": true
+ },
+ "seal": {
+  "file": "seal.jpg",
+  "commons": "Ringedsealportrait.jpg",
+  "license": "Public domain",
+  "author": "Lee Cooper",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Ringedsealportrait.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Pinniped",
+  "attributionRequired": false
+ },
+ "walrus": {
+  "file": "walrus.jpg",
+  "commons": "Walrus_male_close_up_head_odobenus_rosmarus.jpg",
+  "license": "Public domain",
+  "author": "U.S. Fish and Wildlife Service",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Walrus_male_close_up_head_odobenus_rosmarus.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Walrus",
+  "attributionRequired": false
+ },
+ "shark": {
+  "file": "shark.jpg",
+  "commons": "Close_up_of_mako_shark_head_005.jpg",
+  "license": "Public domain",
+  "author": "Spotty11222 at English Wikipedia",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Close_up_of_mako_shark_head_005.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Shark",
+  "attributionRequired": false
+ },
+ "fish": {
+  "file": "fish.jpg",
+  "commons": "Aquarium_fish7.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Ks.mini",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Aquarium_fish7.JPG",
+  "wikipedia": "https://en.wikipedia.org/wiki/Fish",
+  "attributionRequired": true
+ },
+ "kiwi": {
+  "file": "kiwi.jpg",
+  "commons": "Apteryx_mantelli_-Rotorua,_North_Island,_New_Zealand-8a.jpg",
+  "license": "CC BY 2.0",
+  "author": "The.Rohit",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Apteryx_mantelli_-Rotorua,_North_Island,_New_Zealand-8a.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kiwi_(bird)",
+  "attributionRequired": true
+ },
+ "snake": {
+  "file": "snake.jpg",
+  "commons": "Close-up_photo_of_Anerythristic_Type_A_corn_snake_head.jpg",
+  "license": "CC0",
+  "author": "EthanPo",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Close-up_photo_of_Anerythristic_Type_A_corn_snake_head.jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Snake",
+  "attributionRequired": false
+ },
+ "butterfly": {
+  "file": "butterfly.jpg",
+  "commons": "Fesoj_-_Papilio_machaon_(by).jpg",
+  "license": "CC BY 2.0",
+  "author": "fesoj",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Fesoj_-_Papilio_machaon_(by).jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Butterfly",
+  "attributionRequired": true
+ },
+ "bee": {
+  "file": "bee.jpg",
+  "commons": "2001078_009_70_132_002ac_(20333788303).jpg",
+  "license": "No restrictions",
+  "author": "Texas State Archives from Austin, Texas, USA",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:2001078_009_70_132_002ac_(20333788303).jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Bee",
+  "attributionRequired": true
+ },
+ "snail": {
+  "file": "snail.jpg",
+  "commons": "2015-09-15-1206_(21411761176).jpg",
+  "license": "CC BY 2.0",
+  "author": "teteria sonnna from Obukhiv, Ukraine",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:2015-09-15-1206_(21411761176).jpg",
+  "wikipedia": "https://en.wikipedia.org/wiki/Snail",
+  "attributionRequired": true
+ }
+}
