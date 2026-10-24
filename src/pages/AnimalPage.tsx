@@ -143,14 +143,14 @@ export default function AnimalPage() {
             <motion.button
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .5 }}
               onClick={() => { blip(500); nav(`/type/${t.id}`); }}
-              style={{ marginTop: 22, color: '#fff', fontWeight: 800, fontSize: 18,
+              style={{ marginTop: 18, minHeight: 56, padding: '0 4px', color: '#fff', fontWeight: 800, fontSize: 18,
                        textDecoration: 'underline', textUnderlineOffset: 6, opacity: .95 }}>
               Такой же носик есть ещё у кого-то →
             </motion.button>
 
             <div style={{ marginTop: 26 }}>
               <button onClick={() => setOpen(o => !o)}
-                style={{ fontSize: 16, fontWeight: 700, color: 'rgba(255,255,255,.85)' }}>
+                style={{ fontSize: 16, fontWeight: 700, minHeight: 52, padding: '0 4px', color: 'rgba(255,255,255,.85)' }}>
                 {open ? '— Свернуть' : '+ Для взрослых'}
               </button>
               <AnimatePresence>

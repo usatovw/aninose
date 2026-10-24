@@ -1,0 +1,6 @@
+# Собираем поверх уже готового образа: Docker Hub отдаёт 429 на базовый node,
+# а всё, что изменилось, — это собранный фронтенд и серверный код.
+FROM aninose:2
+COPY dist ./dist
+COPY server ./server
+COPY content ./content

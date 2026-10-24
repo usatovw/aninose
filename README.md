@@ -53,3 +53,35 @@ npm run serve        # http://localhost:8080
 ## Секреты
 
 Ключи только в `.env` (в `.gitignore`). Шаблон — `.env.example`.
+
+## Что где живёт
+
+- Боевой адрес: https://aninose.containerapps.ru
+- Образ: `aninose.cr.cloud.ru/aninose` (Artifact Registry проекта Cloud.ru)
+- Приложение: Container Apps `aninose`, порт 8080
+
+### Развернуть заново
+
+```bash
+docker build -t aninose:N .
+docker save aninose:N -o /tmp/aninose.tar
+GODEBUG=http2client=0 crane push /tmp/aninose.tar aninose.cr.cloud.ru/aninose:N
+GODEBUG=http2client=0 evo ca deploy aninose --image aninose.cr.cloud.ru/aninose:N \
+  --port 8080 --cpu 1 --memory 1Gi --min-instances 1 --max-instances 3 --public --yes
+```
+
+`GODEBUG=http2client=0` обязателен из окружения с прокси: прокси сбрасывает HTTP/2
+к `*.cloud.ru`, по HTTP/1.1 всё проходит. По той же причине `docker push` напрямую
+не работает и образ заливается через `crane`.
+
+## Честно о недоделанном
+
+- **Звук.** Живые записи CC0 нашлись для 21 вида, для остальных 32 звук
+  сгенерирован. Генерация узнаваемая, но это не полевая запись.
+- **Два кропа слабее прочих.** У белки кадр нерезкий, у носорога в кроп попадает
+  рог и кожа, а не ноздри — исходных фотографий лучше не нашлось под свободной лицензией.
+- **Прогресс альбома.** На сервере он лежит в `/tmp` и обнуляется при перезапуске
+  контейнера; надёжное хранилище — `localStorage` в браузере. Для одного ребёнка
+  этого достаточно, но если нужен альбом между устройствами — нужен S3 или БД.
+- **Озвучка синтезированная.** Голос ElevenLabs, не живой. Записать папиным
+  голосом — отдельная возможность, её пока нет.
