@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Nav } from '../components/Chrome';
 import { Scene } from '../components/Scene';
 import { Burst } from '../components/Burst';
-import { animals, noseTypes, photoUrl, noseUrl, animalsOfType } from '../lib/content';
+import { animals, noseTypes, tileUrl, hasCut, noseUrl, animalsOfType } from '../lib/content';
 import { say, blip, animalSound } from '../lib/audio';
 
 const shuffle = <T,>(a: T[]) => [...a].sort(() => Math.random() - .5);
@@ -99,10 +99,14 @@ export default function Sort() {
                   border: `6px solid ${active ? h.palette.to : 'rgba(255,255,255,.9)'}`,
                   boxShadow: active ? '0 20px 46px rgba(0,0,0,.26)' : '0 8px 22px rgba(0,0,0,.14)',
                 }}>
-                {/* фото зверя этого типа — чтобы выбирать можно было не читая */}
-                <div style={{ height: 94, background: `linear-gradient(150deg, ${h.palette.from}, ${h.palette.to})` }}>
-                  {face && <img src={photoUrl(face.id)} alt="" loading="lazy"
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: .95 }} />}
+                {/* зверь этого типа — чтобы выбирать можно было не читая */}
+                <div style={{ height: 112, background: h.palette.from, display: 'grid',
+                              placeItems: 'center', overflow: 'hidden' }}>
+                  {face && <img src={tileUrl(face.id)} alt="" loading="lazy"
+                    style={hasCut(face.id)
+                      ? { maxHeight: '86%', maxWidth: '86%', width: 'auto', objectFit: 'contain',
+                          filter: 'drop-shadow(0 8px 10px rgba(70,40,15,.24))' }
+                      : { width: '100%', height: '100%', objectFit: 'cover' }} />}
                 </div>
                 <div style={{ padding: '12px 10px 14px', fontFamily: 'var(--display)', fontWeight: 600,
                               fontSize: 'clamp(16px,1.4vw,20px)', lineHeight: 1.15, color: 'var(--ink)' }}>

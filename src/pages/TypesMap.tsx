@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Nav } from '../components/Chrome';
 import { Scene } from '../components/Scene';
-import { noseTypes, animalsOfType, photoUrl, animals } from '../lib/content';
+import { noseTypes, animalsOfType, tileUrl, faceOfType, hasCut, cutMask, animals } from '../lib/content';
 import { say, blip } from '../lib/audio';
 import { IconDice } from '../components/Icon';
 
@@ -33,23 +33,23 @@ export default function TypesMap() {
         <div className="types">
           {noseTypes.map((t, i) => {
             const pets = animalsOfType(t.id);
-            const face = pets[0];
+            const face = faceOfType(t.id);
             return (
-              <motion.button key={t.id} className="type-card"
+              <motion.button key={t.id} className="house"
+                style={{ background: t.palette.from }}
                 initial={{ opacity: 0, y: 34, scale: .94 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ delay: i * .055, type: 'spring', stiffness: 190, damping: 20 }}
                 whileHover={{ y: -8, scale: 1.015 }} whileTap={{ scale: .97 }}
                 onClick={() => { blip(560); say(`t-${t.id}-name`); setTimeout(() => nav(`/type/${t.id}`), 850); }}>
-                <motion.img className="type-card__photo" src={photoUrl(face.id)} alt="" loading="lazy"
-                  initial={{ scale: 1.14 }} whileHover={{ scale: 1.2 }}
-                  transition={{ duration: 1.1, ease: [.2, .8, .3, 1] }} />
-                <div className="type-card__veil"
-                     style={{ background: `linear-gradient(145deg, ${t.palette.from}, ${t.palette.to})` }} />
-                <div style={{ position: 'absolute', inset: 0,
-                              background: 'linear-gradient(180deg, transparent 38%, rgba(0,0,0,.42))' }} />
-                <span className="type-card__count">{pets.length}</span>
-                <span className="type-card__name">{t.name}</span>
+                <span className="house__glow" />
+                <span className="house__shadow" />
+                <motion.img className="house__pet" src={tileUrl(face.id)} alt="" loading="lazy"
+                  style={hasCut(face.id) ? cutMask(face.id) : { borderRadius: 26, boxShadow: '0 0 0 8px #fff' }}
+                  whileHover={{ y: -8, scale: 1.04 }}
+                  transition={{ type: 'spring', stiffness: 220, damping: 16 }} />
+                <span className="house__count">{pets.length}</span>
+                <span className="house__name">{t.name}</span>
               </motion.button>
             );
           })}

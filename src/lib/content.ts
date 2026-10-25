@@ -2,6 +2,8 @@ import animalsRaw from '../../content/animals.json';
 import typesRaw from '../../content/nose-types.json';
 import photoMeta from '../../content/photo-meta.json';
 import soundMeta from '../../content/sound-meta.json';
+import hasCutList from '../../content/has-cut.json';
+import cutBleed from '../../content/cut-bleed.json';
 
 export type Palette = { from: string; to: string };
 export type Animal = {
@@ -24,7 +26,37 @@ export const typeById = (id?: string) => noseTypes.find(t => t.id === id);
 export const animalsOfType = (typeId: string) => animals.filter(a => a.type === typeId);
 
 export const photoUrl = (id: string) => `/media/photos/${id}.jpg`;
+/** Силуэт без фона. Есть не у всех: макро-кадры и камуфляж не вырезаются. */
+const CUT = new Set(hasCutList as string[]);
+export const hasCut = (id: string) => CUT.has(id);
+export const cutUrl = (id: string) => `/media/cut/${id}.png`;
 export const noseUrl  = (id: string) => `/media/noses/${id}.jpg`;
+/**
+ * Силуэты, у которых зверь упирается в край исходного кадра, обрываются
+ * прямой линией — вырез сразу читается как обрезанная фотография.
+ * Растворяем именно эти стороны мягким градиентом: срез перестаёт быть виден.
+ */
+const BLEED = cutBleed as Record<string, string[]>;
+const DIR: Record<string, string> = {
+  bottom: 'to top', top: 'to bottom', left: 'to right', right: 'to left',
+};
+export function cutMask(id: string): React.CSSProperties {
+  const sides = BLEED[id];
+  if (!sides?.length) return {};
+  const layers = sides
+    .map(s => `linear-gradient(${DIR[s]}, transparent 0%, #000 11%, #000 100%)`)
+    .join(', ');
+  return { maskImage: layers, WebkitMaskImage: layers,
+           maskComposite: 'intersect', WebkitMaskComposite: 'source-in' } as React.CSSProperties;
+}
+
+/** Картинка для плитки: силуэт, если он есть, иначе обычное фото. */
+export const tileUrl = (id: string) => (hasCut(id) ? cutUrl(id) : photoUrl(id));
+/** Лицо домика: берём зверя, у которого силуэт вырезался — он читается крупно. */
+export const faceOfType = (typeId: string) => {
+  const pets = animalsOfType(typeId);
+  return pets.find(a => hasCut(a.id)) || pets[0];
+};
 export const gradient = (p: Palette) => `linear-gradient(160deg, ${p.from} 0%, ${p.to} 100%)`;
 
 /** Русские числительные: «1 носик», «2 носика», «5 носиков». Папа читает вслух. */

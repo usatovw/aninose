@@ -9,7 +9,13 @@
   "wikipedia": "https://en.wikipedia.org/wiki/Dog",
   "attributionRequired": true,
   "w": 768,
-  "h": 768
+  "h": 768,
+  "cutSource": {
+   "commons": "Winston",
+   "license": "BY",
+   "author": "Dippy Daloo",
+   "descUrl": "https://www.flickr.com/photos/95477820@N02/8730902798"
+  }
  },
  "cat": {
   "file": "cat.jpg",
@@ -56,7 +62,13 @@
   "source": "wordpress",
   "attributionRequired": false,
   "w": 825,
-  "h": 825
+  "h": 825,
+  "cutSource": {
+   "commons": "File:Aitutaki Pigs.JPG",
+   "license": "CC BY-SA 2.5",
+   "author": "Ciell",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Aitutaki_Pigs.JPG"
+  }
  },
  "sheep": {
   "file": "sheep.jpg",
@@ -137,7 +149,13 @@
   "wikipedia": "https://en.wikipedia.org/wiki/Guinea_pig",
   "attributionRequired": true,
   "w": 619,
-  "h": 619
+  "h": 619,
+  "cutSource": {
+   "commons": "File:A white, orange and black guinea pig.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Rex tremendae majestatis",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:A_white,_orange_and_black_guinea_pig.jpg"
+  }
  },
  "bear": {
   "file": "bear.jpg",
@@ -215,7 +233,13 @@
   "wikipedia": "https://en.wikipedia.org/wiki/Moose",
   "attributionRequired": true,
   "w": 867,
-  "h": 867
+  "h": 867,
+  "cutSource": {
+   "commons": "Big Bull Moose",
+   "license": "BY-SA",
+   "author": "RTD Photography",
+   "descUrl": "https://www.flickr.com/photos/29778206@N04/2788113139"
+  }
  },
  "boar": {
   "file": "boar.jpg",
@@ -295,7 +319,13 @@
   "source": "flickr",
   "attributionRequired": true,
   "w": 746,
-  "h": 746
+  "h": 746,
+  "cutSource": {
+   "commons": "Free male lion walking snow",
+   "license": "CC0",
+   "author": "unknown",
+   "descUrl": "https://www.rawpixel.com/image/5912164/image-face-public-domain-nature"
+  }
  },
  "tiger": {
   "file": "tiger.jpg",
@@ -339,7 +369,13 @@
   "wikipedia": "https://en.wikipedia.org/wiki/Rhinoceros",
   "attributionRequired": true,
   "w": 825,
-  "h": 825
+  "h": 825,
+  "cutSource": {
+   "commons": "File:Day 14 White Rhinos (Ceratotherium simum) female and young ... (53233854255).jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Bernard DUPONT from FRANCE",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Day_14_White_Rhinos_(Ceratotherium_simum)_female_and_young_..._(53233854255).jpg"
+  }
  },
  "monkey": {
   "file": "monkey.jpg",
@@ -442,7 +478,13 @@
   "source": "flickr",
   "attributionRequired": true,
   "w": 874,
-  "h": 874
+  "h": 874,
+  "cutSource": {
+   "commons": "File:Giant anteater - Oso hormiguero (Myrmecophaga tridactyla) (8697860914).jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Fernando Flores from Caracas, Venezuela",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Giant_anteater_-_Oso_hormiguero_(Myrmecophaga_tridactyla)_(8697860914).jpg"
+  }
  },
  "saiga": {
   "file": "saiga.jpg",
@@ -486,7 +528,13 @@
   "wikipedia": "https://en.wikipedia.org/wiki/Whale",
   "attributionRequired": true,
   "w": 733,
-  "h": 733
+  "h": 733,
+  "cutSource": {
+   "commons": "humpback whale breaching",
+   "license": "BY",
+   "author": "minicooper93402",
+   "descUrl": "https://www.flickr.com/photos/21703936@N08/5923319280"
+  }
  },
  "dolphin": {
   "file": "dolphin.jpg",
@@ -530,7 +578,13 @@
   "wikipedia": "https://en.wikipedia.org/wiki/Shark",
   "attributionRequired": false,
   "w": 825,
-  "h": 825
+  "h": 825,
+  "cutSource": {
+   "commons": "Great White",
+   "license": "BY",
+   "author": "bfick",
+   "descUrl": "https://www.flickr.com/photos/48948205@N00/2102738070"
+  }
  },
  "fish": {
   "file": "fish.jpg",
@@ -608,7 +662,13 @@
   "source": "rawpixel",
   "attributionRequired": false,
   "w": 768,
-  "h": 768
+  "h": 768,
+  "cutSource": {
+   "commons": "File:Caldasiguana.JPG",
+   "license": "CC BY 3.0",
+   "author": "Andrevruas",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Caldasiguana.JPG"
+  }
  },
  "monitor": {
   "file": "monitor.jpg",

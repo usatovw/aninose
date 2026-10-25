@@ -1,0 +1,127 @@
+{
+ "bear": [
+  "top"
+ ],
+ "bee": [
+  "right"
+ ],
+ "boar": [
+  "top"
+ ],
+ "camel": [
+  "left"
+ ],
+ "chicken": [
+  "bottom",
+  "left"
+ ],
+ "cow": [
+  "right"
+ ],
+ "crocodile": [
+  "right"
+ ],
+ "deer": [
+  "left"
+ ],
+ "dog": [
+  "bottom",
+  "right"
+ ],
+ "dolphin": [
+  "right"
+ ],
+ "duck": [
+  "right"
+ ],
+ "echidna": [
+  "left"
+ ],
+ "fox": [
+  "bottom",
+  "top"
+ ],
+ "giraffe": [
+  "bottom",
+  "top"
+ ],
+ "goat": [
+  "left"
+ ],
+ "gorilla": [
+  "top"
+ ],
+ "hamster": [
+  "top",
+  "right"
+ ],
+ "hedgehog": [
+  "left"
+ ],
+ "hippo": [
+  "right"
+ ],
+ "horse": [
+  "top"
+ ],
+ "kiwi": [
+  "left"
+ ],
+ "mole": [
+  "left",
+  "right"
+ ],
+ "monitor": [
+  "right"
+ ],
+ "monkey": [
+  "bottom"
+ ],
+ "platypus": [
+  "right"
+ ],
+ "proboscismonkey": [
+  "bottom",
+  "right"
+ ],
+ "rabbit": [
+  "right"
+ ],
+ "seal": [
+  "top",
+  "left"
+ ],
+ "sheep": [
+  "top"
+ ],
+ "snail": [
+  "right"
+ ],
+ "snake": [
+  "right"
+ ],
+ "squirrel": [
+  "bottom"
+ ],
+ "starnosedmole": [
+  "right"
+ ],
+ "tapir": [
+  "right"
+ ],
+ "tiger": [
+  "right"
+ ],
+ "walrus": [
+  "top"
+ ],
+ "warthog": [
+  "right"
+ ],
+ "wolf": [
+  "left"
+ ],
+ "zebra": [
+  "right"
+ ]
+}

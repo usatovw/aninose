@@ -72,7 +72,8 @@ export function BlobPhoto({ src, lens = true, start = { x: .5, y: .5 }, squash =
         <defs>
           <clipPath id={`clip-${id}`}>
             <motion.path
-              animate={reduce ? {} : { d: [...SHAPES, SHAPES[0]] }}
+              initial={{ d: SHAPES[0] }}
+              animate={reduce ? { d: SHAPES[0] } : { d: [...SHAPES, SHAPES[0]] }}
               transition={{ duration: 26, repeat: Infinity, ease: 'easeInOut' }}
               d={SHAPES[0]}
             />

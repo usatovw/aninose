@@ -64,6 +64,21 @@
 | Бородавочник | [File:Red warthog (6073674924).jpg](https://commons.wikimedia.org/wiki/File:Red_warthog_(6073674924).jpg) | Derek Keats from Johannesburg, South Africa | CC BY 2.0 |
 | Касатка | [Orca spray](https://www.flickr.com/photos/26406919@N00/1018409504) | Unhindered by Talent | BY-SA |
 
+## Фотографии, из которых вырезаны силуэты
+
+| Животное | Файл | Автор | Лицензия |
+|---|---|---|---|
+| Собака | [Winston](https://www.flickr.com/photos/95477820@N02/8730902798) | Dippy Daloo | BY |
+| Свинка | [File:Aitutaki Pigs.JPG](https://commons.wikimedia.org/wiki/File:Aitutaki_Pigs.JPG) | Ciell | CC BY-SA 2.5 |
+| Морская свинка | [File:A white, orange and black guinea pig.jpg](https://commons.wikimedia.org/wiki/File:A_white,_orange_and_black_guinea_pig.jpg) | Rex tremendae majestatis | CC BY-SA 4.0 |
+| Лось | [Big Bull Moose](https://www.flickr.com/photos/29778206@N04/2788113139) | RTD Photography | BY-SA |
+| Лев | [Free male lion walking snow](https://www.rawpixel.com/image/5912164/image-face-public-domain-nature) | unknown | CC0 |
+| Носорог | [File:Day 14 White Rhinos (Ceratotherium simum) female and young ... (53233854255).jpg](https://commons.wikimedia.org/wiki/File:Day_14_White_Rhinos_(Ceratotherium_simum)_female_and_young_..._(53233854255).jpg) | Bernard DUPONT from FRANCE | CC BY-SA 2.0 |
+| Муравьед | [File:Giant anteater - Oso hormiguero (Myrmecophaga tridactyla) (8697860914).jpg](https://commons.wikimedia.org/wiki/File:Giant_anteater_-_Oso_hormiguero_(Myrmecophaga_tridactyla)_(8697860914).jpg) | Fernando Flores from Caracas, Venezuela | CC BY-SA 2.0 |
+| Кит | [humpback whale breaching](https://www.flickr.com/photos/21703936@N08/5923319280) | minicooper93402 | BY |
+| Акула | [Great White](https://www.flickr.com/photos/48948205@N00/2102738070) | bfick | BY |
+| Ящерица | [File:Caldasiguana.JPG](https://commons.wikimedia.org/wiki/File:Caldasiguana.JPG) | Andrevruas | CC BY 3.0 |
+
 ## Звуки — живые записи
 
 | Животное | Запись | Автор | Лицензия | Источник |

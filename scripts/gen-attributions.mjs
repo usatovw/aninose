@@ -11,6 +11,17 @@ md += `| Животное | Файл | Автор | Лицензия |\n|---|---
 for (const [id, m] of Object.entries(photos)) {
   md += `| ${ru[id] || id} | [${m.commons}](${m.descUrl || ''}) | ${m.author || '—'} | ${m.license} |\n`;
 }
+// У части зверей портрет и силуэт — разные снимки: силуэт вырезан из кадра
+// во весь рост, который нашёлся отдельно. Такой снимок тоже нужно указать.
+const cuts = Object.entries(photos).filter(([, m]) => m.cutSource);
+if (cuts.length) {
+  md += `\n## Фотографии, из которых вырезаны силуэты\n\n`;
+  md += `| Животное | Файл | Автор | Лицензия |\n|---|---|---|---|\n`;
+  for (const [id, m] of cuts) {
+    const c = m.cutSource;
+    md += `| ${ru[id] || id} | [${c.commons || c.title}](${c.descUrl || c.url || ''}) | ${c.author || '—'} | ${c.license} |\n`;
+  }
+}
 md += `\n## Звуки — живые записи\n\n| Животное | Запись | Автор | Лицензия | Источник |\n|---|---|---|---|---|\n`;
 for (const [id, m] of Object.entries(sounds)) {
   md += `| ${ru[id] || id} | [${m.title}](${m.url || ''}) | ${m.creator || '—'} | ${String(m.license).toUpperCase()} | ${m.source} |\n`;

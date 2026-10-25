@@ -4,9 +4,11 @@ import { useParams, useNavigate, useNavigationType } from 'react-router-dom';
 import { Nav } from '../components/Chrome';
 import { Scene } from '../components/Scene';
 import { BlobPhoto } from '../components/BlobPhoto';
+import { Cutout } from '../components/Cutout';
+import { Sticker } from '../components/Sticker';
 import { Burst } from '../components/Burst';
 import { IconSound, IconNext, IconNose, IconLens, IconZoomIn, IconZoomOut } from '../components/Icon';
-import { byId, typeById, animals, animalsOfType, photos, photoUrl, noseUrl, displayFocus } from '../lib/content';
+import { byId, typeById, animals, animalsOfType, photos, photoUrl, noseUrl, displayFocus, hasCut, cutUrl } from '../lib/content';
 import { say, blip, animalSound, introduce, autoPlaysLeft, noteAutoPlay } from '../lib/audio';
 import { markSeen } from '../lib/progress';
 
@@ -72,36 +74,31 @@ export default function AnimalPage() {
                 initial={{ opacity: 0, scale: .9 }} animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 1.03 }}
                 transition={{ type: 'spring', stiffness: 190, damping: 20 }}>
-                <BlobPhoto src={zoom ? noseUrl(a.id) : photoUrl(a.id)}
-                           lens start={marker} squash={squash} />
+                {zoom
+                  ? <BlobPhoto src={noseUrl(a.id)} lens start={marker} squash={squash} />
+                  : hasCut(a.id)
+                    ? <Cutout src={cutUrl(a.id)} squash={squash} maxH="min(56vh, 560px)" />
+                    : <Sticker src={photoUrl(a.id)} squash={squash} maxH="min(56vh, 560px)" />}
               </motion.div>
             </AnimatePresence>
 
-            {/* Кольцо, а не заливка: маркер не должен закрывать то, на что показывает.
-                В режиме кропа та же кнопка возвращает обратно — иначе выйти нечем. */}
+            {/* Кнопка-носик: крупная, с живым превью носа внутри —
+                так понятно, что будет, если нажать. */}
             <motion.button
               onClick={poke}
-              aria-label={zoom ? 'Показать зверя целиком' : `Нажми на нос: ${a.ru}`}
-              style={{
-                position: 'absolute',
-                left: zoom ? '50%' : `${marker.x * 100}%`,
-                top: zoom ? '88%' : `${marker.y * 100}%`,
-                width: 96, height: 96, marginLeft: -48, marginTop: -48, zIndex: 6,
-                borderRadius: '50%', display: 'grid', placeItems: 'center',
-                color: '#fff', background: 'rgba(40,24,10,.30)',
-                border: '5px solid rgba(255,255,255,.96)',
-                boxShadow: '0 10px 28px rgba(0,0,0,.3)', backdropFilter: 'blur(2px)',
-              }}
-              animate={reduce || zoom ? {} : { scale: [1, 1.05, 1] }}
-              transition={{ duration: 2.1, repeat: Infinity, ease: 'easeInOut' }}
-              whileTap={{ scale: .86 }}>
-              {zoom ? <IconZoomOut size={38} /> : <IconZoomIn size={38} />}
+              aria-label={zoom ? 'Показать зверя целиком' : `Посмотреть нос: ${a.ru}`}
+              className="nose-btn"
+              animate={reduce ? {} : { scale: [1, 1.04, 1] }}
+              transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
+              whileTap={{ scale: .9 }}>
+              <span className="nose-btn__pic">
+                <img src={zoom ? photoUrl(a.id) : noseUrl(a.id)} alt="" />
+              </span>
+              <span className="nose-btn__label">
+                {zoom ? <>Показать {a.ru.toLowerCase()}</> : <>Вот его носик</>}
+                {zoom ? <IconZoomOut size={24} /> : <IconZoomIn size={24} />}
+              </span>
             </motion.button>
-
-            <div className="photo-hint">
-              {zoom ? <><IconNose size={20} /> Это его настоящий носик</>
-                    : <><IconLens size={20} /> Веди пальчиком — и рассмотри</>}
-            </div>
           </div>
 
           <div>

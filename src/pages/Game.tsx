@@ -4,7 +4,7 @@ import { Nav } from '../components/Chrome';
 import { Scene } from '../components/Scene';
 import { BlobPhoto } from '../components/BlobPhoto';
 import { Burst } from '../components/Burst';
-import { animals, photoUrl, noseUrl, plural } from '../lib/content';
+import { animals, tileUrl, hasCut, noseUrl, plural } from '../lib/content';
 import { say, blip, animalSound } from '../lib/audio';
 import { useNavigate } from 'react-router-dom';
 
@@ -73,7 +73,9 @@ export default function Game() {
               transition={{ delay: i * .07, type: 'spring', stiffness: 220, damping: 18 }}
               whileHover={{ y: -8 }} whileTap={{ scale: .94 }}
               onClick={() => choose(o.id)}>
-              <img src={photoUrl(o.id)} alt={o.ru} />
+              <span className="beast__disc">
+                <img src={tileUrl(o.id)} className={hasCut(o.id) ? '' : 'is-photo'} alt={o.ru} />
+              </span>
               <span>{o.ru}</span>
             </motion.button>
           ))}

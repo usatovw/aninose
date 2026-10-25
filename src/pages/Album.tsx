@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Nav } from '../components/Chrome';
 import { Scene } from '../components/Scene';
-import { animals, photoUrl, plural, noseTypes, aliasesOf } from '../lib/content';
+import { animals, tileUrl, hasCut, plural, noseTypes, aliasesOf } from '../lib/content';
 import { seen, syncFromServer } from '../lib/progress';
 import { say, blip } from '../lib/audio';
 
@@ -74,9 +74,12 @@ export default function Album() {
                 transition={{ delay: Math.min(i * .018, .7), type: 'spring', stiffness: 210, damping: 20 }}
                 whileHover={{ y: -6 }} whileTap={{ scale: .95 }}
                 onClick={() => { blip(got ? 660 : 400); nav(`/animal/${a.id}`); }}>
-                <img src={photoUrl(a.id)} alt={a.ru} loading="lazy"
-                  style={{ filter: got ? 'none' : 'grayscale(1) contrast(.85) brightness(1.08)',
-                           opacity: got ? 1 : .62 }} />
+                <span className="beast__disc">
+                  <img src={tileUrl(a.id)} className={hasCut(a.id) ? '' : 'is-photo'}
+                    alt={a.ru} loading="lazy"
+                    style={{ filter: got ? undefined : 'grayscale(1) contrast(.85) brightness(1.08)',
+                             opacity: got ? 1 : .55 }} />
+                </span>
                 <span>{a.ru}</span>
               </motion.button>
             );

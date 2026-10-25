@@ -11,3 +11,4 @@ bin/
 scripts/.media-cache/
 Dockerfile.patch
 public/media/_orig/
+media-src/

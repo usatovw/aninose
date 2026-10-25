@@ -1,47 +1,52 @@
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { unlock, say, blip, animalSound } from '../lib/audio';
-import { photoUrl } from '../lib/content';
+import { cutUrl, cutMask } from '../lib/content';
 import { Scene } from '../components/Scene';
-import { BlobPhoto } from '../components/BlobPhoto';
 import { IconPlay } from '../components/Icon';
 
 const WORD = 'Носики'.split('');
-// Носики-спутники: узнаваемые кадры по кругу — ребёнок видит, про что это, не читая.
-// Узнаваемые звери по краям: ребёнок понимает, про что это, не читая,
-// и может потыкать в них ещё до кнопки «Смотреть».
+// Звери-силуэты вокруг заголовка: ребёнок видит, про что это, не читая,
+// и может потыкать в них ещё до кнопки «Смотреть». Только те, у кого
+// вырез из фона чистый — иначе на заливке будет висеть обрезок фотографии.
 const ORBIT = [
-  { id: 'cow',     x: 8,  y: 74, s: 104 },
-  { id: 'pig',     x: 26, y: 86, s: 86  },
-  { id: 'duck',    x: 46, y: 80, s: 82  },
-  { id: 'dog',     x: 64, y: 88, s: 92  },
-  { id: 'giraffe', x: 82, y: 72, s: 96  },
-  { id: 'horse',   x: 74, y: 14, s: 80  },
+  { id: 'sheep',  h: 150, d: -4 },
+  { id: 'pig',    h: 120, d:  3 },
+  { id: 'duck',   h: 128, d: -3 },
+  { id: 'dog',    h: 146, d:  4 },
+  { id: 'rabbit', h: 132, d: -2 },
+  { id: 'goat',   h: 140, d:  3 },
 ];
 
 export default function Home() {
   const nav = useNavigate();
+  const reduce = useReducedMotion();
   const start = () => { unlock(); blip(620); say('ui-hello'); setTimeout(() => nav('/types'), 240); };
 
   return (
-    <div className="screen" style={{ justifyContent: 'center', position: 'relative' }}>
-      <Scene from="#FFE0A6" to="#FFAE93" accent="#FFF8EC" />
+    <div className="screen" style={{ justifyContent: 'center', position: 'relative',
+                                     paddingBottom: 'clamp(28px, 20vh, 190px)' }}>
+      <Scene from="#FFE0A6" to="#FFF4D8" />
 
-      {ORBIT.map((o, i) => (
-        <motion.button key={o.id} className="orbit-dot" aria-label={`Послушать: ${o.id}`}
-          onClick={() => { unlock(); blip(700); say(`a-${o.id}-name`).then(() => animalSound(o.id)); }}
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          whileHover={{ scale: 1.1 }} whileTap={{ scale: .88 }}
-          transition={{ delay: .5 + i * .09, type: 'spring', stiffness: 200, damping: 13 }}
-          style={{ left: `${o.x}%`, top: `${o.y}%`, width: o.s, height: o.s }}>
-          <img src={photoUrl(o.id)} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </motion.button>
-      ))}
+      {/* звери стоят на земле вдоль нижнего края — ряд персонажей,
+          а не кружки поверх текста: композиция вместо россыпи */}
+      <div className="orbit-row" aria-label="Звери: нажми и послушай">
+        {ORBIT.map((o, i) => (
+          <motion.button key={o.id} className="orbit-pet" aria-label={`Послушать: ${o.id}`}
+            onClick={() => { unlock(); blip(700); say(`a-${o.id}-name`).then(() => animalSound(o.id)); }}
+            initial={{ y: 120, opacity: 0, rotate: o.d * 2 }}
+            animate={{ y: 0, opacity: 1, rotate: o.d }}
+            whileHover={{ y: -14, rotate: 0, scale: 1.06 }} whileTap={{ scale: .92 }}
+            transition={{ delay: .55 + i * .09, type: 'spring', stiffness: 200, damping: 15 }}
+            style={{ height: o.h }}>
+            <motion.img src={cutUrl(o.id)} alt="" style={cutMask(o.id)}
+              animate={reduce ? {} : { y: [0, -7, 0] }}
+              transition={{ duration: 5 + i * .7, repeat: Infinity, ease: 'easeInOut' }} />
+          </motion.button>
+        ))}
+      </div>
 
-      <div className="wrap" style={{ display: 'grid', gap: 'clamp(20px,3vw,56px)',
-                                     gridTemplateColumns: 'minmax(280px,1.1fr) minmax(250px,420px)',
-                                     alignItems: 'center', position: 'relative', zIndex: 2 }}>
+      <div className="wrap home-grid">
         <div>
           <h1 style={{ display: 'flex', flexWrap: 'wrap', fontSize: 'clamp(56px, 11vw, 150px)' }}>
             {WORD.map((ch, i) => (
@@ -67,14 +72,20 @@ export default function Home() {
           </motion.button>
         </div>
 
+        {/* герой заставки — жираф: именно про него Стеша спросила первым делом */}
         <motion.div
           initial={{ scale: .7, opacity: 0, rotate: -8 }}
           animate={{ scale: 1, opacity: 1, rotate: 0 }}
-          transition={{ delay: .22, type: 'spring', stiffness: 150, damping: 15 }}>
-          <motion.div animate={{ y: [0, -20, 0] }}
-            transition={{ duration: 6.5, repeat: Infinity, ease: 'easeInOut' }}>
-            <BlobPhoto src={photoUrl('elephant')} lens={false} />
-          </motion.div>
+          transition={{ delay: .22, type: 'spring', stiffness: 150, damping: 15 }}
+          style={{ position: 'relative' }}>
+          <div aria-hidden style={{ position: 'absolute', left: '14%', right: '14%', bottom: '-4%',
+                                    height: 26, borderRadius: '50%', background: 'rgba(70,40,15,.26)',
+                                    filter: 'blur(16px)' }} />
+          <motion.img src={cutUrl('giraffe')} alt="" draggable={false}
+            animate={reduce ? {} : { y: [0, -18, 0], rotate: [-1.5, 1.5, -1.5] }}
+            transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
+            style={{ width: '100%', position: 'relative', ...cutMask('giraffe'),
+                     filter: 'drop-shadow(0 18px 20px rgba(70,40,15,.22))' }} />
         </motion.div>
       </div>
     </div>
