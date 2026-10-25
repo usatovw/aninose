@@ -85,7 +85,9 @@ export default function Sort() {
 
         <div style={{ display: 'flex', gap: 'clamp(12px,2.2vw,28px)', justifyContent: 'center', flexWrap: 'wrap' }}>
           {houses.map(h => {
-            const face = animalsOfType(h.id)[0];
+            // не берём того же зверя, что в руке: иначе ответ виден заранее
+            const pool = animalsOfType(h.id).filter(x => x.id !== beast.id);
+            const face = pool[0] || animalsOfType(h.id)[0];
             const active = over === h.id;
             return (
               <motion.div key={h.id} ref={el => { boxes.current[h.id] = el; }}
