@@ -69,6 +69,16 @@ export function blip(freq = 540) {
 }
 
 /**
+ * Автоозвучка надоедает: первые разы она объясняет правила игры,
+ * дальше начинает мешать. После трёх раз за сеанс замолкаем и ждём кнопку.
+ */
+const AUTO_LIMIT = 3;
+let autoPlays = 0;
+export const autoPlaysLeft = () => Math.max(0, AUTO_LIMIT - autoPlays);
+export const noteAutoPlay = () => { autoPlays += 1; };
+export function resetAutoPlays() { autoPlays = 0; }
+
+/**
  * Знакомство: кто это -> как звучит -> что у него за нос.
  * Третий шаг обязателен: ребёнок не читает, и без него содержание страницы
  * не доходит до него вообще.

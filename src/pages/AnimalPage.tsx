@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useNavigationType } from 'react-router-dom';
 import { Nav } from '../components/Chrome';
 import { Scene } from '../components/Scene';
 import { BlobPhoto } from '../components/BlobPhoto';
 import { Burst } from '../components/Burst';
-import { IconSound, IconNext, IconNose, IconLens } from '../components/Icon';
-import { byId, typeById, animals, photos, photoUrl, noseUrl, displayFocus } from '../lib/content';
-import { say, blip, animalSound, introduce } from '../lib/audio';
+import { IconSound, IconNext, IconNose, IconLens, IconZoomIn, IconZoomOut } from '../components/Icon';
+import { byId, typeById, animals, animalsOfType, photos, photoUrl, noseUrl, displayFocus } from '../lib/content';
+import { say, blip, animalSound, introduce, autoPlaysLeft, noteAutoPlay } from '../lib/audio';
 import { markSeen } from '../lib/progress';
 
 export default function AnimalPage() {
@@ -15,6 +15,7 @@ export default function AnimalPage() {
   const nav = useNavigate();
   const a = byId(id);
   const reduce = useReducedMotion();
+  const navType = useNavigationType();
   const [zoom, setZoom] = useState(false);
   const [squash, setSquash] = useState(0);
   const [burst, setBurst] = useState(0);
@@ -27,18 +28,26 @@ export default function AnimalPage() {
     poked.current = false;
     markSeen(a.id);
     const signal = { cancelled: false };
-    introduce(a.id, signal);
-    // если ребёнок не догадался нажать — подсказываем голосом
-    const hint = setTimeout(() => { if (!poked.current) say('ui-tap-nose'); }, 9000);
-    return () => { signal.cancelled = true; clearTimeout(hint); };
+    // POP — это кнопка «Назад»: ребёнок уже слышал этого зверя, повтор сбивает.
+    const auto = navType !== 'POP' && autoPlaysLeft() > 0;
+    if (auto) { noteAutoPlay(); introduce(a.id, signal); }
+    const hint = auto
+      ? setTimeout(() => { if (!poked.current) say('ui-tap-nose'); }, 9000)
+      : undefined;
+    return () => { signal.cancelled = true; if (hint) clearTimeout(hint); };
   }, [a?.id]);
 
   if (!a) return <div className="screen"><div className="wrap">Такого зверя у нас нет</div></div>;
   const t = typeById(a.type)!;
   const meta = photos[a.id] || {};
-  const i = animals.findIndex(x => x.id === a.id);
   const marker = displayFocus(a.id, a.noseFocus);
-  const next = animals[(i + 1) % animals.length];
+  const i = animals.findIndex(x => x.id === a.id);
+  // «Дальше» ведёт по своему домику, а не по общему списку: иначе
+  // после коровы прилетает акула, и тема рассыпается
+  const group = animalsOfType(a.type);
+  const gi = group.findIndex(x => x.id === a.id);
+  const next = group[(gi + 1) % group.length];
+  const lastInGroup = group.length > 1 && gi === group.length - 1;
 
   const poke = () => {
     poked.current = true;
@@ -86,7 +95,7 @@ export default function AnimalPage() {
               animate={reduce || zoom ? {} : { scale: [1, 1.05, 1] }}
               transition={{ duration: 2.1, repeat: Infinity, ease: 'easeInOut' }}
               whileTap={{ scale: .86 }}>
-              <IconNose size={40} />
+              {zoom ? <IconZoomOut size={38} /> : <IconZoomIn size={38} />}
             </motion.button>
 
             <div className="photo-hint">
@@ -110,11 +119,12 @@ export default function AnimalPage() {
 
             <motion.div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}
               initial={{ y: 14, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: .32 }}>
-              <button className="btn btn--quiet" onClick={() => { blip(620); say(`a-${a.id}-kid`); }}>
+              <button className="btn btn--quiet"
+                onClick={() => { blip(620); poked.current = true; introduce(a.id); }}>
                 <IconSound size={26} /> Послушать
               </button>
               <button className="btn" onClick={() => { blip(640); nav(`/animal/${next.id}`); }}>
-                Дальше <IconNext size={26} />
+                {lastInGroup ? 'Сначала' : 'Дальше'} <IconNext size={26} />
               </button>
             </motion.div>
 

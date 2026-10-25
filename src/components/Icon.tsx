@@ -51,3 +51,15 @@ export const IconNose = ({ size = 30, color = 'currentColor' }: P) => (
 export const IconLens = ({ size = 30, color = 'currentColor' }: P) => (
   <svg {...base(size)} stroke={color}><circle cx="14" cy="14" r="8.5" /><path d="m21 21 6 6" /></svg>
 );
+/** Лупа с плюсом — однозначное «посмотреть крупнее». Капля читалась как непонятно что. */
+export const IconZoomIn = ({ size = 30, color = 'currentColor' }: P) => (
+  <svg {...base(size)} stroke={color}>
+    <circle cx="14" cy="14" r="9" /><path d="M14 10v8M10 14h8" /><path d="m21.5 21.5 5.5 5.5" />
+  </svg>
+);
+/** Лупа с минусом — вернуться к зверю целиком. */
+export const IconZoomOut = ({ size = 30, color = 'currentColor' }: P) => (
+  <svg {...base(size)} stroke={color}>
+    <circle cx="14" cy="14" r="9" /><path d="M10 14h8" /><path d="m21.5 21.5 5.5 5.5" />
+  </svg>
+);
