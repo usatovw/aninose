@@ -163,5 +163,40 @@
   "prompt": "a low soft crocodile hiss and gentle water ripple, calm",
   "seconds": 2,
   "source": "ElevenLabs sound effects"
+ },
+ "camel": {
+  "prompt": "a soft camel grunt and nasal blow, gentle, close mic",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "tiger": {
+  "prompt": "a soft tiger chuff greeting, friendly puffing breath, not a roar",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "snake": {
+  "prompt": "a gentle snake hiss, soft short sss, close mic",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "warthog": {
+  "prompt": "a warthog snuffling and rooting in dry soil, soft grunts",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "orca": {
+  "prompt": "a distant soft whale blow, spout of air over water",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "lizard": {
+  "prompt": "a tiny lizard scurrying over dry leaves, very soft",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
+ },
+ "monitor": {
+  "prompt": "a slow soft reptile hiss, deep and short",
+  "seconds": 2,
+  "source": "ElevenLabs sound effects"
  }
 }

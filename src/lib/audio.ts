@@ -2,6 +2,18 @@
 // браузер блокирует автозвук до первого касания, голос и звук животного не должны
 // перебивать друг друга, а повторные нажатия не должны накладываться слоями.
 let unlocked = false;
+let blocked = false;
+const blockedListeners = new Set<(v: boolean) => void>();
+export const isBlocked = () => blocked;
+export function onBlocked(fn: (v: boolean) => void) {
+  blockedListeners.add(fn);
+  return () => { blockedListeners.delete(fn); };
+}
+function setBlocked(v: boolean) {
+  if (blocked === v) return;
+  blocked = v;
+  blockedListeners.forEach(f => f(v));
+}
 let currentVoice: HTMLAudioElement | null = null;
 let currentSfx: HTMLAudioElement | null = null;
 let ctx: AudioContext | null = null;
@@ -10,6 +22,7 @@ export const isUnlocked = () => unlocked;
 
 export function unlock() {
   if (unlocked) return;
+  setBlocked(false);
   unlocked = true;
   try {
     ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
@@ -25,8 +38,14 @@ function play(src: string, slot: 'voice' | 'sfx', volume = 1): Promise<void> {
   a.volume = volume;
   if (slot === 'voice') currentVoice = a; else currentSfx = a;
   return a.play().then(
-    () => new Promise<void>(res => { a.onended = () => res(); a.onerror = () => res(); }),
-    () => undefined,              // нет файла — молча продолжаем, интерфейс не ломается
+    () => { setBlocked(false);
+            return new Promise<void>(res => { a.onended = () => res(); a.onerror = () => res(); }); },
+    (err: any) => {
+      // NotAllowedError — браузер не пустил звук без жеста: об этом надо сказать вслух,
+      // иначе ребёнок остаётся с немым приложением и не понимает почему
+      if (err && err.name === 'NotAllowedError') setBlocked(true);
+      return undefined;
+    },
   );
 }
 
@@ -49,8 +68,15 @@ export function blip(freq = 540) {
   o.start(); o.stop(ctx.currentTime + 0.24);
 }
 
-/** Голос + звук зверя подряд: сначала кто это, потом как звучит. */
-export async function introduce(id: string) {
+/**
+ * Знакомство: кто это -> как звучит -> что у него за нос.
+ * Третий шаг обязателен: ребёнок не читает, и без него содержание страницы
+ * не доходит до него вообще.
+ */
+export async function introduce(id: string, signal?: { cancelled: boolean }) {
   await say(`a-${id}-name`);
+  if (signal?.cancelled) return;
   await animalSound(id);
+  if (signal?.cancelled) return;
+  await say(`a-${id}-kid`);
 }

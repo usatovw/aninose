@@ -117,8 +117,52 @@ h2 { font-family: var(--display); font-weight: 600; letter-spacing: -.01em;
 
 @media (prefers-reduced-motion: reduce) { * { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
 
-@media (max-width: 860px) {
-  .screen > .wrap > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+/* ——— страница животного ——— */
+.animal-grid {
+  display: grid; gap: clamp(20px, 3.5vw, 56px);
+  grid-template-columns: minmax(300px, 1.4fr) minmax(280px, 420px);
+  align-items: center;
+}
+.photo-hint {
+  display: flex; align-items: center; gap: 9px; justify-content: center;
+  margin-top: 14px; font-weight: 800; font-size: 17px; color: var(--ink);
+  opacity: .72;
+}
+.link-soft {
+  display: inline-flex; align-items: center; min-height: 56px; margin-top: 16px;
+  font-weight: 800; font-size: 18px; color: var(--ink);
+  text-decoration: underline; text-underline-offset: 6px; opacity: .8;
+}
+.adult-toggle {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 52px; padding: 0 20px; border-radius: 999px;
+  background: rgba(255,255,255,.8); color: var(--ink-soft);
+  font-weight: 800; font-size: 16px; box-shadow: 0 4px 14px rgba(90,58,30,.1);
+}
+
+/* ——— плашка «звук выключен» ——— */
+.sound-off {
+  position: fixed; left: 50%; transform: translateX(-50%);
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 90;
+  display: inline-flex; align-items: center; gap: 12px;
+  min-height: 72px; padding: 0 30px; border-radius: 999px;
+  background: var(--accent); color: #fff; font-family: var(--display);
+  font-weight: 600; font-size: 21px; box-shadow: 0 14px 34px rgba(242,96,60,.4);
+}
+
+@media (max-width: 880px) {
+  .animal-grid { grid-template-columns: 1fr; }
+  .wrap > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
   h1 { font-size: clamp(38px, 11vw, 60px) !important; margin-left: 0 !important; }
   .lead { font-size: 20px; }
 }
+
+/* кружки-звери на заставке — кликабельные, каждый звучит */
+.orbit-dot {
+  position: absolute; overflow: hidden; padding: 0;
+  border-radius: 54% 46% 48% 52% / 46% 54% 46% 54%;
+  border: 6px solid rgba(255,255,255,.94);
+  box-shadow: 0 14px 34px rgba(120,70,30,.22);
+  z-index: 1;
+}
+@media (max-width: 880px) { .orbit-dot { display: none; } }

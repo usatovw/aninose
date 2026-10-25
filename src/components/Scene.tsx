@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { motion, useMotionValue, useSpring, useTransform, useReducedMotion } from 'framer-motion';
 
 /**
  * Фон-сцена: несколько слоёв мягких пятен, которые едут с разной скоростью
@@ -42,14 +42,14 @@ export function Scene({ from, to, accent = '#fff', seed = 0 }: Props) {
     <div aria-hidden style={{ position: 'fixed', inset: 0, zIndex: -1, overflow: 'hidden',
                               background: `linear-gradient(155deg, ${from} 0%, ${to} 100%)` }}>
       {SHAPES.map((s, i) => (
-        <Blob key={i} s={s} i={i + seed} sx={sx} sy={sy} accent={accent} />
+        <Blob key={i} s={s} sx={sx} sy={sy} accent={accent} />
       ))}
       <Grain />
     </div>
   );
 }
 
-function Blob({ s, i, sx, sy, accent }: any) {
+function Blob({ s, sx, sy, accent }: any) {
   const tx = useTransform(sx, (v: number) => v * -s.r * s.d * 9);
   const ty = useTransform(sy, (v: number) => v * -s.r * s.d * 9);
   return (
@@ -59,10 +59,11 @@ function Blob({ s, i, sx, sy, accent }: any) {
         width: s.r, height: s.r, marginLeft: -s.r / 2, marginTop: -s.r / 2,
         borderRadius: '50%', x: tx, y: ty,
         background: `radial-gradient(circle at 34% 30%, ${accent}, transparent 68%)`,
-        opacity: s.o, filter: 'blur(8px)',
+        opacity: s.o * .55, filter: 'blur(70px)',
       }}
-      animate={{ scale: [1, 1.08, 1], rotate: [0, i % 2 ? 8 : -8, 0] }}
-      transition={{ duration: 16 + i * 3, repeat: Infinity, ease: 'easeInOut' }}
+      // пятна только следуют за курсором; постоянного «дыхания» нет —
+      // пять бесконечных циклов на экране утомляют и выглядят дёшево
+    
     />
   );
 }

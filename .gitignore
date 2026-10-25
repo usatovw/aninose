@@ -9,3 +9,5 @@ dist/
 bin/
 .evo/
 scripts/.media-cache/
+Dockerfile.patch
+public/media/_orig/

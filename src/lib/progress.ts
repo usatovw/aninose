@@ -22,13 +22,9 @@ export function markSeen(id: string) {
   return true;
 }
 
-export async function syncFromServer() {
-  try {
-    const r = await fetch('/api/progress');
-    if (!r.ok) return;
-    const { ids } = await r.json();
-    if (!Array.isArray(ids)) return;
-    const merged = Array.from(new Set([...read(), ...ids]));
-    write(merged);
-  } catch { /* не критично */ }
-}
+/**
+ * Альбом намеренно читается только из localStorage.
+ * Серверный список общий на всех посетителей — вливать его значит
+ * заполнять альбом ребёнка чужими находками.
+ */
+export async function syncFromServer() { /* no-op */ }

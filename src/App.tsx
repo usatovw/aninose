@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Home from './pages/Home';
 import TypesMap from './pages/TypesMap';
 import TypePage from './pages/TypePage';
@@ -8,10 +8,12 @@ import AnimalPage from './pages/AnimalPage';
 import Game from './pages/Game';
 import Album from './pages/Album';
 import Sort from './pages/Sort';
-import { unlock } from './lib/audio';
+import { unlock, onBlocked, isBlocked } from './lib/audio';
 
 export default function App() {
   const loc = useLocation();
+  const [muted, setMuted] = useState(isBlocked());
+  useEffect(() => onBlocked(setMuted), []);
   // Браузер не даёт играть звук до жеста — ловим любой первый жест, не только кнопку «Начать».
   useEffect(() => {
     const on = () => unlock();
@@ -22,6 +24,12 @@ export default function App() {
   useEffect(() => { window.scrollTo(0, 0); }, [loc.pathname]);
 
   return (
+    <>
+    {muted && (
+      <button className="sound-off" onClick={() => { unlock(); setMuted(false); }}>
+        Включить звук
+      </button>
+    )}
     <AnimatePresence mode="wait">
       <motion.div key={loc.pathname}
         initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
@@ -39,5 +47,6 @@ export default function App() {
         </Routes>
       </motion.div>
     </AnimatePresence>
+    </>
   );
 }

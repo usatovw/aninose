@@ -4,7 +4,7 @@ import { Nav } from '../components/Chrome';
 import { Scene } from '../components/Scene';
 import { BlobPhoto } from '../components/BlobPhoto';
 import { Burst } from '../components/Burst';
-import { animals, photoUrl, noseUrl } from '../lib/content';
+import { animals, photoUrl, noseUrl, plural } from '../lib/content';
 import { say, blip, animalSound } from '../lib/audio';
 import { useNavigate } from 'react-router-dom';
 
@@ -46,7 +46,7 @@ export default function Game() {
           Чей это носик?
         </motion.h1>
         <p className="lead" style={{ margin: '12px auto 22px', color: 'var(--ink-soft)' }}>
-          Угадала {score} раз
+          Угадала {score} {plural(score, 'раз', 'раза', 'раз')}
         </p>
 
         <div style={{ position: 'relative', width: 'clamp(230px,32vw,330px)', margin: '0 auto 30px' }}>

@@ -1,20 +1,22 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { unlock, say, blip } from '../lib/audio';
-import { noseUrl, photoUrl } from '../lib/content';
+import { unlock, say, blip, animalSound } from '../lib/audio';
+import { photoUrl } from '../lib/content';
 import { Scene } from '../components/Scene';
 import { BlobPhoto } from '../components/BlobPhoto';
 import { IconPlay } from '../components/Icon';
 
 const WORD = 'Носики'.split('');
 // Носики-спутники: узнаваемые кадры по кругу — ребёнок видит, про что это, не читая.
+// Узнаваемые звери по краям: ребёнок понимает, про что это, не читая,
+// и может потыкать в них ещё до кнопки «Смотреть».
 const ORBIT = [
-  { id: 'cow',    x: 3,  y: 68, s: 108, d: 6.2 },
-  { id: 'pig',    x: 16, y: 86, s: 86,  d: 7.4 },
-  { id: 'duck',   x: 40, y: 80, s: 80,  d: 5.6 },
-  { id: 'dog',    x: 60, y: 90, s: 92,  d: 8.0 },
-  { id: 'giraffe',x: 90, y: 74, s: 98,  d: 6.8 },
-  { id: 'snail',  x: 78, y: 12, s: 76,  d: 7.8 },
+  { id: 'cow',     x: 8,  y: 74, s: 104 },
+  { id: 'pig',     x: 26, y: 86, s: 86  },
+  { id: 'duck',    x: 46, y: 80, s: 82  },
+  { id: 'dog',     x: 64, y: 88, s: 92  },
+  { id: 'giraffe', x: 82, y: 72, s: 96  },
+  { id: 'horse',   x: 74, y: 14, s: 80  },
 ];
 
 export default function Home() {
@@ -26,18 +28,15 @@ export default function Home() {
       <Scene from="#FFE0A6" to="#FFAE93" accent="#FFF8EC" />
 
       {ORBIT.map((o, i) => (
-        <motion.img key={o.id} src={noseUrl(o.id)} alt="" aria-hidden
+        <motion.button key={o.id} className="orbit-dot" aria-label={`Послушать: ${o.id}`}
+          onClick={() => { unlock(); blip(700); say(`a-${o.id}-name`).then(() => animalSound(o.id)); }}
           initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1, y: [0, -14, 0], rotate: [0, i % 2 ? 5 : -5, 0] }}
-          transition={{ scale: { delay: .5 + i * .09, type: 'spring', stiffness: 200, damping: 13 },
-                        opacity: { delay: .5 + i * .09 },
-                        y: { duration: o.d, repeat: Infinity, ease: 'easeInOut' },
-                        rotate: { duration: o.d * 1.4, repeat: Infinity, ease: 'easeInOut' } }}
-          style={{ position: 'absolute', left: `${o.x}%`, top: `${o.y}%`,
-                   width: o.s, height: o.s, objectFit: 'cover',
-                   borderRadius: '54% 46% 48% 52% / 46% 54% 46% 54%',
-                   border: '6px solid rgba(255,255,255,.92)',
-                   boxShadow: '0 14px 34px rgba(120,70,30,.22)', pointerEvents: 'none' }} />
+          animate={{ scale: 1, opacity: 1 }}
+          whileHover={{ scale: 1.1 }} whileTap={{ scale: .88 }}
+          transition={{ delay: .5 + i * .09, type: 'spring', stiffness: 200, damping: 13 }}
+          style={{ left: `${o.x}%`, top: `${o.y}%`, width: o.s, height: o.s }}>
+          <img src={photoUrl(o.id)} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </motion.button>
       ))}
 
       <div className="wrap" style={{ display: 'grid', gap: 'clamp(20px,3vw,56px)',

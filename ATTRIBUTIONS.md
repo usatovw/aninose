@@ -9,7 +9,7 @@
 | Собака | [DogNose01](https://www.flickr.com/photos/41774931@N00/109543598) | hickr | BY |
 | Кошка | [Cat's eyes and nose by iezalel williams IMG_1175-001](https://www.flickr.com/photos/181765699@N08/48093569333) | iezalel7williams | CC0 1.0 |
 | Корова | [Cow's nose closeup, farming animal](https://www.rawpixel.com/image/6039322/photo-image-public-domain-nature-free) | unknown | CC0 1.0 |
-| Лошадка | [Free horse's nose closeup background](https://www.rawpixel.com/image/5924727/photo-image-background-face-public-domain) | unknown | CC0 1.0 |
+| Лошадка | [File:Ancient horse head.jpg](https://commons.wikimedia.org/wiki/File:Ancient_horse_head.jpg) | C. E. Price | PUBLIC DOMAIN |
 | Свинка | [A close-up of a brown pig looking through a rusty wire fence, surrounded by fallen leaves on the ground.](https://wordpress.org/photos/photo/84769e10f0/) | lrodriguez20765 | CC0 1.0 |
 | Овечка | [Close-up of a sheep with a muddy nose and curious expression. The background shows grass, dirt, and another sheep, conveying a rustic farm setting.](https://wordpress.org/photos/photo/99169638fa/) | Tawhid Sadman | CC0 1.0 |
 | Козочка | [Goat to be kidding me](https://www.flickr.com/photos/58411470@N00/54226942443) | kewl | BY 2.0 |
@@ -22,7 +22,7 @@
 | Волк | [Farkas_2.jpg](https://commons.wikimedia.org/wiki/File:Farkas_2.jpg) | Pilgab | CC BY-SA 3.0 |
 | Лисичка | [Red_fox_face_mammal_vulpes_vulpes.jpg](https://commons.wikimedia.org/wiki/File:Red_fox_face_mammal_vulpes_vulpes.jpg) | U.S. Fish and Wildlife Service | Public domain |
 | Ёжик | [South_African_hedgehog_lying_close_up_-_DPLA_-_99f194ab3746fbc43835fd7d3a0616a6.jpg](https://commons.wikimedia.org/wiki/File:South_African_hedgehog_lying_close_up_-_DPLA_-_99f194ab3746fbc43835fd7d3a0616a6.jpg) | Garst, Warren, 1922-2016, photographer | CC BY-SA 4.0 |
-| Белочка | [1050](https://www.flickr.com/photos/44189714@N03/4411393349) | Eduardo S3 | BY 2.0 |
+| Белочка | [File:Eichhörnchen (Sciurus vulgaris) mit Walnuss (DSCF7269).jpg](https://commons.wikimedia.org/wiki/File:Eichh%C3%B6rnchen_(Sciurus_vulgaris)_mit_Walnuss_(DSCF7269).jpg) | Norbert 1975 | CC BY 3.0 |
 | Оленёнок | [Baby deer](https://www.flickr.com/photos/78341140@N00/5673714658) | waitscm | BY 2.0 |
 | Лось | [Alces_alces_qtl1.jpg](https://commons.wikimedia.org/wiki/File:Alces_alces_qtl1.jpg) | Quartl | CC BY-SA 3.0 |
 | Кабан | [Bache001.jpg](https://commons.wikimedia.org/wiki/File:Bache001.jpg) | dontworry | CC BY-SA 3.0 |
@@ -59,6 +59,10 @@
 | Бабочка | [Fesoj_-_Papilio_machaon_(by).jpg](https://commons.wikimedia.org/wiki/File:Fesoj_-_Papilio_machaon_(by).jpg) | fesoj | CC BY 2.0 |
 | Пчёлка | [Sweat bee, Nomia species, face](https://www.rawpixel.com/image/8752494/sweat-bee-nomia-species-face) | usgsbee | CC0 1.0 |
 | Улитка | [2015-09-15-1206_(21411761176).jpg](https://commons.wikimedia.org/wiki/File:2015-09-15-1206_(21411761176).jpg) | teteria sonnna from Obukhiv, Ukraine | CC BY 2.0 |
+| Ящерица | [Close face green iguana](https://www.rawpixel.com/image/6022436/photo-image-face-texture-public-domain) | unknown | CC0 |
+| Варан | [File:Ackie face.jpg](https://commons.wikimedia.org/wiki/File:Ackie_face.jpg) | Merryeli | CC BY-SA 4.0 |
+| Бородавочник | [File:Red warthog (6073674924).jpg](https://commons.wikimedia.org/wiki/File:Red_warthog_(6073674924).jpg) | Derek Keats from Johannesburg, South Africa | CC BY 2.0 |
+| Касатка | [Orca spray](https://www.flickr.com/photos/26406919@N00/1018409504) | Unhindered by Talent | BY-SA |
 
 ## Звуки — живые записи
 
@@ -78,12 +82,9 @@
 | Мышка | [squeak.wav](https://freesound.org/people/semccab/sounds/154381) | semccab | CC0 | freesound |
 | Слон | [Elephant Trumpets Growls.flac](https://freesound.org/people/D.jones/sounds/527845) | D.jones | CC0 | freesound |
 | Лев | [Roar.m4a](https://freesound.org/people/tahirahg1991/sounds/420466) | tahirahg1991 | CC0 | freesound |
-| Тигр | [Roar.m4a](https://freesound.org/people/tahirahg1991/sounds/420466) | tahirahg1991 | CC0 | freesound |
 | Носорог | [Rhinoceros Trumpet Joyful](https://freesound.org/people/bevibeldesign/sounds/350421) | bevibeldesign | CC0 | freesound |
-| Верблюд | [void - 808 .wav](https://freesound.org/people/rorymceachan/sounds/516736) | rorymceachan | CC0 | freesound |
 | Крокодил | [Crocodile in Vezo](https://commons.wikimedia.org/w/index.php?curid=165096266) | Gasybeaugosse2020 | CC0 | wikimedia_audio |
 | Дельфин | [Dolphin Noise-.wav](https://freesound.org/people/jfournier18/sounds/456151) | jfournier18 | CC0 | freesound |
-| Змейка | [rattlesnake](https://freesound.org/people/bjelicvuk/sounds/733002) | bjelicvuk | CC0 | freesound |
 | Пчёлка | [Bee Buzzing](https://freesound.org/people/JonCon_Library/sounds/481647) | JonCon_Library | CC0 | freesound |
 
 ## Звуки — синтезированные
@@ -122,6 +123,14 @@
 - **Киви** — «a small bird snuffling in soil, soft sniffing»
 - **Бабочка** — «very soft delicate fluttering of butterfly wings»
 - **Улитка** — «a very soft wet slithering sound, tiny and gentle»
+- **Крокодил** — «a low soft crocodile hiss and gentle water ripple, calm»
+- **Верблюд** — «a soft camel grunt and nasal blow, gentle, close mic»
+- **Тигр** — «a soft tiger chuff greeting, friendly puffing breath, not a roar»
+- **Змейка** — «a gentle snake hiss, soft short sss, close mic»
+- **Бородавочник** — «a warthog snuffling and rooting in dry soil, soft grunts»
+- **Касатка** — «a distant soft whale blow, spout of air over water»
+- **Ящерица** — «a tiny lizard scurrying over dry leaves, very soft»
+- **Варан** — «a slow soft reptile hiss, deep and short»
 
 ## Озвучка
 

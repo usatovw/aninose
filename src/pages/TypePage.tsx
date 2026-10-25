@@ -32,18 +32,24 @@ export default function TypePage() {
             drag="x" dragConstraints={{ left: 0, right: 0 }} dragElastic={.45}
             onDragEnd={(_, info) => {
               if (Math.abs(info.offset.x) < 50) return;
-              setK(v => (v + (info.offset.x < 0 ? 1 : pets.length - 1)) % pets.length);
-              blip(620); animalSound(cur.id);
+              // индекс считаем заранее: cur взят из замыкания и после setK ещё старый,
+              // из-за чего карусель озвучивала предыдущего зверя
+              const nextIdx = (k + (info.offset.x < 0 ? 1 : pets.length - 1)) % pets.length;
+              setK(nextIdx); blip(620);
+              const nx = pets[nextIdx];
+              say(`a-${nx.id}-name`).then(() => animalSound(nx.id));
             }}
             initial={{ scale: .82, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 160, damping: 17 }}
-            style={{ cursor: 'grab' }}>
+            style={{ cursor: 'grab', touchAction: 'pan-y' }}>
             <motion.div animate={{ y: [0, -14, 0] }} transition={{ duration: 6.5, repeat: Infinity, ease: 'easeInOut' }}>
               <BlobPhoto key={cur.id} src={noseUrl(cur.id)} lens={false} />
             </motion.div>
             <div style={{ textAlign: 'center', marginTop: 14, color: '#fff', fontWeight: 800,
                           textShadow: '0 2px 12px rgba(0,0,0,.32)' }}>
-              Это носик: {cur.ru} · тяни вбок
+              {pets.length > 1
+                ? <>Это носик: {cur.ru} · тяни вбок</>
+                : <>Это носик: {cur.ru} · такой только у него одного!</>}
             </div>
           </motion.div>
 
@@ -78,8 +84,9 @@ export default function TypePage() {
           ))}
         </div>
 
-        <div className="note" style={{ marginTop: 28 }}>
-          <h4>Для взрослых</h4>
+        <details className="note" style={{ marginTop: 28 }}>
+          <summary className="adult-toggle" style={{ listStyle: 'none', cursor: 'pointer' }}>i  Для взрослых</summary>
+          <h4 style={{ marginTop: 14 }}>Для взрослых</h4>
           <p style={{ margin: 0 }}>{t.parent}</p>
           <div className="note__src">
             Источник: {t.sources.map((s, i) => (
@@ -87,7 +94,7 @@ export default function TypePage() {
                 <a href={s.url} target="_blank" rel="noreferrer">{s.title}</a></span>
             ))}
           </div>
-        </div>
+        </details>
       </div>
     </div>
   );

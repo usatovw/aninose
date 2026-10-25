@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Nav } from '../components/Chrome';
 import { Scene } from '../components/Scene';
-import { animals, photoUrl } from '../lib/content';
+import { animals, photoUrl, plural } from '../lib/content';
 import { seen, syncFromServer } from '../lib/progress';
 import { say, blip } from '../lib/audio';
 
@@ -22,7 +22,7 @@ export default function Album() {
         <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
           <h1>Мой альбом</h1>
           <p className="lead" style={{ marginTop: 12, color: 'var(--ink-soft)' }}>
-            Нашла {found} носиков из {animals.length}
+            Нашла {found} {plural(found, 'носик', 'носика', 'носиков')} из {animals.length}
           </p>
         </motion.div>
 
@@ -33,6 +33,10 @@ export default function Album() {
             style={{ height: '100%', background: 'linear-gradient(90deg,#FFC46B,#F2603C)' }} />
         </div>
 
+        <p style={{ fontWeight: 700, color: 'var(--ink-soft)', marginBottom: 14 }}>
+          Цветные — те, кого Стеша уже нашла. Нажми на любого, чтобы открыть.
+        </p>
+
         <div className="beasts">
           {animals.map((a, i) => {
             const got = ids.has(a.id);
@@ -42,10 +46,10 @@ export default function Album() {
                 transition={{ delay: Math.min(i * .018, .7), type: 'spring', stiffness: 210, damping: 20 }}
                 whileHover={{ y: -6 }} whileTap={{ scale: .95 }}
                 onClick={() => { blip(got ? 660 : 400); nav(`/animal/${a.id}`); }}>
-                <img src={photoUrl(a.id)} alt={got ? a.ru : 'Ещё не найден'} loading="lazy"
-                  style={{ filter: got ? 'none' : 'grayscale(1) contrast(.55) brightness(1.3)',
-                           opacity: got ? 1 : .5 }} />
-                <span>{got ? a.ru : '?'}</span>
+                <img src={photoUrl(a.id)} alt={a.ru} loading="lazy"
+                  style={{ filter: got ? 'none' : 'grayscale(1) contrast(.5) brightness(1.35)',
+                           opacity: got ? 1 : .42 }} />
+                <span>{a.ru}</span>
               </motion.button>
             );
           })}

@@ -125,15 +125,6 @@
   "url": "https://freesound.org/people/tahirahg1991/sounds/420466",
   "duration": 1856
  },
- "tiger": {
-  "file": "tiger.mp3",
-  "title": "Roar.m4a",
-  "license": "cc0",
-  "creator": "tahirahg1991",
-  "source": "freesound",
-  "url": "https://freesound.org/people/tahirahg1991/sounds/420466",
-  "duration": 1856
- },
  "rhino": {
   "file": "rhino.mp3",
   "title": "Rhinoceros Trumpet Joyful",
@@ -142,15 +133,6 @@
   "source": "freesound",
   "url": "https://freesound.org/people/bevibeldesign/sounds/350421",
   "duration": 1371
- },
- "camel": {
-  "file": "camel.mp3",
-  "title": "void - 808 .wav",
-  "license": "cc0",
-  "creator": "rorymceachan",
-  "source": "freesound",
-  "url": "https://freesound.org/people/rorymceachan/sounds/516736",
-  "duration": 1738
  },
  "crocodile": {
   "file": "crocodile.ogx",
@@ -169,15 +151,6 @@
   "source": "freesound",
   "url": "https://freesound.org/people/jfournier18/sounds/456151",
   "duration": 2580
- },
- "snake": {
-  "file": "snake.mp3",
-  "title": "rattlesnake",
-  "license": "cc0",
-  "creator": "bjelicvuk",
-  "source": "freesound",
-  "url": "https://freesound.org/people/bjelicvuk/sounds/733002",
-  "duration": 1322
  },
  "bee": {
   "file": "bee.mp3",

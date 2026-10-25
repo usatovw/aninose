@@ -210,5 +210,21 @@
  "snail": {
   "noseVisible": true,
   "checkedBy": "contact-sheet-review"
+ },
+ "lizard": {
+  "noseVisible": true,
+  "checkedBy": "contact-sheet-review"
+ },
+ "monitor": {
+  "noseVisible": true,
+  "checkedBy": "contact-sheet-review"
+ },
+ "warthog": {
+  "noseVisible": true,
+  "checkedBy": "contact-sheet-review"
+ },
+ "orca": {
+  "noseVisible": true,
+  "checkedBy": "contact-sheet-review"
  }
 }

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Nav } from '../components/Chrome';
@@ -7,6 +8,7 @@ import { say, blip } from '../lib/audio';
 
 export default function TypesMap() {
   const nav = useNavigate();
+  useEffect(() => { say('ui-pick'); }, []);
   return (
     <div className="screen">
       <Scene from="#FFF1D4" to="#FFD9C0" accent="#FFFFFF" />
@@ -31,7 +33,7 @@ export default function TypesMap() {
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ delay: i * .055, type: 'spring', stiffness: 190, damping: 20 }}
                 whileHover={{ y: -8, scale: 1.015 }} whileTap={{ scale: .97 }}
-                onClick={() => { blip(560); say(`t-${t.id}-name`); nav(`/type/${t.id}`); }}>
+                onClick={() => { blip(560); say(`t-${t.id}-name`); setTimeout(() => nav(`/type/${t.id}`), 850); }}>
                 <motion.img className="type-card__photo" src={photoUrl(face.id)} alt="" loading="lazy"
                   initial={{ scale: 1.14 }} whileHover={{ scale: 1.2 }}
                   transition={{ duration: 1.1, ease: [.2, .8, .3, 1] }} />

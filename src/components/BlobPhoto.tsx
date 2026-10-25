@@ -1,5 +1,5 @@
 import { useId, useRef, useState } from 'react';
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { motion, useMotionValue, useSpring, useTransform, useReducedMotion } from 'framer-motion';
 
 /**
  * Фотография внутри живой органической маски.
@@ -27,6 +27,7 @@ type Props = {
 
 export function BlobPhoto({ src, lens = true, start = { x: .5, y: .5 }, squash = 0, onPointer }: Props) {
   const id = useId().replace(/:/g, '');
+  const reduce = useReducedMotion();
   const box = useRef<HTMLDivElement>(null);
   const [pos, setPos] = useState(start);
   const [dragging, setDragging] = useState(false);
@@ -50,7 +51,9 @@ export function BlobPhoto({ src, lens = true, start = { x: .5, y: .5 }, squash =
     <motion.div
       ref={box}
       style={{ position: 'relative', width: '100%', aspectRatio: '1/1',
-               rotateX: tiltX, rotateY: tiltY, transformPerspective: 1000, touchAction: 'none' }}
+               rotateX: tiltX, rotateY: tiltY, transformPerspective: 1000,
+               // pan-y: лупу ведём по горизонтали, вертикаль отдаём скроллу страницы
+               touchAction: 'pan-y' }}
       animate={{ scaleX: 1 + squash * .06, scaleY: 1 - squash * .07, y: squash * 8 }}
       transition={{ type: 'spring', stiffness: 700, damping: 14 }}
       onPointerDown={e => { (e.target as Element).setPointerCapture?.(e.pointerId);
@@ -63,14 +66,13 @@ export function BlobPhoto({ src, lens = true, start = { x: .5, y: .5 }, squash =
       <motion.div
         style={{ position: 'absolute', inset: '6% 6% -2% 6%', borderRadius: '50%',
                  background: 'rgba(70,40,15,.3)', filter: 'blur(34px)', zIndex: -1 }}
-        animate={{ scale: [1, 1.05, 1] }}
-        transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
+        animate={{}}
       />
       <svg viewBox="0 0 500 500" style={{ width: '100%', height: '100%', overflow: 'visible' }}>
         <defs>
           <clipPath id={`clip-${id}`}>
             <motion.path
-              animate={{ d: [...SHAPES, SHAPES[0]] }}
+              animate={reduce ? {} : { d: [...SHAPES, SHAPES[0]] }}
               transition={{ duration: 26, repeat: Infinity, ease: 'easeInOut' }}
               d={SHAPES[0]}
             />
