@@ -183,3 +183,13 @@ h2 { font-family: var(--display); font-weight: 600; letter-spacing: -.01em;
   width: 44px; height: 44px; border-radius: 50%; font-size: 26px;
   color: var(--ink-soft); background: rgba(0,0,0,.05);
 }
+/* прячем нативный крестик: свой уже есть и выглядит одинаково во всех браузерах */
+.search::-webkit-search-cancel-button,
+.search::-webkit-search-decoration { -webkit-appearance: none; appearance: none; }
+/* название проекта в шапке — путь обратно на заставку */
+.start-link {
+  font-family: var(--display); font-weight: 600; font-size: 22px;
+  color: var(--ink); opacity: .55; padding: 0 10px; min-height: 56px;
+}
+.start-link:hover { opacity: .9; }
+@media (max-width: 560px) { .start-link { display: none; } }

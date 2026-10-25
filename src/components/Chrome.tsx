@@ -22,6 +22,11 @@ export function Nav({ light = false }: { light?: boolean }) {
       initial={{ y: -22, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: .05 }}>
       {loc.pathname !== '/' && btn('back', 'Назад', <IconBack />, -1)}
       {btn('home', 'Все носики', <IconHome />, '/types')}
+      {loc.pathname !== '/' && (
+        <button className="start-link" onClick={() => { blip(430); stopVoice(); nav('/'); }}>
+          Носики
+        </button>
+      )}
       <div className="spacer" />
       {btn('medal', 'Мой альбом', <IconMedal />, '/album')}
       {btn('dice', 'Игра', <IconDice />, '/game')}

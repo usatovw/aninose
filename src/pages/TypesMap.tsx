@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Nav } from '../components/Chrome';
 import { Scene } from '../components/Scene';
-import { noseTypes, animalsOfType, photoUrl } from '../lib/content';
+import { noseTypes, animalsOfType, photoUrl, animals } from '../lib/content';
 import { say, blip } from '../lib/audio';
+import { IconDice } from '../components/Icon';
 
 export default function TypesMap() {
   const nav = useNavigate();
@@ -21,6 +22,12 @@ export default function TypesMap() {
           <p className="lead" style={{ marginTop: 14, color: 'var(--ink-soft)' }}>
             Выбирай домик — посмотрим, кто там живёт
           </p>
+          <button className="btn" style={{ marginTop: 18 }}
+            onClick={() => { blip(700);
+              const r = animals[Math.floor(Math.random() * animals.length)];
+              nav(`/animal/${r.id}`); }}>
+            <IconDice size={28} /> Удиви меня
+          </button>
         </motion.div>
 
         <div className="types">
