@@ -47,8 +47,8 @@ export default function Album() {
                 whileHover={{ y: -6 }} whileTap={{ scale: .95 }}
                 onClick={() => { blip(got ? 660 : 400); nav(`/animal/${a.id}`); }}>
                 <img src={photoUrl(a.id)} alt={a.ru} loading="lazy"
-                  style={{ filter: got ? 'none' : 'grayscale(1) contrast(.5) brightness(1.35)',
-                           opacity: got ? 1 : .42 }} />
+                  style={{ filter: got ? 'none' : 'grayscale(1) contrast(.85) brightness(1.08)',
+                           opacity: got ? 1 : .62 }} />
                 <span>{a.ru}</span>
               </motion.button>
             );
