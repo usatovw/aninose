@@ -16,7 +16,8 @@
   "palette": {
    "from": "#FFD6A5",
    "to": "#FFAE7B"
-  }
+  },
+  "noseZoom": 0.8
  },
  {
   "id": "cat",
@@ -34,7 +35,8 @@
   "palette": {
    "from": "#FFC9DE",
    "to": "#FF9EC4"
-  }
+  },
+  "noseZoom": 0.8
  },
  {
   "id": "cow",
@@ -52,7 +54,8 @@
   "palette": {
    "from": "#FFE9B0",
    "to": "#F5C96B"
-  }
+  },
+  "noseZoom": 0.8
  },
  {
   "id": "horse",
@@ -70,7 +73,8 @@
   "palette": {
    "from": "#D9BFA6",
    "to": "#B9906B"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "pig",
@@ -88,7 +92,8 @@
   "palette": {
    "from": "#FFC2D1",
    "to": "#FF93B5"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "sheep",
@@ -106,7 +111,8 @@
   "palette": {
    "from": "#F2EDE4",
    "to": "#D6CCBC"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "goat",
@@ -124,7 +130,8 @@
   "palette": {
    "from": "#E8DCC8",
    "to": "#C9B48E"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "chicken",
@@ -142,7 +149,8 @@
   "palette": {
    "from": "#FFE2A8",
    "to": "#FFBE5C"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "duck",
@@ -160,7 +168,8 @@
   "palette": {
    "from": "#CDE8B5",
    "to": "#9DD07A"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "rabbit",
@@ -178,7 +187,8 @@
   "palette": {
    "from": "#FFE3E8",
    "to": "#FFBCC9"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "hamster",
@@ -196,7 +206,8 @@
   "palette": {
    "from": "#FFDFBA",
    "to": "#F5B97D"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "guineapig",
@@ -214,7 +225,8 @@
   "palette": {
    "from": "#FFD9C0",
    "to": "#EBAE85"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "bear",
@@ -233,7 +245,8 @@
   "palette": {
    "from": "#D7BBA8",
    "to": "#A98065"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "wolf",
@@ -251,7 +264,8 @@
   "palette": {
    "from": "#C9D3DC",
    "to": "#8FA3B5"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "fox",
@@ -269,7 +283,8 @@
   "palette": {
    "from": "#FFC79B",
    "to": "#F08E4B"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "hedgehog",
@@ -287,7 +302,8 @@
   "palette": {
    "from": "#E2CDB0",
    "to": "#B99A72"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "squirrel",
@@ -305,7 +321,8 @@
   "palette": {
    "from": "#FFD2B0",
    "to": "#E09B6E"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "deer",
@@ -323,7 +340,8 @@
   "palette": {
    "from": "#E8D3B8",
    "to": "#C09B70"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "moose",
@@ -341,7 +359,8 @@
   "palette": {
    "from": "#C9B79B",
    "to": "#8F7A5E"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "boar",
@@ -359,7 +378,8 @@
   "palette": {
    "from": "#C3AC95",
    "to": "#8A7059"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "mole",
@@ -377,7 +397,8 @@
   "palette": {
    "from": "#C7BBAE",
    "to": "#8E7F70"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "mouse",
@@ -395,7 +416,8 @@
   "palette": {
    "from": "#DCDCE8",
    "to": "#AFAFC4"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "beaver",
@@ -413,7 +435,8 @@
   "palette": {
    "from": "#C9A98C",
    "to": "#96755A"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "elephant",
@@ -431,7 +454,8 @@
   "palette": {
    "from": "#C3B4F0",
    "to": "#9887E0"
-  }
+  },
+  "noseZoom": 0.34
  },
  {
   "id": "giraffe",
@@ -449,7 +473,8 @@
   "palette": {
    "from": "#FFD98A",
    "to": "#E8A94B"
-  }
+  },
+  "noseZoom": 0.34
  },
  {
   "id": "lion",
@@ -467,7 +492,8 @@
   "palette": {
    "from": "#FFD48A",
    "to": "#E8A044"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "tiger",
@@ -485,7 +511,8 @@
   "palette": {
    "from": "#FFBE7D",
    "to": "#E88A3C"
-  }
+  },
+  "noseZoom": 0.34
  },
  {
   "id": "zebra",
@@ -497,13 +524,14 @@
   "kid": "Зебра — это лошадка в полосочку. И носик у неё как у лошадки, большой и мягкий.",
   "parent": "Зебры относятся к лошадиным; строение носа сходно с лошадиным, включая подвижные ноздри.",
   "noseFocus": {
-   "x": 0.495,
-   "y": 0.83
+   "x": 0.57,
+   "y": 0.86
   },
   "palette": {
    "from": "#E8E8E8",
    "to": "#B0B0B0"
-  }
+  },
+  "noseZoom": 0.34
  },
  {
   "id": "hippo",
@@ -521,7 +549,8 @@
   "palette": {
    "from": "#C4AEC9",
    "to": "#8E7399"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "rhino",
@@ -539,7 +568,8 @@
   "palette": {
    "from": "#C8C3BC",
    "to": "#8E8880"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "monkey",
@@ -557,7 +587,8 @@
   "palette": {
    "from": "#E8CBA8",
    "to": "#C49A68"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "gorilla",
@@ -575,7 +606,8 @@
   "palette": {
    "from": "#B9B2AC",
    "to": "#7D746D"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "proboscismonkey",
@@ -594,7 +626,8 @@
   "palette": {
    "from": "#F0C49B",
    "to": "#D4915E"
-  }
+  },
+  "noseZoom": 0.34
  },
  {
   "id": "camel",
@@ -606,13 +639,14 @@
   "kid": "В пустыне песочек летит в лицо. А верблюд — хлоп! — и закрыл носик. Умный!",
   "parent": "Верблюд способен смыкать ноздри, защищаясь от песка. Носовые ходы также участвуют в сбережении влаги: часть водяного пара из выдыхаемого воздуха конденсируется обратно.",
   "noseFocus": {
-   "x": 0.813,
-   "y": 0.56
+   "x": 0.8,
+   "y": 0.6
   },
   "palette": {
    "from": "#F0D9A8",
    "to": "#D0A464"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "crocodile",
@@ -624,13 +658,14 @@
   "kid": "Крокодил лежит в водичке тихо-тихо. Торчат только глазки и носик на макушке.",
   "parent": "Ноздри крокодила расположены на возвышении в передней части морды, что позволяет дышать, оставаясь почти полностью под водой. При погружении ноздри закрываются клапанами; нёбная заслонка отделяет глотку от ротовой полости.",
   "noseFocus": {
-   "x": 0.4,
-   "y": 0.45
+   "x": 0.44,
+   "y": 0.33
   },
   "palette": {
    "from": "#B6D3A0",
    "to": "#7FA368"
-  }
+  },
+  "noseZoom": 0.45
  },
  {
   "id": "ostrich",
@@ -648,7 +683,8 @@
   "palette": {
    "from": "#E8D6B8",
    "to": "#BFA379"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "starnosedmole",
@@ -666,7 +702,8 @@
   "palette": {
    "from": "#A8E6CF",
    "to": "#64CBA4"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "tapir",
@@ -684,7 +721,8 @@
   "palette": {
    "from": "#C5B8B0",
    "to": "#8C7B72"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "anteater",
@@ -702,7 +740,8 @@
   "palette": {
    "from": "#CFC0AE",
    "to": "#95806C"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "saiga",
@@ -721,7 +760,8 @@
   "palette": {
    "from": "#E8DCC0",
    "to": "#BFAE86"
-  }
+  },
+  "noseZoom": 0.34
  },
  {
   "id": "platypus",
@@ -739,7 +779,8 @@
   "palette": {
    "from": "#B2D8E8",
    "to": "#79AEC6"
-  }
+  },
+  "noseZoom": 0.34
  },
  {
   "id": "echidna",
@@ -757,7 +798,8 @@
   "palette": {
    "from": "#D8C7AE",
    "to": "#A08A6C"
-  }
+  },
+  "noseZoom": 0.34
  },
  {
   "id": "whale",
@@ -775,7 +817,8 @@
   "palette": {
    "from": "#9ACDE8",
    "to": "#5E9CC4"
-  }
+  },
+  "noseZoom": 0.34
  },
  {
   "id": "dolphin",
@@ -793,7 +836,8 @@
   "palette": {
    "from": "#A5D8E8",
    "to": "#6BAACC"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "seal",
@@ -811,7 +855,8 @@
   "palette": {
    "from": "#C2D6E0",
    "to": "#8AA7B8"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "walrus",
@@ -829,7 +874,8 @@
   "palette": {
    "from": "#CBB8AE",
    "to": "#95796C"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "shark",
@@ -848,7 +894,8 @@
   "palette": {
    "from": "#AFC6D4",
    "to": "#718EA3"
-  }
+  },
+  "noseZoom": 0.8
  },
  {
   "id": "fish",
@@ -866,7 +913,8 @@
   "palette": {
    "from": "#A8E0E0",
    "to": "#6CBFBF"
-  }
+  },
+  "noseZoom": 0.34
  },
  {
   "id": "kiwi",
@@ -885,7 +933,8 @@
   "palette": {
    "from": "#D4C4A8",
    "to": "#A08E6E"
-  }
+  },
+  "noseZoom": 0.8
  },
  {
   "id": "snake",
@@ -903,7 +952,8 @@
   "palette": {
    "from": "#C8E0A0",
    "to": "#8FB863"
-  }
+  },
+  "noseZoom": 0.8
  },
  {
   "id": "butterfly",
@@ -921,7 +971,8 @@
   "palette": {
    "from": "#F5BCE4",
    "to": "#DE8BCB"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "bee",
@@ -939,7 +990,8 @@
   "palette": {
    "from": "#FFE08A",
    "to": "#E8B23C"
-  }
+  },
+  "noseZoom": 0.8
  },
  {
   "id": "snail",
@@ -957,7 +1009,8 @@
   "palette": {
    "from": "#D8CBA8",
    "to": "#A89770"
-  }
+  },
+  "noseZoom": 0.34
  },
  {
   "id": "lizard",
@@ -975,7 +1028,8 @@
   "palette": {
    "from": "#CFE8A8",
    "to": "#9FCB0E"
-  }
+  },
+  "noseZoom": 0.8
  },
  {
   "id": "monitor",
@@ -993,7 +1047,8 @@
   "palette": {
    "from": "#C8DCA0",
    "to": "#93B468"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "warthog",
@@ -1011,7 +1066,8 @@
   "palette": {
    "from": "#D8C0A0",
    "to": "#A88860"
-  }
+  },
+  "noseZoom": 0.55
  },
  {
   "id": "orca",
@@ -1023,12 +1079,13 @@
   "kid": "Косатка чёрно-белая и очень большая. А носик у неё на макушке, как у кита!",
   "parent": "Косатка — самый крупный представитель дельфиновых, то есть зубатое китообразное: дыхало одинарное и расположено на верхней части головы. Дыхание произвольное.",
   "noseFocus": {
-   "x": 0.6,
-   "y": 0.29
+   "x": 0.67,
+   "y": 0.37
   },
   "palette": {
    "from": "#A8C8DC",
    "to": "#6E96B4"
-  }
+  },
+  "noseZoom": 0.34
  }
 ]
