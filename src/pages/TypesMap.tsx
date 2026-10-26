@@ -4,12 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import { Nav } from '../components/Chrome';
 import { Scene } from '../components/Scene';
 import { noseTypes, animalsOfType, tileUrl, faceOfType, hasCut, cutMask, animals } from '../lib/content';
-import { say, blip } from '../lib/audio';
+import { say, sayAfter, blip } from '../lib/audio';
 import { IconDice } from '../components/Icon';
 
 export default function TypesMap() {
   const nav = useNavigate();
-  useEffect(() => { say('ui-pick'); }, []);
+  // не перебиваем приветствие с заставки — ждём, пока оно договорит
+  useEffect(() => { sayAfter('ui-pick'); }, []);
   return (
     <div className="screen">
       <Scene from="#FFF1D4" to="#FFD9C0" accent="#FFFFFF" />

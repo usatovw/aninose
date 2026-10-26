@@ -49,7 +49,30 @@ function play(src: string, slot: 'voice' | 'sfx', volume = 1): Promise<void> {
   );
 }
 
-export const say = (key: string) => play(`/media/voice/${key}.mp3`, 'voice', 1);
+// Каждая реплика получает номер: по нему видно, не перебили ли её,
+// пока мы ждали окончания предыдущей.
+let voiceTurn = 0;
+let voiceDone: Promise<void> = Promise.resolve();
+
+export function say(key: string) {
+  voiceTurn += 1;
+  voiceDone = play(`/media/voice/${key}.mp3`, 'voice', 1);
+  return voiceDone;
+}
+
+/**
+ * Реплика, которая ждёт своей очереди. Переход с заставки на карту
+ * обрывал «Привет, Стеша!» на полуслове: новая страница сразу говорила
+ * «Выбирай носик», а play() глушит предыдущий голос. Теперь дожидаемся.
+ */
+export async function sayAfter(key: string) {
+  const mine = voiceTurn;
+  await voiceDone;
+  if (voiceTurn !== mine) return;      // за время ожидания сказали что-то ещё
+  return say(key);
+}
+
+export const isSpeaking = () => !!currentVoice && !currentVoice.paused && !currentVoice.ended;
 export const stopVoice = () => { currentVoice?.pause(); currentVoice = null; };
 
 export function animalSound(id: string) {

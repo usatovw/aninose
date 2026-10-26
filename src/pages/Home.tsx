@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { unlock, say, blip, animalSound, isUnlocked } from '../lib/audio';
+import { unlock, say, blip, animalSound, isUnlocked, isSpeaking } from '../lib/audio';
 import { cutUrl, cutMask } from '../lib/content';
 import { Scene } from '../components/Scene';
 import { IconPlay } from '../components/Icon';
@@ -22,7 +22,12 @@ const ORBIT = [
 export default function Home() {
   const nav = useNavigate();
   const reduce = useReducedMotion();
-  const start = () => { unlock(); blip(620); say('ui-hello'); setTimeout(() => nav('/types'), 240); };
+  const start = () => {
+    unlock(); blip(620);
+    // приветствие уже звучит с момента открытия — не начинаем его заново
+    if (!isSpeaking()) say('ui-hello');
+    setTimeout(() => nav('/types'), 240);
+  };
 
   // Заставка встречала молча: пока не было ни одного касания, браузер
   // не пускает звук, а мы даже не пробовали — значит и плашка «Включить звук»

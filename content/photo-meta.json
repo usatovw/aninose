@@ -18,10 +18,10 @@
   },
   "wholeAnimal": true,
   "noseSource": {
-   "commons": "Dog Nose.jpg",
-   "license": "CC BY-SA 2.0",
-   "author": "great_sea",
-   "descUrl": "https://commons.wikimedia.org/wiki/File:Dog_Nose.jpg"
+   "commons": "Canine Nose Macro Photo.png",
+   "license": "CC BY-SA 4.0",
+   "author": "Metography",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Canine_Nose_Macro_Photo.png"
   }
  },
  "cat": {
@@ -224,7 +224,13 @@
   "wikipedia": "https://en.wikipedia.org/wiki/Hedgehog",
   "attributionRequired": true,
   "w": 725,
-  "h": 725
+  "h": 725,
+  "noseSource": {
+   "commons": "'Andrew' (5720284368).jpg",
+   "license": "CC BY 2.0",
+   "author": "Peter Trimming from Croydon, England",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:%27Andrew%27_(5720284368).jpg"
+  }
  },
  "squirrel": {
   "file": "squirrel.jpg",
@@ -476,7 +482,13 @@
   "w": 900,
   "h": 900,
   "source": "commons",
-  "wholeAnimal": true
+  "wholeAnimal": true,
+  "noseSource": {
+   "commons": "Albino Camel.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Bubreg2",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Albino_Camel.jpg"
+  }
  },
  "crocodile": {
   "file": "crocodile.jpg",
@@ -754,7 +766,13 @@
    "author": "Andrevruas",
    "descUrl": "https://commons.wikimedia.org/wiki/File:Caldasiguana.JPG"
   },
-  "wholeAnimal": true
+  "wholeAnimal": true,
+  "noseSource": {
+   "commons": "Cool Guy (3578092058).jpg",
+   "license": "CC BY 2.0",
+   "author": "Erich Ferdinand from germany",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Cool_Guy_(3578092058).jpg"
+  }
  },
  "monitor": {
   "file": "monitor.jpg",
@@ -789,6 +807,12 @@
   "attributionRequired": true,
   "w": 900,
   "h": 900,
-  "wholeAnimal": true
+  "wholeAnimal": true,
+  "noseSource": {
+   "commons": "Anim1128 - Flickr - NOAA Photo Library.jpg",
+   "license": "Public domain",
+   "author": "Allen Shimada NOAA/NMFS/OST/AMD.",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Anim1128_-_Flickr_-_NOAA_Photo_Library.jpg"
+  }
  }
 }
