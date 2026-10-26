@@ -16,7 +16,13 @@
    "author": "Dippy Daloo",
    "descUrl": "https://www.flickr.com/photos/95477820@N02/8730902798"
   },
-  "wholeAnimal": true
+  "wholeAnimal": true,
+  "noseSource": {
+   "commons": "Dog Nose.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "great_sea",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Dog_Nose.jpg"
+  }
  },
  "cat": {
   "file": "cat.jpg",
@@ -33,10 +39,10 @@
  },
  "cow": {
   "file": "cow.jpg",
-  "commons": "Animal SM (2784423580).jpg",
-  "license": "CC BY 2.0",
-  "author": "FaceMePLS from The Hague, The Netherlands",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Animal_SM_(2784423580).jpg",
+  "commons": "A cow.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Arisepeter",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:A_cow.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Cattle",
   "source": "commons",
   "attributionRequired": false,
@@ -46,32 +52,34 @@
  },
  "horse": {
   "file": "horse.jpg",
-  "commons": "File:Ancient horse head.jpg",
-  "license": "PUBLIC DOMAIN",
-  "author": "C. E. Price",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Ancient_horse_head.jpg",
-  "source": "wikimedia",
+  "commons": "A cheval en estivage près de l'Ar du Tsan DSC 0766 (51406676097).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Pierre-Marie Epiney",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:A_cheval_en_estivage_pr%C3%A8s_de_l%27Ar_du_Tsan_DSC_0766_(51406676097).jpg",
+  "source": "commons",
   "attributionRequired": false,
-  "w": 920,
-  "h": 920
+  "w": 900,
+  "h": 900,
+  "wholeAnimal": true
  },
  "pig": {
   "file": "pig.jpg",
-  "commons": "A close-up of a brown pig looking through a rusty wire fence, surrounded by fallen leaves on the ground.",
-  "license": "CC0 1.0",
-  "author": "lrodriguez20765",
-  "descUrl": "https://wordpress.org/photos/photo/84769e10f0/",
+  "commons": "120814 Museumsdorf A 065 (1).jpg",
+  "license": "CC BY 2.0",
+  "author": "weisserstier from Wien, Austria",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:120814_Museumsdorf_A_065_(1).jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Pig",
-  "source": "wordpress",
+  "source": "commons",
   "attributionRequired": false,
-  "w": 825,
-  "h": 825,
+  "w": 900,
+  "h": 900,
   "cutSource": {
    "commons": "File:Aitutaki Pigs.JPG",
    "license": "CC BY-SA 2.5",
    "author": "Ciell",
    "descUrl": "https://commons.wikimedia.org/wiki/File:Aitutaki_Pigs.JPG"
-  }
+  },
+  "wholeAnimal": true
  },
  "sheep": {
   "file": "sheep.jpg",
@@ -138,12 +146,12 @@
  },
  "hamster": {
   "file": "hamster.jpg",
-  "commons": "Russian Dwarf Hamster in the Garden",
-  "license": "by",
-  "author": "cdrussorusso",
-  "descUrl": "https://www.flickr.com/photos/23516192@N08/2725617059",
+  "commons": "Хом'як жора.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Yutooq",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:%D0%A5%D0%BE%D0%BC%27%D1%8F%D0%BA_%D0%B6%D0%BE%D1%80%D0%B0.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Hamster",
-  "source": "openverse",
+  "source": "commons",
   "attributionRequired": true,
   "w": 900,
   "h": 900,
@@ -183,25 +191,29 @@
  },
  "wolf": {
   "file": "wolf.jpg",
-  "commons": "Farkas_2.jpg",
-  "license": "CC BY-SA 3.0",
-  "author": "Pilgab",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Farkas_2.jpg",
+  "commons": "Wolves (53022772048).jpg",
+  "license": "CC BY 2.0",
+  "author": "Jennifer C.",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Wolves_(53022772048).jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Wolf",
   "attributionRequired": true,
-  "w": 825,
-  "h": 825
+  "w": 900,
+  "h": 900,
+  "source": "commons",
+  "wholeAnimal": true
  },
  "fox": {
   "file": "fox.jpg",
-  "commons": "Red_fox_face_mammal_vulpes_vulpes.jpg",
-  "license": "Public domain",
-  "author": "U.S. Fish and Wildlife Service",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Red_fox_face_mammal_vulpes_vulpes.jpg",
+  "commons": "Fox Den (47990408151).jpg",
+  "license": "CC BY 2.0",
+  "author": "Larry Lamsa",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Fox_Den_(47990408151).jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Red_fox",
   "attributionRequired": false,
-  "w": 725,
-  "h": 725
+  "w": 900,
+  "h": 900,
+  "source": "commons",
+  "wholeAnimal": true
  },
  "hedgehog": {
   "file": "hedgehog.jpg",
@@ -227,15 +239,16 @@
  },
  "deer": {
   "file": "deer.jpg",
-  "commons": "Baby deer",
-  "license": "BY 2.0",
-  "author": "waitscm",
-  "descUrl": "https://www.flickr.com/photos/78341140@N00/5673714658",
+  "commons": "Formosan Sika at Beijing Wildlife Park image 4.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "TarnishedPath",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Formosan_Sika_at_Beijing_Wildlife_Park_image_4.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Deer",
-  "source": "flickr",
+  "source": "commons",
   "attributionRequired": true,
-  "w": 683,
-  "h": 683
+  "w": 900,
+  "h": 900,
+  "wholeAnimal": true
  },
  "moose": {
   "file": "moose.jpg",
@@ -271,15 +284,15 @@
  },
  "mole": {
   "file": "mole.jpg",
-  "commons": "Mole, animal",
-  "license": "cc0",
-  "author": "unknown",
-  "descUrl": "https://www.rawpixel.com/image/6041713/mole-animal-free-public-domain-cc0-photo",
+  "commons": "DSC 0044 (32492377818).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "JOE BLOWE from Bountiful, Utah, Iran",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:DSC_0044_(32492377818).jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Mole_(animal)",
   "attributionRequired": true,
   "w": 900,
   "h": 900,
-  "source": "openverse",
+  "source": "commons",
   "wholeAnimal": true
  },
  "mouse": {
@@ -319,44 +332,48 @@
  },
  "giraffe": {
   "file": "giraffe.jpg",
-  "commons": "SEDONA AZ",
-  "license": "BY 2.0",
-  "author": "shock264",
-  "descUrl": "https://www.flickr.com/photos/77890596@N04/7655974560",
+  "commons": "Girafe du parc national de Zakouma.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Fatakaya",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Girafe_du_parc_national_de_Zakouma.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Giraffe",
-  "source": "flickr",
+  "source": "commons",
   "attributionRequired": true,
-  "w": 680,
-  "h": 680
+  "w": 900,
+  "h": 900,
+  "wholeAnimal": true
  },
  "lion": {
   "file": "lion.jpg",
-  "commons": "White lion head",
-  "license": "BY 2.0",
-  "author": "DJM Photos",
-  "descUrl": "https://www.flickr.com/photos/136371668@N06/21718431626",
+  "commons": "Lion (51647683166).jpg",
+  "license": "CC0",
+  "author": "Mathias Appel",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Lion_(51647683166).jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Lion",
-  "source": "flickr",
+  "source": "commons",
   "attributionRequired": true,
-  "w": 746,
-  "h": 746,
+  "w": 900,
+  "h": 900,
   "cutSource": {
    "commons": "Free male lion walking snow",
    "license": "CC0",
    "author": "unknown",
    "descUrl": "https://www.rawpixel.com/image/5912164/image-face-public-domain-nature"
-  }
+  },
+  "wholeAnimal": true
  },
  "tiger": {
   "file": "tiger.jpg",
-  "commons": "Tiger_Face_(10971343685).jpg",
+  "commons": "Feline grace by nagarjun.jpg",
   "license": "CC BY 2.0",
-  "author": "Steve Wilson - over 6 million views Thanks !! from Chester, UK",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Tiger_Face_(10971343685).jpg",
+  "author": "Kandukuru Nagarjun",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Feline_grace_by_nagarjun.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Tiger",
   "attributionRequired": true,
-  "w": 1000,
-  "h": 1000
+  "w": 900,
+  "h": 900,
+  "source": "commons",
+  "wholeAnimal": true
  },
  "zebra": {
   "file": "zebra.jpg",
@@ -373,77 +390,93 @@
  },
  "hippo": {
   "file": "hippo.jpg",
-  "commons": "Pygmy_hippo.jpg",
-  "license": "CC BY-SA 2.0",
-  "author": "Scott Sandars from Melbourne, Australia",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Pygmy_hippo.jpg",
+  "commons": "Group of Hippopotamus amphibius.jpg",
+  "license": "CC0",
+  "author": "Nkunda102",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Group_of_Hippopotamus_amphibius.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Hippopotamus",
   "attributionRequired": true,
-  "w": 733,
-  "h": 733
+  "w": 900,
+  "h": 900,
+  "source": "commons",
+  "wholeAnimal": true
  },
  "rhino": {
   "file": "rhino.jpg",
-  "commons": "Ceratotherium_simum-portrait-Lisbon_02.JPG",
-  "license": "CC BY-SA 3.0",
-  "author": "Salix",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Ceratotherium_simum-portrait-Lisbon_02.JPG",
+  "commons": "Day 29 White Rhino (Ceratotherium simum) (53269932150).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Bernard DUPONT from FRANCE",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Day_29_White_Rhino_(Ceratotherium_simum)_(53269932150).jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Rhinoceros",
   "attributionRequired": true,
-  "w": 825,
-  "h": 825,
+  "w": 900,
+  "h": 900,
   "cutSource": {
    "commons": "File:Day 14 White Rhinos (Ceratotherium simum) female and young ... (53233854255).jpg",
    "license": "CC BY-SA 2.0",
    "author": "Bernard DUPONT from FRANCE",
    "descUrl": "https://commons.wikimedia.org/wiki/File:Day_14_White_Rhinos_(Ceratotherium_simum)_female_and_young_..._(53233854255).jpg"
+  },
+  "source": "commons",
+  "wholeAnimal": true,
+  "noseSource": {
+   "commons": "White Rhinoceros (Ceratotherium simum) (30008359716).jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Bernard DUPONT from FRANCE",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:White_Rhinoceros_(Ceratotherium_simum)_(30008359716).jpg"
   }
  },
  "monkey": {
   "file": "monkey.jpg",
-  "commons": "Mandrill face",
-  "license": "BY 2.0",
-  "author": "Steve Wilson - over 10 million views Thanks !!",
-  "descUrl": "https://www.flickr.com/photos/26811962@N05/9075805380",
+  "commons": "Mandrill and flower.jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "Brocken Inaglory",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Mandrill_and_flower.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Monkey",
-  "source": "flickr",
+  "source": "commons",
   "attributionRequired": true,
-  "w": 983,
-  "h": 983
+  "w": 900,
+  "h": 900,
+  "wholeAnimal": true
  },
  "gorilla": {
   "file": "gorilla.jpg",
-  "commons": "A_Gorilla_Good_Morning_(63683883).jpeg",
-  "license": "CC BY 3.0",
-  "author": "Dylan Colon",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:A_Gorilla_Good_Morning_(63683883).jpeg",
+  "commons": "Young western lowland gorilla in tree.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "JosepMGracia",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Young_western_lowland_gorilla_in_tree.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Gorilla",
   "attributionRequired": true,
-  "w": 730,
-  "h": 730
+  "w": 900,
+  "h": 900,
+  "source": "commons",
+  "wholeAnimal": true
  },
  "proboscismonkey": {
   "file": "proboscismonkey.jpg",
-  "commons": "This female came pretty close",
-  "license": "BY 2.0",
-  "author": "shankar s.",
-  "descUrl": "https://www.flickr.com/photos/77742560@N06/11113513706",
+  "commons": "Proboscis Monkey (13970771490).jpg",
+  "license": "CC BY 2.0",
+  "author": "Mike Prince from Bangalore, India",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Proboscis_Monkey_(13970771490).jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Proboscis_monkey",
-  "source": "flickr",
+  "source": "commons",
   "attributionRequired": true,
-  "w": 680,
-  "h": 680
+  "w": 900,
+  "h": 900,
+  "wholeAnimal": true
  },
  "camel": {
   "file": "camel.jpg",
-  "commons": "Camel_face.jpg",
-  "license": "Public domain",
-  "author": "Self",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Camel_face.jpg",
+  "commons": "Arab Strollers, 29 Sep, 2024Canon EOS R71-800 @ f-4.535 mm.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Goodones",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Arab_Strollers,_29_Sep,_2024Canon_EOS_R71-800_@_f-4.535_mm.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Camel",
   "attributionRequired": false,
-  "w": 825,
-  "h": 825
+  "w": 900,
+  "h": 900,
+  "source": "commons",
+  "wholeAnimal": true
  },
  "crocodile": {
   "file": "crocodile.jpg",
@@ -473,10 +506,10 @@
  },
  "starnosedmole": {
   "file": "starnosedmole.jpg",
-  "commons": "Condylura cristata (Ontario, Canada) 3.jpg",
+  "commons": "Condylura cristata 135791796.jpg",
   "license": "CC BY 4.0",
-  "author": "Dan MacNeal",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Condylura_cristata_(Ontario,_Canada)_3.jpg",
+  "author": "Marilyne Busque-Dubois",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Condylura_cristata_135791796.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Star-nosed_mole",
   "attributionRequired": true,
   "w": 900,
@@ -486,14 +519,16 @@
  },
  "tapir": {
   "file": "tapir.jpg",
-  "commons": "Anta_na_RPPN_Cristalino.jpg",
-  "license": "CC BY-SA 4.0",
-  "author": "Fábio Mitsuka Paschoal",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Anta_na_RPPN_Cristalino.jpg",
+  "commons": "Lowland Tapir (Tapirus terrestris) male out of the forest ... - Flickr - berniedup.jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Bernard DUPONT from FRANCE",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Lowland_Tapir_(Tapirus_terrestris)_male_out_of_the_forest_..._-_Flickr_-_berniedup.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Tapir",
   "attributionRequired": true,
-  "w": 733,
-  "h": 733
+  "w": 900,
+  "h": 900,
+  "source": "commons",
+  "wholeAnimal": true
  },
  "anteater": {
   "file": "anteater.jpg",
@@ -537,14 +572,16 @@
  },
  "echidna": {
   "file": "echidna.jpg",
-  "commons": "Close-up_of_a_short-beaked_echidna_(Tachyglossus_aculeatus),_photographed_in_Wilks_Park_Wildlife_Restoration_Area_(1).jpg",
-  "license": "CC BY-SA 3.0 au",
-  "author": "Bidgee",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_short-beaked_echidna_(Tachyglossus_aculeatus),_photographed_in_Wilks_Park_Wildlife_Restoration_Area_(1).jpg",
+  "commons": "Echidna (Tachyglossus aculeatus setosus).jpg",
+  "license": "CC BY-SA 3.0",
+  "author": "JKMelville",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Echidna_(Tachyglossus_aculeatus_setosus).jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Echidna",
   "attributionRequired": true,
-  "w": 733,
-  "h": 733
+  "w": 900,
+  "h": 900,
+  "source": "commons",
+  "wholeAnimal": true
  },
  "whale": {
   "file": "whale.jpg",
@@ -580,21 +617,23 @@
  },
  "seal": {
   "file": "seal.jpg",
-  "commons": "Ringedsealportrait.jpg",
-  "license": "Public domain",
-  "author": "Lee Cooper",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Ringedsealportrait.jpg",
+  "commons": "Zeehondencreche Pieterburen-2.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "GerardM",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Zeehondencreche_Pieterburen-2.JPG",
   "wikipedia": "https://en.wikipedia.org/wiki/Pinniped",
   "attributionRequired": false,
-  "w": 600,
-  "h": 600
+  "w": 900,
+  "h": 900,
+  "source": "commons",
+  "wholeAnimal": true
  },
  "walrus": {
   "file": "walrus.jpg",
-  "commons": "Man and walrus doing press-ups in Anapa dolphinarium (cropped).jpg",
-  "license": "CC BY-SA 4.0",
-  "author": "Роман Дергунов",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Man_and_walrus_doing_press-ups_in_Anapa_dolphinarium_(cropped).jpg",
+  "commons": "Close up of head of young bull walrus marine mammal in water odobenus rosmarus.jpg",
+  "license": "Public domain",
+  "author": "Joel Garlich-Miller, U.S. Fish and Wildlife Service",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Close_up_of_head_of_young_bull_walrus_marine_mammal_in_water_odobenus_rosmarus.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Walrus",
   "attributionRequired": false,
   "w": 900,
@@ -619,14 +658,20 @@
    "descUrl": "https://www.flickr.com/photos/48948205@N00/2102738070"
   },
   "source": "commons",
-  "wholeAnimal": true
+  "wholeAnimal": true,
+  "noseSource": {
+   "commons": "Carcharhinus melanopterus Luc Viatour.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Luc Viatour",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Carcharhinus_melanopterus_Luc_Viatour.jpg"
+  }
  },
  "fish": {
   "file": "fish.jpg",
-  "commons": "LIFE Streams - The LIFE Programme project (P-068747-00-02).jpg",
-  "license": "CC BY 4.0",
-  "author": "unknown",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:LIFE_Streams_-_The_LIFE_Programme_project_(P-068747-00-02).jpg",
+  "commons": "Le Bugue - Aquarium du Périgord noir - Poissons - 008.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Thesupermat",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Le_Bugue_-_Aquarium_du_P%C3%A9rigord_noir_-_Poissons_-_008.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Fish",
   "attributionRequired": true,
   "w": 900,
@@ -647,14 +692,16 @@
  },
  "snake": {
   "file": "snake.jpg",
-  "commons": "Close-up_photo_of_Anerythristic_Type_A_corn_snake_head.jpg",
-  "license": "CC0",
-  "author": "EthanPo",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Close-up_photo_of_Anerythristic_Type_A_corn_snake_head.jpg",
+  "commons": "Elaphe anomala 5772392.jpg",
+  "license": "CC BY 4.0",
+  "author": "Kim, Hyun-tae",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Elaphe_anomala_5772392.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Snake",
   "attributionRequired": false,
-  "w": 1000,
-  "h": 1000
+  "w": 900,
+  "h": 900,
+  "source": "commons",
+  "wholeAnimal": true
  },
  "butterfly": {
   "file": "butterfly.jpg",
@@ -669,15 +716,16 @@
  },
  "bee": {
   "file": "bee.jpg",
-  "commons": "Sweat bee, Nomia species, face",
-  "license": "CC0 1.0",
-  "author": "usgsbee",
-  "descUrl": "https://www.rawpixel.com/image/8752494/sweat-bee-nomia-species-face",
+  "commons": "Abeille buckfast ?.JPG",
+  "license": "CC BY-SA 3.0",
+  "author": "Marc Andrighetti",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Abeille_buckfast_%3F.JPG",
   "wikipedia": "https://en.wikipedia.org/wiki/Bee",
-  "source": "rawpixel",
+  "source": "commons",
   "attributionRequired": false,
-  "w": 802,
-  "h": 802
+  "w": 900,
+  "h": 900,
+  "wholeAnimal": true
  },
  "snail": {
   "file": "snail.jpg",
@@ -692,31 +740,33 @@
  },
  "lizard": {
   "file": "lizard.jpg",
-  "commons": "Close face green iguana",
-  "license": "CC0",
-  "author": "unknown",
-  "descUrl": "https://www.rawpixel.com/image/6022436/photo-image-face-texture-public-domain",
-  "source": "rawpixel",
+  "commons": "Caldasiguana.JPG",
+  "license": "CC BY 3.0",
+  "author": "Andrevruas",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Caldasiguana.JPG",
+  "source": "commons",
   "attributionRequired": false,
-  "w": 768,
-  "h": 768,
+  "w": 900,
+  "h": 900,
   "cutSource": {
    "commons": "File:Caldasiguana.JPG",
    "license": "CC BY 3.0",
    "author": "Andrevruas",
    "descUrl": "https://commons.wikimedia.org/wiki/File:Caldasiguana.JPG"
-  }
+  },
+  "wholeAnimal": true
  },
  "monitor": {
   "file": "monitor.jpg",
-  "commons": "File:Ackie face.jpg",
-  "license": "CC BY-SA 4.0",
-  "author": "Merryeli",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Ackie_face.jpg",
-  "source": "wikimedia",
+  "commons": "Samar water monitor imported from iNaturalist photo 410634583 on 3 December 2024 (cropped).jpg",
+  "license": "CC BY 4.0",
+  "author": "(c) Wouter Beukema, some rights reserved (CC BY)",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Samar_water_monitor_imported_from_iNaturalist_photo_410634583_on_3_December_2024_(cropped).jpg",
+  "source": "commons",
   "attributionRequired": true,
-  "w": 733,
-  "h": 733
+  "w": 900,
+  "h": 900,
+  "wholeAnimal": true
  },
  "warthog": {
   "file": "warthog.jpg",
@@ -731,13 +781,14 @@
  },
  "orca": {
   "file": "orca.jpg",
-  "commons": "Orca spray",
-  "license": "BY-SA",
-  "author": "Unhindered by Talent",
-  "descUrl": "https://www.flickr.com/photos/26406919@N00/1018409504",
-  "source": "flickr",
+  "commons": "Anim1110 - Flickr - NOAA Photo Library.jpg",
+  "license": "Public domain",
+  "author": "NOAA Photo Library",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Anim1110_-_Flickr_-_NOAA_Photo_Library.jpg",
+  "source": "commons",
   "attributionRequired": true,
-  "w": 683,
-  "h": 683
+  "w": 900,
+  "h": 900,
+  "wholeAnimal": true
  }
 }

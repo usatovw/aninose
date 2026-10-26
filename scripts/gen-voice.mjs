@@ -52,8 +52,20 @@ for (const [k,v] of Object.entries({
   'ui-game':'Давай поиграем! Чей это носик?',
 })) add(k, v);
 
+// Режим выгрузки: отдаём готовые строки питону, он проставляет ударения
+// через ruaccent (словарь + модель омографов), и мы синтезируем уже их.
+// Без ударений модель читает «бабочка» как «бабУшка», «звездонос» наугад.
+if (process.argv.includes('--dump')) {
+  fs.writeFileSync('content/voice-lines.json', JSON.stringify(lines, null, 1));
+  console.log('строк выгружено:', lines.length);
+  process.exit(0);
+}
+const STRESS = fs.existsSync('content/voice-stress.json')
+  ? JSON.parse(fs.readFileSync('content/voice-stress.json', 'utf8')) : {};
+
 let spent = 0, made = 0, cached = 0;
-for (const { key, text } of lines) {
+for (const { key, text: plain } of lines) {
+  const text = STRESS[key] || plain;
   const h = crypto.createHash('sha1').update(MODEL + VOICE + text).digest('hex').slice(0,12);
   if (map[key]?.hash === h && fs.existsSync(`${OUT}/${key}.mp3`)) { cached++; continue; }
   const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${VOICE}?output_format=mp3_44100_128`, {

@@ -11,6 +11,9 @@ const MODEL = 'eleven_multilingual_v2';
 const OUT = 'public/media/voice';
 const MAP = 'content/voice-map.json';
 const map = JSON.parse(fs.readFileSync(MAP, 'utf8'));
+// синтезируем вариант с ударениями — он же лежит в карте
+const STRESS = fs.existsSync('content/voice-stress.json')
+  ? JSON.parse(fs.readFileSync('content/voice-stress.json', 'utf8')) : {};
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 // знаки ударения в сравнении не участвуют: они влияют на речь, не на слова
@@ -42,7 +45,7 @@ async function stt(buf, name) {
 
 const keys = process.argv.slice(2);
 for (const key of keys) {
-  const text = map[key]?.text;
+  const text = STRESS[key] || map[key]?.text;
   if (!text) { console.log('нет такой строки:', key); continue; }
   let ok = false;
   for (const vs of TRIES) {

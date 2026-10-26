@@ -8,61 +8,61 @@
 |---|---|---|---|
 | Собака | [Dog In The Snow](https://www.flickr.com/photos/51035655291@N01/131841577) | liber | by-sa |
 | Кошка | [Stray cat full body portrait](https://www.flickr.com/photos/26344495@N05/28065058453) | Ivan Radic | by |
-| Корова | [Animal SM (2784423580).jpg](https://commons.wikimedia.org/wiki/File:Animal_SM_(2784423580).jpg) | FaceMePLS from The Hague, The Netherlands | CC BY 2.0 |
-| Лошадка | [File:Ancient horse head.jpg](https://commons.wikimedia.org/wiki/File:Ancient_horse_head.jpg) | C. E. Price | PUBLIC DOMAIN |
-| Свинка | [A close-up of a brown pig looking through a rusty wire fence, surrounded by fallen leaves on the ground.](https://wordpress.org/photos/photo/84769e10f0/) | lrodriguez20765 | CC0 1.0 |
+| Корова | [A cow.jpg](https://commons.wikimedia.org/wiki/File:A_cow.jpg) | Arisepeter | CC BY-SA 4.0 |
+| Лошадка | [A cheval en estivage près de l'Ar du Tsan DSC 0766 (51406676097).jpg](https://commons.wikimedia.org/wiki/File:A_cheval_en_estivage_pr%C3%A8s_de_l%27Ar_du_Tsan_DSC_0766_(51406676097).jpg) | Pierre-Marie Epiney | CC BY-SA 2.0 |
+| Свинка | [120814 Museumsdorf A 065 (1).jpg](https://commons.wikimedia.org/wiki/File:120814_Museumsdorf_A_065_(1).jpg) | weisserstier from Wien, Austria | CC BY 2.0 |
 | Овечка | [Free sheep standing grass field](https://www.rawpixel.com/image/5909966/image-background-public-domain-green) | unknown | cc0 |
 | Козочка | [Goat Standing in Barnyard](https://www.flickr.com/photos/8749778@N06/30642602755) | Eric Kilby | by-sa |
 | Курочка | [Chicken standing table](https://www.rawpixel.com/image/3300594/free-photo-image-hen-animal-bench) | unknown | cc0 |
 | Уточка | [A brown speckled duck standing on a stone path, with a blurred background of trees and foliage illuminated by soft sunlight. The duck is facing slightly to the side, showcasing its arched neck and distinct blue-gray bill.](https://wordpress.org/photos/photo/6016858545/) | Nilo Velez | cc0 |
 | Зайчик | [Conejo_astronomo.png](https://commons.wikimedia.org/wiki/File:Conejo_astronomo.png) | derivative work: Photohound (talk) Conejo_astronomo1.jpg: Masteruk | CC BY 3.0 |
-| Хомячок | [Russian Dwarf Hamster in the Garden](https://www.flickr.com/photos/23516192@N08/2725617059) | cdrussorusso | by |
+| Хомячок | [Хом'як жора.jpg](https://commons.wikimedia.org/wiki/File:%D0%A5%D0%BE%D0%BC%27%D1%8F%D0%BA_%D0%B6%D0%BE%D1%80%D0%B0.jpg) | Yutooq | CC BY-SA 4.0 |
 | Морская свинка | [Cochon d'Inde (Cavia porcellus) (1).jpg](https://commons.wikimedia.org/wiki/File:Cochon_d%27Inde_(Cavia_porcellus)_(1).jpg) | Gzen92 | CC BY-SA 4.0 |
 | Медведь | [Brown Bear standing in river](https://www.flickr.com/photos/76641642@N08/50377060656) | BLM Alaska | by |
-| Волк | [Farkas_2.jpg](https://commons.wikimedia.org/wiki/File:Farkas_2.jpg) | Pilgab | CC BY-SA 3.0 |
-| Лисичка | [Red_fox_face_mammal_vulpes_vulpes.jpg](https://commons.wikimedia.org/wiki/File:Red_fox_face_mammal_vulpes_vulpes.jpg) | U.S. Fish and Wildlife Service | Public domain |
+| Волк | [Wolves (53022772048).jpg](https://commons.wikimedia.org/wiki/File:Wolves_(53022772048).jpg) | Jennifer C. | CC BY 2.0 |
+| Лисичка | [Fox Den (47990408151).jpg](https://commons.wikimedia.org/wiki/File:Fox_Den_(47990408151).jpg) | Larry Lamsa | CC BY 2.0 |
 | Ёжик | [South_African_hedgehog_lying_close_up_-_DPLA_-_99f194ab3746fbc43835fd7d3a0616a6.jpg](https://commons.wikimedia.org/wiki/File:South_African_hedgehog_lying_close_up_-_DPLA_-_99f194ab3746fbc43835fd7d3a0616a6.jpg) | Garst, Warren, 1922-2016, photographer | CC BY-SA 4.0 |
 | Белочка | [Free squirrel standing dirt floor](https://www.rawpixel.com/image/5907298/photo-image-background-public-domain-nature) | unknown | cc0 |
-| Оленёнок | [Baby deer](https://www.flickr.com/photos/78341140@N00/5673714658) | waitscm | BY 2.0 |
+| Оленёнок | [Formosan Sika at Beijing Wildlife Park image 4.jpg](https://commons.wikimedia.org/wiki/File:Formosan_Sika_at_Beijing_Wildlife_Park_image_4.jpg) | TarnishedPath | CC BY-SA 4.0 |
 | Лось | [Moose standing field](https://www.rawpixel.com/image/6040005/photo-image-background-public-domain-free) | unknown | cc0 |
 | Кабан | [Bachyně se selátky.jpg](https://commons.wikimedia.org/wiki/File:Bachyn%C4%9B_se_sel%C3%A1tky.jpg) | Luiseach94 | CC BY-SA 4.0 |
-| Кротик | [Mole, animal](https://www.rawpixel.com/image/6041713/mole-animal-free-public-domain-cc0-photo) | unknown | cc0 |
+| Кротик | [DSC 0044 (32492377818).jpg](https://commons.wikimedia.org/wiki/File:DSC_0044_(32492377818).jpg) | JOE BLOWE from Bountiful, Utah, Iran | CC BY-SA 2.0 |
 | Мышка | [Kletterkünstler_Hausmaus.JPG](https://commons.wikimedia.org/wiki/File:Kletterk%C3%BCnstler_Hausmaus.JPG) | 4028mdk09 | CC BY-SA 3.0 |
 | Бобр | [European_beaver_sitting_in_snow_close_up_-_DPLA_-_91ceee45dcf84a61a16e556c881ac667.jpg](https://commons.wikimedia.org/wiki/File:European_beaver_sitting_in_snow_close_up_-_DPLA_-_91ceee45dcf84a61a16e556c881ac667.jpg) | Garst, Warren, 1922-2016, photographer | CC BY-SA 4.0 |
 | Слон | [African forest elephant drinking at Dzanga Bai.jpg](https://commons.wikimedia.org/wiki/File:African_forest_elephant_drinking_at_Dzanga_Bai.jpg) | JosepMGracia | CC BY-SA 4.0 |
-| Жираф | [SEDONA AZ](https://www.flickr.com/photos/77890596@N04/7655974560) | shock264 | BY 2.0 |
-| Лев | [White lion head](https://www.flickr.com/photos/136371668@N06/21718431626) | DJM Photos | BY 2.0 |
-| Тигр | [Tiger_Face_(10971343685).jpg](https://commons.wikimedia.org/wiki/File:Tiger_Face_(10971343685).jpg) | Steve Wilson - over 6 million views Thanks !! from Chester, UK | CC BY 2.0 |
+| Жираф | [Girafe du parc national de Zakouma.jpg](https://commons.wikimedia.org/wiki/File:Girafe_du_parc_national_de_Zakouma.jpg) | Fatakaya | CC BY-SA 4.0 |
+| Лев | [Lion (51647683166).jpg](https://commons.wikimedia.org/wiki/File:Lion_(51647683166).jpg) | Mathias Appel | CC0 |
+| Тигр | [Feline grace by nagarjun.jpg](https://commons.wikimedia.org/wiki/File:Feline_grace_by_nagarjun.jpg) | Kandukuru Nagarjun | CC BY 2.0 |
 | Зебра | [Zebra standing in dry grassland](https://www.rawpixel.com/image/6081422/zebra) | unknown | cc0 |
-| Бегемот | [Pygmy_hippo.jpg](https://commons.wikimedia.org/wiki/File:Pygmy_hippo.jpg) | Scott Sandars from Melbourne, Australia | CC BY-SA 2.0 |
-| Носорог | [Ceratotherium_simum-portrait-Lisbon_02.JPG](https://commons.wikimedia.org/wiki/File:Ceratotherium_simum-portrait-Lisbon_02.JPG) | Salix | CC BY-SA 3.0 |
-| Обезьянка | [Mandrill face](https://www.flickr.com/photos/26811962@N05/9075805380) | Steve Wilson - over 10 million views Thanks !! | BY 2.0 |
-| Горилла | [A_Gorilla_Good_Morning_(63683883).jpeg](https://commons.wikimedia.org/wiki/File:A_Gorilla_Good_Morning_(63683883).jpeg) | Dylan Colon | CC BY 3.0 |
-| Носач | [This female came pretty close](https://www.flickr.com/photos/77742560@N06/11113513706) | shankar s. | BY 2.0 |
-| Верблюд | [Camel_face.jpg](https://commons.wikimedia.org/wiki/File:Camel_face.jpg) | Self | Public domain |
+| Бегемот | [Group of Hippopotamus amphibius.jpg](https://commons.wikimedia.org/wiki/File:Group_of_Hippopotamus_amphibius.jpg) | Nkunda102 | CC0 |
+| Носорог | [Day 29 White Rhino (Ceratotherium simum) (53269932150).jpg](https://commons.wikimedia.org/wiki/File:Day_29_White_Rhino_(Ceratotherium_simum)_(53269932150).jpg) | Bernard DUPONT from FRANCE | CC BY-SA 2.0 |
+| Обезьянка | [Mandrill and flower.jpg](https://commons.wikimedia.org/wiki/File:Mandrill_and_flower.jpg) | Brocken Inaglory | CC BY-SA 3.0 |
+| Горилла | [Young western lowland gorilla in tree.jpg](https://commons.wikimedia.org/wiki/File:Young_western_lowland_gorilla_in_tree.jpg) | JosepMGracia | CC BY-SA 4.0 |
+| Носач | [Proboscis Monkey (13970771490).jpg](https://commons.wikimedia.org/wiki/File:Proboscis_Monkey_(13970771490).jpg) | Mike Prince from Bangalore, India | CC BY 2.0 |
+| Верблюд | [Arab Strollers, 29 Sep, 2024Canon EOS R71-800 @ f-4.535 mm.jpg](https://commons.wikimedia.org/wiki/File:Arab_Strollers,_29_Sep,_2024Canon_EOS_R71-800_@_f-4.535_mm.jpg) | Goodones | CC BY-SA 4.0 |
 | Крокодил | [BDF Wildlife Training Area](https://www.flickr.com/photos/36281822@N08/4903474111) | US Army Africa | by |
 | Страус | [1M2A4860 (44158694950).jpg](https://commons.wikimedia.org/wiki/File:1M2A4860_(44158694950).jpg) | Stephen Temple from Cape Town, South Africa | CC BY-SA 2.0 |
-| Звездонос | [Condylura cristata (Ontario, Canada) 3.jpg](https://commons.wikimedia.org/wiki/File:Condylura_cristata_(Ontario,_Canada)_3.jpg) | Dan MacNeal | CC BY 4.0 |
-| Тапир | [Anta_na_RPPN_Cristalino.jpg](https://commons.wikimedia.org/wiki/File:Anta_na_RPPN_Cristalino.jpg) | Fábio Mitsuka Paschoal | CC BY-SA 4.0 |
+| Звездонос | [Condylura cristata 135791796.jpg](https://commons.wikimedia.org/wiki/File:Condylura_cristata_135791796.jpg) | Marilyne Busque-Dubois | CC BY 4.0 |
+| Тапир | [Lowland Tapir (Tapirus terrestris) male out of the forest ... - Flickr - berniedup.jpg](https://commons.wikimedia.org/wiki/File:Lowland_Tapir_(Tapirus_terrestris)_male_out_of_the_forest_..._-_Flickr_-_berniedup.jpg) | Bernard DUPONT from FRANCE | CC BY-SA 2.0 |
 | Муравьед | [Giant Anteater](https://www.flickr.com/photos/7326810@N08/3050076599) | Just chaos | BY 2.0 |
 | Сайгак | [Saiga_tartarica_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Saiga_tartarica_(cropped).jpg) | Navinder Singh | CC BY-SA 4.0 |
 | Утконос | [Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale_2.jpg](https://commons.wikimedia.org/wiki/File:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale_2.jpg) | Charles J. Sharp | CC BY-SA 4.0 |
-| Ехидна | [Close-up_of_a_short-beaked_echidna_(Tachyglossus_aculeatus),_photographed_in_Wilks_Park_Wildlife_Restoration_Area_(1).jpg](https://commons.wikimedia.org/wiki/File:Close-up_of_a_short-beaked_echidna_(Tachyglossus_aculeatus),_photographed_in_Wilks_Park_Wildlife_Restoration_Area_(1).jpg) | Bidgee | CC BY-SA 3.0 au |
+| Ехидна | [Echidna (Tachyglossus aculeatus setosus).jpg](https://commons.wikimedia.org/wiki/File:Echidna_(Tachyglossus_aculeatus_setosus).jpg) | JKMelville | CC BY-SA 3.0 |
 | Кит | [A massive humpback whale glides directly beneath camera.jpg](https://commons.wikimedia.org/wiki/File:A_massive_humpback_whale_glides_directly_beneath_camera.jpg) | Stanislav Stelmakhovich | CC0 |
 | Дельфин | [Swimming Mates (Bottlenose Dolphin - Tursiops Truncatus)](https://www.flickr.com/photos/28647421@N04/8379105139) | MashiurR | by |
-| Тюлень | [Ringedsealportrait.jpg](https://commons.wikimedia.org/wiki/File:Ringedsealportrait.jpg) | Lee Cooper | Public domain |
-| Морж | [Man and walrus doing press-ups in Anapa dolphinarium (cropped).jpg](https://commons.wikimedia.org/wiki/File:Man_and_walrus_doing_press-ups_in_Anapa_dolphinarium_(cropped).jpg) | Роман Дергунов | CC BY-SA 4.0 |
+| Тюлень | [Zeehondencreche Pieterburen-2.JPG](https://commons.wikimedia.org/wiki/File:Zeehondencreche_Pieterburen-2.JPG) | GerardM | CC BY-SA 3.0 |
+| Морж | [Close up of head of young bull walrus marine mammal in water odobenus rosmarus.jpg](https://commons.wikimedia.org/wiki/File:Close_up_of_head_of_young_bull_walrus_marine_mammal_in_water_odobenus_rosmarus.jpg) | Joel Garlich-Miller, U.S. Fish and Wildlife Service | Public domain |
 | Акула | [Bukangi.png](https://commons.wikimedia.org/wiki/File:Bukangi.png) | 수산자원연구부 | KOGL Type 1 |
-| Рыбка | [LIFE Streams - The LIFE Programme project (P-068747-00-02).jpg](https://commons.wikimedia.org/wiki/File:LIFE_Streams_-_The_LIFE_Programme_project_(P-068747-00-02).jpg) | unknown | CC BY 4.0 |
+| Рыбка | [Le Bugue - Aquarium du Périgord noir - Poissons - 008.jpg](https://commons.wikimedia.org/wiki/File:Le_Bugue_-_Aquarium_du_P%C3%A9rigord_noir_-_Poissons_-_008.jpg) | Thesupermat | CC BY-SA 4.0 |
 | Киви | [Apteryx_mantelli_-Rotorua,_North_Island,_New_Zealand-8a.jpg](https://commons.wikimedia.org/wiki/File:Apteryx_mantelli_-Rotorua,_North_Island,_New_Zealand-8a.jpg) | The.Rohit | CC BY 2.0 |
-| Змейка | [Close-up_photo_of_Anerythristic_Type_A_corn_snake_head.jpg](https://commons.wikimedia.org/wiki/File:Close-up_photo_of_Anerythristic_Type_A_corn_snake_head.jpg) | EthanPo | CC0 |
+| Змейка | [Elaphe anomala 5772392.jpg](https://commons.wikimedia.org/wiki/File:Elaphe_anomala_5772392.jpg) | Kim, Hyun-tae | CC BY 4.0 |
 | Бабочка | [Fesoj_-_Papilio_machaon_(by).jpg](https://commons.wikimedia.org/wiki/File:Fesoj_-_Papilio_machaon_(by).jpg) | fesoj | CC BY 2.0 |
-| Пчёлка | [Sweat bee, Nomia species, face](https://www.rawpixel.com/image/8752494/sweat-bee-nomia-species-face) | usgsbee | CC0 1.0 |
+| Пчёлка | [Abeille buckfast ?.JPG](https://commons.wikimedia.org/wiki/File:Abeille_buckfast_%3F.JPG) | Marc Andrighetti | CC BY-SA 3.0 |
 | Улитка | [2015-09-15-1206_(21411761176).jpg](https://commons.wikimedia.org/wiki/File:2015-09-15-1206_(21411761176).jpg) | teteria sonnna from Obukhiv, Ukraine | CC BY 2.0 |
-| Ящерица | [Close face green iguana](https://www.rawpixel.com/image/6022436/photo-image-face-texture-public-domain) | unknown | CC0 |
-| Варан | [File:Ackie face.jpg](https://commons.wikimedia.org/wiki/File:Ackie_face.jpg) | Merryeli | CC BY-SA 4.0 |
+| Ящерица | [Caldasiguana.JPG](https://commons.wikimedia.org/wiki/File:Caldasiguana.JPG) | Andrevruas | CC BY 3.0 |
+| Варан | [Samar water monitor imported from iNaturalist photo 410634583 on 3 December 2024 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Samar_water_monitor_imported_from_iNaturalist_photo_410634583_on_3_December_2024_(cropped).jpg) | (c) Wouter Beukema, some rights reserved (CC BY) | CC BY 4.0 |
 | Бородавочник | [File:Red warthog (6073674924).jpg](https://commons.wikimedia.org/wiki/File:Red_warthog_(6073674924).jpg) | Derek Keats from Johannesburg, South Africa | CC BY 2.0 |
-| Косатка | [Orca spray](https://www.flickr.com/photos/26406919@N00/1018409504) | Unhindered by Talent | BY-SA |
+| Косатка | [Anim1110 - Flickr - NOAA Photo Library.jpg](https://commons.wikimedia.org/wiki/File:Anim1110_-_Flickr_-_NOAA_Photo_Library.jpg) | NOAA Photo Library | Public domain |
 
 ## Фотографии, из которых вырезаны силуэты
 
