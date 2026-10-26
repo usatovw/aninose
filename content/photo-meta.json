@@ -142,7 +142,13 @@
   "wikipedia": "https://en.wikipedia.org/wiki/Rabbit",
   "attributionRequired": true,
   "w": 600,
-  "h": 600
+  "h": 600,
+  "noseSource": {
+   "commons": "Oryctolagus-cuniculus-and-carrot.png",
+   "license": "CC BY-SA 3.0",
+   "author": "User:ElC",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Oryctolagus-cuniculus-and-carrot.png"
+  }
  },
  "hamster": {
   "file": "hamster.jpg",
@@ -241,7 +247,13 @@
   "source": "openverse",
   "attributionRequired": true,
   "w": 900,
-  "h": 900
+  "h": 900,
+  "noseSource": {
+   "commons": "Garten 112.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Fischer.H",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Garten_112.jpg"
+  }
  },
  "deer": {
   "file": "deer.jpg",
