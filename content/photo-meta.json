@@ -726,7 +726,13 @@
   "w": 900,
   "h": 900,
   "source": "commons",
-  "wholeAnimal": true
+  "wholeAnimal": true,
+  "noseSource": {
+   "commons": "Brown Red Snake Flicking Forked Tongue 5.jpg",
+   "license": "CC BY 2.0",
+   "author": "Amaury Laporte",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Brown_Red_Snake_Flicking_Forked_Tongue_5.jpg"
+  }
  },
  "butterfly": {
   "file": "butterfly.jpg",
@@ -765,10 +771,10 @@
  },
  "lizard": {
   "file": "lizard.jpg",
-  "commons": "Caldasiguana.JPG",
-  "license": "CC BY 3.0",
-  "author": "Andrevruas",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Caldasiguana.JPG",
+  "commons": "Common green iguana lying on sand - DPLA - 26be368d3ba5ee3801a1b3376df7ea80.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "Garst, Warren, 1922-2016, photographer",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Common_green_iguana_lying_on_sand_-_DPLA_-_26be368d3ba5ee3801a1b3376df7ea80.jpg",
   "source": "commons",
   "attributionRequired": false,
   "w": 900,
@@ -781,23 +787,29 @@
   },
   "wholeAnimal": true,
   "noseSource": {
-   "commons": "Cool Guy (3578092058).jpg",
+   "commons": "Iguana iguana tongue.jpg",
    "license": "CC BY 2.0",
-   "author": "Erich Ferdinand from germany",
-   "descUrl": "https://commons.wikimedia.org/wiki/File:Cool_Guy_(3578092058).jpg"
+   "author": "David Björn from D.F, Mexico",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Iguana_iguana_tongue.jpg"
   }
  },
  "monitor": {
   "file": "monitor.jpg",
-  "commons": "Samar water monitor imported from iNaturalist photo 410634583 on 3 December 2024 (cropped).jpg",
-  "license": "CC BY 4.0",
-  "author": "(c) Wouter Beukema, some rights reserved (CC BY)",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Samar_water_monitor_imported_from_iNaturalist_photo_410634583_on_3_December_2024_(cropped).jpg",
+  "commons": "Parc de Niokolo-Koba, Sénégal - COD260725-160.jpg",
+  "license": "CC BY-SA 4.0",
+  "author": "COD photographer",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Parc_de_Niokolo-Koba,_S%C3%A9n%C3%A9gal_-_COD260725-160.jpg",
   "source": "commons",
   "attributionRequired": true,
   "w": 900,
   "h": 900,
-  "wholeAnimal": true
+  "wholeAnimal": true,
+  "noseSource": {
+   "commons": "Bengal monitor at Anawilundawa Bird Sanctuary - (A Mischievous Grin).jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Senthi Aathavan Senthilverl",
+   "descUrl": "https://commons.wikimedia.org/wiki/File:Bengal_monitor_at_Anawilundawa_Bird_Sanctuary_-_(A_Mischievous_Grin).jpg"
+  }
  },
  "warthog": {
   "file": "warthog.jpg",

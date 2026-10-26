@@ -14,16 +14,6 @@
   "seconds": 2,
   "source": "ElevenLabs sound effects"
  },
- "bear": {
-  "prompt": "a low soft bear huff and grunt, calm not aggressive",
-  "seconds": 2,
-  "source": "ElevenLabs sound effects"
- },
- "wolf": {
-  "prompt": "a short gentle wolf howl, distant and soft",
-  "seconds": 2,
-  "source": "ElevenLabs sound effects"
- },
  "fox": {
   "prompt": "a short fox bark call in a quiet forest",
   "seconds": 2,

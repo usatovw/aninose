@@ -2,15 +2,21 @@
 // Аргументы: id:индекс[:cx[:cy]]
 import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
-const MORE = JSON.parse(fs.readFileSync('scripts/.media-cache/more.json', 'utf8'));
+const POOLS = {
+  more: JSON.parse(fs.readFileSync('scripts/.media-cache/more.json', 'utf8')),
+  noses: fs.existsSync('scripts/.media-cache/noses.json')
+    ? JSON.parse(fs.readFileSync('scripts/.media-cache/noses.json', 'utf8')) : {},
+};
 const META = 'content/photo-meta.json';
 const meta = JSON.parse(fs.readFileSync(META, 'utf8'));
 const UA = 'aninose/1.0 (children educational project; github.com/usatovw/aninose)';
 fs.mkdirSync('media-src/whole', { recursive: true });
 
 for (const arg of process.argv.slice(2)) {
-  const [id, idx, cx = '0.5', cy = '0.5'] = arg.split(':');
-  const c = MORE[id]?.[Number(idx)];
+  // id:индекс[:cx:cy] — из категорий вида; id@noses:индекс — из точечного поиска
+  const [rawId, idx, cx = '0.5', cy = '0.5'] = arg.split(':');
+  const [id, pool = 'more'] = rawId.split('@');
+  const c = POOLS[pool]?.[id]?.[Number(idx)];
   if (!c) { console.log(id, 'нет кандидата', idx); continue; }
   const raw = `media-src/whole/${id}.jpg`;
   const ac = new AbortController(); const to = setTimeout(() => ac.abort(), 90000);

@@ -82,12 +82,13 @@
  },
  "hedgehog": {
   "file": "hedgehog.mp3",
-  "title": "Angry hedgehog huffing snorting 2",
+  "title": "Hedgehog eating",
   "license": "cc0",
-  "creator": "fthgurdy",
+  "creator": "tatratank",
   "source": "freesound",
-  "url": "https://freesound.org/people/fthgurdy/sounds/528178",
-  "duration": 5949
+  "url": "https://freesound.org/people/tatratank/sounds/541421",
+  "duration": 2600,
+  "note": "взят спокойный фрагмент, срезаны верхние частоты — прежняя запись «Angry hedgehog» пугала"
  },
  "squirrel": {
   "file": "squirrel.mp3",
@@ -160,5 +161,24 @@
   "source": "freesound",
   "url": "https://freesound.org/people/JonCon_Library/sounds/481647",
   "duration": 2521
+ },
+ "wolf": {
+  "file": "wolf.mp3",
+  "title": "15-WolfCrying.wav",
+  "license": "cc0",
+  "creator": "cazadordoblekatana",
+  "source": "freesound",
+  "url": "https://freesound.org/people/cazadordoblekatana/sounds/429109",
+  "duration": 3000
+ },
+ "bear": {
+  "file": "bear.mp3",
+  "title": "Grizzly Bear growl eating",
+  "license": "cc0",
+  "creator": "felix.blume",
+  "source": "freesound",
+  "url": "https://freesound.org/people/felix.blume/sounds/519599",
+  "duration": 2400,
+  "note": "спокойный фрагмент ворчания; прежний звук был синтезирован и звучал неправдоподобно"
  }
 }

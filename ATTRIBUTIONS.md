@@ -59,8 +59,8 @@
 | Бабочка | [Fesoj_-_Papilio_machaon_(by).jpg](https://commons.wikimedia.org/wiki/File:Fesoj_-_Papilio_machaon_(by).jpg) | fesoj | CC BY 2.0 |
 | Пчёлка | [Abeille buckfast ?.JPG](https://commons.wikimedia.org/wiki/File:Abeille_buckfast_%3F.JPG) | Marc Andrighetti | CC BY-SA 3.0 |
 | Улитка | [2015-09-15-1206_(21411761176).jpg](https://commons.wikimedia.org/wiki/File:2015-09-15-1206_(21411761176).jpg) | teteria sonnna from Obukhiv, Ukraine | CC BY 2.0 |
-| Ящерица | [Caldasiguana.JPG](https://commons.wikimedia.org/wiki/File:Caldasiguana.JPG) | Andrevruas | CC BY 3.0 |
-| Варан | [Samar water monitor imported from iNaturalist photo 410634583 on 3 December 2024 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Samar_water_monitor_imported_from_iNaturalist_photo_410634583_on_3_December_2024_(cropped).jpg) | (c) Wouter Beukema, some rights reserved (CC BY) | CC BY 4.0 |
+| Ящерица | [Common green iguana lying on sand - DPLA - 26be368d3ba5ee3801a1b3376df7ea80.jpg](https://commons.wikimedia.org/wiki/File:Common_green_iguana_lying_on_sand_-_DPLA_-_26be368d3ba5ee3801a1b3376df7ea80.jpg) | Garst, Warren, 1922-2016, photographer | CC BY-SA 4.0 |
+| Варан | [Parc de Niokolo-Koba, Sénégal - COD260725-160.jpg](https://commons.wikimedia.org/wiki/File:Parc_de_Niokolo-Koba,_S%C3%A9n%C3%A9gal_-_COD260725-160.jpg) | COD photographer | CC BY-SA 4.0 |
 | Бородавочник | [File:Red warthog (6073674924).jpg](https://commons.wikimedia.org/wiki/File:Red_warthog_(6073674924).jpg) | Derek Keats from Johannesburg, South Africa | CC BY 2.0 |
 | Косатка | [Anim1110 - Flickr - NOAA Photo Library.jpg](https://commons.wikimedia.org/wiki/File:Anim1110_-_Flickr_-_NOAA_Photo_Library.jpg) | NOAA Photo Library | Public domain |
 
@@ -92,7 +92,7 @@
 | Козочка | [goat.mp3](https://freesound.org/people/saha213131/sounds/683259) | saha213131 | CC0 | freesound |
 | Уточка | [Duck quacking.mp3](https://freesound.org/people/DigPro120/sounds/558858) | DigPro120 | CC0 | freesound |
 | Морская свинка | [Guinea pig is running again](https://freesound.org/people/16FVolejnikovaA/sounds/498392) | 16FVolejnikovaA | CC0 | freesound |
-| Ёжик | [Angry hedgehog huffing snorting 2](https://freesound.org/people/fthgurdy/sounds/528178) | fthgurdy | CC0 | freesound |
+| Ёжик | [Hedgehog eating](https://freesound.org/people/tatratank/sounds/541421) | tatratank | CC0 | freesound |
 | Белочка | [Ground Squirrel First Chirp](https://freesound.org/people/burgersmoke/sounds/640992) | burgersmoke | CC0 | freesound |
 | Мышка | [squeak.wav](https://freesound.org/people/semccab/sounds/154381) | semccab | CC0 | freesound |
 | Слон | [Elephant Trumpets Growls.flac](https://freesound.org/people/D.jones/sounds/527845) | D.jones | CC0 | freesound |
@@ -101,6 +101,8 @@
 | Крокодил | [Crocodile in Vezo](https://commons.wikimedia.org/w/index.php?curid=165096266) | Gasybeaugosse2020 | CC0 | wikimedia_audio |
 | Дельфин | [Dolphin Noise-.wav](https://freesound.org/people/jfournier18/sounds/456151) | jfournier18 | CC0 | freesound |
 | Пчёлка | [Bee Buzzing](https://freesound.org/people/JonCon_Library/sounds/481647) | JonCon_Library | CC0 | freesound |
+| Волк | [15-WolfCrying.wav](https://freesound.org/people/cazadordoblekatana/sounds/429109) | cazadordoblekatana | CC0 | freesound |
+| Медведь | [Grizzly Bear growl eating](https://freesound.org/people/felix.blume/sounds/519599) | felix.blume | CC0 | freesound |
 
 ## Звуки — синтезированные
 
@@ -109,8 +111,6 @@
 - **Курочка** — «a single gentle chicken cluck, farmyard hen, clean recording»
 - **Зайчик** — «soft rabbit thumping and quiet sniffing, small animal»
 - **Хомячок** — «a gentle short natural sound of a Hamster, soft and child friendly»
-- **Медведь** — «a low soft bear huff and grunt, calm not aggressive»
-- **Волк** — «a short gentle wolf howl, distant and soft»
 - **Лисичка** — «a short fox bark call in a quiet forest»
 - **Оленёнок** — «a soft deer bleat call, gentle»
 - **Лось** — «a low soft moose grunt call»
