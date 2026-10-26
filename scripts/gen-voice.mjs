@@ -17,10 +17,30 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const animals = JSON.parse(fs.readFileSync('content/animals.json','utf8'));
 const types   = JSON.parse(fs.readFileSync('content/nose-types.json','utf8'));
 
+// Текст для синтеза отличается от экранного. Проверка распознаванием
+// (scripts/check-voice.mjs) показала две устойчивые поломки:
+//   • одиночное короткое слово модель уводит в чужой язык —
+//     «Лев» читался как Hello, «Страус» как Strauss, «Акула» как Экола;
+//   • тире она озвучивает словом: «закрывать — чтобы» → «закрывать, Маш, чтобы».
+// Поэтому имена уходят в несущей фразе, а тире и двоеточия заменяются запятой.
+const OV = JSON.parse(fs.readFileSync('content/voice-overrides.json', 'utf8'));
+const speakable = t => t.replace(/\s*[—–]\s*/g, ', ').replace(/\s*:\s*/g, ', ')
+                        .replace(/,\s*,/g, ',').replace(/\s+/g, ' ').trim();
+// имя со строчной: с заглавной модель принимает его за имя собственное
+const carrier = name => OV._carrier_name.replace('{}',
+  OV._lowercase_carrier ? name.charAt(0).toLowerCase() + name.slice(1) : name);
+
 const lines = [];
-const add = (key, text) => lines.push({ key, text: text.trim() });
-for (const a of animals) { add(`a-${a.id}-name`, a.ru); add(`a-${a.id}-kid`, a.kid); }
-for (const t of types)   { add(`t-${t.id}-name`, t.name); add(`t-${t.id}-kid`, t.kid); add(`t-${t.id}-why`, t.why); }
+const add = (key, text) => lines.push({ key, text: speakable(text) });
+for (const a of animals) {
+  add(`a-${a.id}-name`, OV[`a-${a.id}-name`] || carrier(a.ru));
+  add(`a-${a.id}-kid`, OV[`a-${a.id}-kid`] || a.kid);
+}
+for (const t of types) {
+  add(`t-${t.id}-name`, OV[`t-${t.id}-name`] || carrier(t.name));
+  add(`t-${t.id}-kid`, OV[`t-${t.id}-kid`] || t.kid);
+  add(`t-${t.id}-why`, OV[`t-${t.id}-why`] || t.why);
+}
 for (const [k,v] of Object.entries({
   'ui-hello':'Привет, Стеша! Пойдём смотреть носики?',
   'ui-pick':'Выбирай носик!',
@@ -40,7 +60,8 @@ for (const { key, text } of lines) {
     method:'POST',
     headers:{ 'xi-api-key':KEY, 'Content-Type':'application/json' },
     body: JSON.stringify({ text, model_id: MODEL,
-      voice_settings:{ stability:0.45, similarity_boost:0.75, style:0.35, use_speaker_boost:true } }),
+      // stability 0.45 давала дрейф в чужой язык на коротких строках
+      voice_settings:{ stability:0.75, similarity_boost:0.8, style:0.1, use_speaker_boost:true } }),
   });
   if (!r.ok) { console.log('FAIL', key, r.status, (await r.text()).slice(0,110)); await sleep(1500); continue; }
   fs.writeFileSync(`${OUT}/${key}.mp3`, Buffer.from(await r.arrayBuffer()));

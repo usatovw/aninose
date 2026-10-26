@@ -52,10 +52,19 @@ export function cutMask(id: string): React.CSSProperties {
 
 /** Картинка для плитки: силуэт, если он есть, иначе обычное фото. */
 export const tileUrl = (id: string) => (hasCut(id) ? cutUrl(id) : photoUrl(id));
-/** Лицо домика: берём зверя, у которого силуэт вырезался — он читается крупно. */
+/** Лицо домика: не первый по списку, а тот, кого ребёнок узнает мгновенно. */
+const FACE: Record<string, string> = {
+  wet: 'cat', dry: 'monkey', trunk: 'elephant', snout: 'pig', star: 'starnosedmole',
+  dive: 'hippo', blow: 'dolphin', beak: 'chicken', dust: 'camel', tongue: 'snake',
+  antennae: 'butterfly', water: 'shark',
+};
 export const faceOfType = (typeId: string) => {
   const pets = animalsOfType(typeId);
-  return pets.find(a => hasCut(a.id)) || pets[0];
+  const want = FACE[typeId];
+  return pets.find(a => a.id === want && hasCut(a.id))
+      || pets.find(a => hasCut(a.id))
+      || pets.find(a => a.id === want)
+      || pets[0];
 };
 export const gradient = (p: Palette) => `linear-gradient(160deg, ${p.from} 0%, ${p.to} 100%)`;
 
@@ -107,7 +116,7 @@ const ALIAS: Record<string, string[]> = {
   squirrel: ['белка'],
   guineapig: ['свинка'],
   monkey: ['обезьяна', 'мандрил', 'мандрилл'],
-  orca: ['косатка', 'кит-убийца'],
+  orca: ['касатка', 'кит-убийца', 'косатка'],
   butterfly: ['мотылёк', 'мотылек'],
   lizard: ['игуана', 'ящерка'],
 };

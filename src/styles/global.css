@@ -34,7 +34,9 @@ img { display: block; max-width: 100%; }
 button { font: inherit; color: inherit; border: none; background: none; cursor: pointer; }
 
 h1 { font-family: var(--display); font-weight: 600; letter-spacing: -.015em;
-     font-size: clamp(44px, 7vw, 104px); line-height: .98; margin: 0; text-wrap: balance; }
+     font-size: clamp(44px, 7vw, 104px); line-height: .98; margin: 0; text-wrap: balance;
+     /* «Бородавочник» и «Звездонос» длиннее колонки — переносим, а не обрезаем */
+     overflow-wrap: anywhere; hyphens: auto; }
 h2 { font-family: var(--display); font-weight: 600; letter-spacing: -.01em;
      font-size: clamp(28px, 3.6vw, 48px); line-height: 1.05; margin: 0; text-wrap: balance; }
 
@@ -89,9 +91,14 @@ h2 { font-family: var(--display); font-weight: 600; letter-spacing: -.01em;
 .house__glow { position: absolute; left: 50%; top: 46%; width: 86%; aspect-ratio: 1;
                transform: translate(-50%,-50%); border-radius: 50%;
                background: rgba(255,255,255,.42); filter: blur(26px); }
+.house__pet-slot {
+  position: absolute; left: 0; right: 0; bottom: 16%; height: 72%;
+  display: grid; place-items: end center; pointer-events: none;
+}
+/* центровку держит слот, а не transform самой картинки: иначе анимация
+   наведения затирает translateX(-50%) и зверь уезжает вбок навсегда */
 .house__pet {
-  position: absolute; left: 50%; bottom: 16%; transform: translateX(-50%);
-  max-height: 72%; max-width: 76%; width: auto; object-fit: contain;
+  max-height: 100%; max-width: 76%; width: auto; object-fit: contain;
   filter: drop-shadow(0 14px 16px rgba(70,40,15,.22));
 }
 .house__shadow { position: absolute; left: 24%; right: 24%; bottom: 14%; height: 16px;

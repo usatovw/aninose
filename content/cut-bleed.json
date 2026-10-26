@@ -1,58 +1,27 @@
 {
- "bear": [
-  "top"
- ],
- "bee": [
-  "right"
- ],
  "boar": [
-  "top"
+  "right"
  ],
  "camel": [
   "left"
  ],
  "chicken": [
-  "bottom",
   "left"
- ],
- "cow": [
-  "right"
- ],
- "crocodile": [
-  "right"
  ],
  "deer": [
   "left"
  ],
  "dog": [
-  "bottom",
-  "right"
- ],
- "dolphin": [
-  "right"
- ],
- "duck": [
   "right"
  ],
  "echidna": [
   "left"
- ],
- "fox": [
-  "bottom",
-  "top"
  ],
  "giraffe": [
   "bottom",
   "top"
  ],
  "goat": [
-  "left"
- ],
- "gorilla": [
-  "top"
- ],
- "hamster": [
-  "top",
   "right"
  ],
  "hedgehog": [
@@ -67,10 +36,6 @@
  "kiwi": [
   "left"
  ],
- "mole": [
-  "left",
-  "right"
- ],
  "monitor": [
   "right"
  ],
@@ -80,22 +45,11 @@
  "platypus": [
   "right"
  ],
- "proboscismonkey": [
-  "bottom",
-  "right"
- ],
  "rabbit": [
   "right"
  ],
- "seal": [
-  "top",
+ "shark": [
   "left"
- ],
- "sheep": [
-  "top"
- ],
- "snail": [
-  "right"
  ],
  "snake": [
   "right"
@@ -103,17 +57,8 @@
  "squirrel": [
   "bottom"
  ],
- "starnosedmole": [
-  "right"
- ],
- "tapir": [
-  "right"
- ],
  "tiger": [
   "right"
- ],
- "walrus": [
-  "top"
  ],
  "warthog": [
   "right"
@@ -122,6 +67,7 @@
   "left"
  ],
  "zebra": [
+  "left",
   "right"
  ]
 }

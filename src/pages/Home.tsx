@@ -1,6 +1,7 @@
+import { useEffect } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { unlock, say, blip, animalSound } from '../lib/audio';
+import { unlock, say, blip, animalSound, isUnlocked } from '../lib/audio';
 import { cutUrl, cutMask } from '../lib/content';
 import { Scene } from '../components/Scene';
 import { IconPlay } from '../components/Icon';
@@ -22,6 +23,16 @@ export default function Home() {
   const nav = useNavigate();
   const reduce = useReducedMotion();
   const start = () => { unlock(); blip(620); say('ui-hello'); setTimeout(() => nav('/types'), 240); };
+
+  // Заставка встречала молча: пока не было ни одного касания, браузер
+  // не пускает звук, а мы даже не пробовали — значит и плашка «Включить звук»
+  // не появлялась. Пробуем поздороваться сразу: получится — Стеша слышит
+  // приветствие, не получится — вылезет плашка, и одно нажатие включит звук.
+  useEffect(() => {
+    if (isUnlocked()) { say('ui-hello'); return; }
+    unlock();
+    say('ui-hello');
+  }, []);
 
   return (
     <div className="screen" style={{ justifyContent: 'center', position: 'relative',

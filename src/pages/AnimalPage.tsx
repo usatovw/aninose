@@ -8,7 +8,7 @@ import { Cutout } from '../components/Cutout';
 import { Sticker } from '../components/Sticker';
 import { Burst } from '../components/Burst';
 import { IconSound, IconNext, IconNose, IconLens, IconZoomIn, IconZoomOut } from '../components/Icon';
-import { byId, typeById, animals, animalsOfType, photos, photoUrl, noseUrl, displayFocus, hasCut, cutUrl } from '../lib/content';
+import { byId, typeById, animals, animalsOfType, photos, photoUrl, noseUrl, hasCut, cutUrl } from '../lib/content';
 import { say, blip, animalSound, introduce, autoPlaysLeft, noteAutoPlay } from '../lib/audio';
 import { markSeen } from '../lib/progress';
 
@@ -42,7 +42,9 @@ export default function AnimalPage() {
   if (!a) return <div className="screen"><div className="wrap">Такого зверя у нас нет</div></div>;
   const t = typeById(a.type)!;
   const meta = photos[a.id] || {};
-  const marker = displayFocus(a.id, a.noseFocus);
+  // Кроп носа теперь строится из отдельного близкого кадра и уже отцентрован,
+  // поэтому лупа стартует из середины, а не из координаты на общем фото.
+  const marker = { x: .5, y: .5 };
   const i = animals.findIndex(x => x.id === a.id);
   // «Дальше» ведёт по своему домику, а не по общему списку: иначе
   // после коровы прилетает акула, и тема рассыпается
@@ -86,7 +88,7 @@ export default function AnimalPage() {
                 так понятно, что будет, если нажать. */}
             <motion.button
               onClick={poke}
-              aria-label={zoom ? 'Показать зверя целиком' : `Посмотреть нос: ${a.ru}`}
+              aria-label={zoom ? `Показать целиком: ${a.ru}` : `Посмотреть нос: ${a.ru}`}
               className="nose-btn"
               animate={reduce ? {} : { scale: [1, 1.04, 1] }}
               transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
@@ -95,7 +97,9 @@ export default function AnimalPage() {
                 <img src={zoom ? photoUrl(a.id) : noseUrl(a.id)} alt="" />
               </span>
               <span className="nose-btn__label">
-                {zoom ? <>Показать {a.ru.toLowerCase()}</> : <>Вот его носик</>}
+                {/* не склоняем имя: «Показать курочка» резало глаз,
+                    а винительный падеж для 57 видов — лишнее поле в данных */}
+                {zoom ? <>Показать целиком</> : <>Вот его носик</>}
                 {zoom ? <IconZoomOut size={24} /> : <IconZoomIn size={24} />}
               </span>
             </motion.button>

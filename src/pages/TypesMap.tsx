@@ -44,10 +44,12 @@ export default function TypesMap() {
                 onClick={() => { blip(560); say(`t-${t.id}-name`); setTimeout(() => nav(`/type/${t.id}`), 850); }}>
                 <span className="house__glow" />
                 <span className="house__shadow" />
-                <motion.img className="house__pet" src={tileUrl(face.id)} alt="" loading="lazy"
-                  style={hasCut(face.id) ? cutMask(face.id) : { borderRadius: 26, boxShadow: '0 0 0 8px #fff' }}
-                  whileHover={{ y: -8, scale: 1.04 }}
-                  transition={{ type: 'spring', stiffness: 220, damping: 16 }} />
+                <span className="house__pet-slot">
+                  <motion.img className="house__pet" src={tileUrl(face.id)} alt="" loading="lazy"
+                    style={hasCut(face.id) ? cutMask(face.id) : { borderRadius: 26, boxShadow: '0 0 0 8px #fff' }}
+                    whileHover={{ y: -8, scale: 1.04 }}
+                    transition={{ type: 'spring', stiffness: 220, damping: 16 }} />
+                </span>
                 <span className="house__count">{pets.length}</span>
                 <span className="house__name">{t.name}</span>
               </motion.button>
