@@ -1,73 +1,18 @@
 {
- "boar": [
-  "right"
- ],
  "camel": [
-  "left"
- ],
- "chicken": [
-  "left"
- ],
- "dog": [
-  "right"
- ],
- "fish": [
-  "left",
-  "right"
- ],
- "goat": [
   "right"
  ],
  "hamster": [
-  "top"
- ],
- "hedgehog": [
+  "bottom",
   "left"
  ],
  "kiwi": [
   "left"
  ],
- "lion": [
-  "left"
- ],
  "platypus": [
   "right"
  ],
- "rabbit": [
-  "right"
- ],
- "rhino": [
-  "left",
-  "right"
- ],
- "seal": [
-  "left",
-  "right"
- ],
- "shark": [
-  "left"
- ],
- "snake": [
-  "left"
- ],
- "squirrel": [
-  "bottom"
- ],
- "starnosedmole": [
-  "left"
- ],
- "tapir": [
-  "left",
-  "right"
- ],
- "walrus": [
-  "left"
- ],
  "warthog": [
-  "right"
- ],
- "zebra": [
-  "left",
   "right"
  ]
 }

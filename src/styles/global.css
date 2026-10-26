@@ -35,8 +35,17 @@ button { font: inherit; color: inherit; border: none; background: none; cursor: 
 
 h1 { font-family: var(--display); font-weight: 600; letter-spacing: -.015em;
      font-size: clamp(44px, 7vw, 104px); line-height: .98; margin: 0; text-wrap: balance;
-     /* «Бородавочник» и «Звездонос» длиннее колонки — переносим, а не обрезаем */
-     overflow-wrap: anywhere; hyphens: auto; }
+     /* break-word, а не anywhere: anywhere рвал «Лошадка» на «Лошадк» и «а».
+        Длинные имена не переносятся, а уменьшаются — см. .animal-name ниже */
+     overflow-wrap: break-word; }
+
+/* Имя зверя подгоняется под ширину колонки по числу букв: «Бородавочник»
+   не должен ни вылезать, ни разваливаться по слогам. */
+.animal-col { container-type: inline-size; }
+.animal-name {
+  font-size: min(clamp(40px, 7vw, 104px), calc(150cqw / var(--len)));
+  overflow-wrap: normal; hyphens: manual;
+}
 h2 { font-family: var(--display); font-weight: 600; letter-spacing: -.01em;
      font-size: clamp(28px, 3.6vw, 48px); line-height: 1.05; margin: 0; text-wrap: balance; }
 

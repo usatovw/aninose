@@ -106,8 +106,12 @@ export function resetAutoPlays() { autoPlays = 0; }
  * Третий шаг обязателен: ребёнок не читает, и без него содержание страницы
  * не доходит до него вообще.
  */
-export async function introduce(id: string, signal?: { cancelled: boolean }) {
-  await say(`a-${id}-name`);
+export async function introduce(id: string, signal?: { cancelled: boolean },
+                                opts?: { queued?: boolean }) {
+  // При входе на страницу ждём, пока договорит предыдущая реплика,
+  // по кнопке «Послушать» — перебиваем, это осознанное нажатие.
+  await (opts?.queued ? sayAfter(`a-${id}-name`) : say(`a-${id}-name`));
+  if (signal?.cancelled) return;
   if (signal?.cancelled) return;
   await animalSound(id);
   if (signal?.cancelled) return;

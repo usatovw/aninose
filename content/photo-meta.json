@@ -1,11 +1,11 @@
 {
  "dog": {
   "file": "dog.jpg",
-  "commons": "Dog In The Snow",
-  "license": "by-sa",
-  "author": "liber",
-  "descUrl": "https://www.flickr.com/photos/51035655291@N01/131841577",
-  "source": "openverse",
+  "commons": "Avu su.jpg",
+  "license": "CC0",
+  "author": "Komavo",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Avu_su.jpg",
+  "source": "commons",
   "wikipedia": "https://en.wikipedia.org/wiki/Dog",
   "attributionRequired": true,
   "w": 900,
@@ -240,11 +240,11 @@
  },
  "squirrel": {
   "file": "squirrel.jpg",
-  "commons": "Free squirrel standing dirt floor",
-  "license": "cc0",
-  "author": "unknown",
-  "descUrl": "https://www.rawpixel.com/image/5907298/photo-image-background-public-domain-nature",
-  "source": "openverse",
+  "commons": "Squirel in the University park (8162280023).jpg",
+  "license": "CC BY-SA 2.0",
+  "author": "Guillaume Speurt from Vilnius, Lithuania",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Squirel_in_the_University_park_(8162280023).jpg",
+  "source": "commons",
   "attributionRequired": true,
   "w": 900,
   "h": 900,
@@ -253,7 +253,8 @@
    "license": "CC BY-SA 4.0",
    "author": "Fischer.H",
    "descUrl": "https://commons.wikimedia.org/wiki/File:Garten_112.jpg"
-  }
+  },
+  "wholeAnimal": true
  },
  "deer": {
   "file": "deer.jpg",
@@ -667,10 +668,10 @@
  },
  "shark": {
   "file": "shark.jpg",
-  "commons": "Bukangi.png",
-  "license": "KOGL Type 1",
-  "author": "수산자원연구부",
-  "descUrl": "https://commons.wikimedia.org/wiki/File:Bukangi.png",
+  "commons": "Reef1372 - Flickr - NOAA Photo Library.jpg",
+  "license": "Public domain",
+  "author": "David Burdick.",
+  "descUrl": "https://commons.wikimedia.org/wiki/File:Reef1372_-_Flickr_-_NOAA_Photo_Library.jpg",
   "wikipedia": "https://en.wikipedia.org/wiki/Shark",
   "attributionRequired": false,
   "w": 900,

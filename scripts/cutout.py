@@ -5,7 +5,7 @@
 import os, json, io
 os.environ.setdefault('U2NET_HOME', '/root/.u2net')
 from rembg import remove, new_session
-from PIL import Image
+from PIL import Image, ImageOps
 
 OUT = 'public/media/cut'
 os.makedirs(OUT, exist_ok=True)
@@ -17,7 +17,16 @@ for x in animals:
     dst = f'{OUT}/{aid}.png'
     if os.path.exists(dst):
         report[aid] = 'cached'; continue
-    im = Image.open(f'public/media/photos/{aid}.jpg').convert('RGB')
+    # Вырезаем из ПОЛНОГО кадра, а не из квадрата 900x900: квадрат режет
+    # зверя по краям, и силуэт получался с прямыми срезами — у собаки
+    # отрезало хвост, у козочки круп.
+    src = f'media-src/whole/{aid}.jpg'
+    if not os.path.exists(src):
+        src = f'media-src/closeup/{aid}.jpg'
+    if not os.path.exists(src):
+        src = f'public/media/photos/{aid}.jpg'
+    im = ImageOps.exif_transpose(Image.open(src)).convert('RGB')
+    im.thumbnail((1400, 1400), Image.LANCZOS)
     cut = remove(im, session=sess)
     bbox = cut.getbbox()
     if not bbox:

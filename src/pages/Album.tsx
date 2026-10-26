@@ -5,13 +5,13 @@ import { Nav } from '../components/Chrome';
 import { Scene } from '../components/Scene';
 import { animals, tileUrl, hasCut, plural, noseTypes, aliasesOf } from '../lib/content';
 import { seen, syncFromServer } from '../lib/progress';
-import { say, blip } from '../lib/audio';
+import { sayAfter, blip } from '../lib/audio';
 
 export default function Album() {
   const nav = useNavigate();
   const [ids, setIds] = useState<Set<string>>(seen());
   const [q, setQ] = useState('');
-  useEffect(() => { syncFromServer().then(() => setIds(seen())); say('ui-album'); }, []);
+  useEffect(() => { syncFromServer().then(() => setIds(seen())); sayAfter('ui-album'); }, []);
   const found = animals.filter(a => ids.has(a.id)).length;
 
   // Поиск для взрослого: ребёнок не читает и не печатает, но папе нужно

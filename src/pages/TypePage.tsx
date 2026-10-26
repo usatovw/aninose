@@ -7,7 +7,7 @@ import { Cutout } from '../components/Cutout';
 import { Sticker } from '../components/Sticker';
 import { IconSound } from '../components/Icon';
 import { typeById, animalsOfType, tileUrl, noseUrl, hasCut, cutUrl, photoUrl, plural } from '../lib/content';
-import { say, blip, animalSound } from '../lib/audio';
+import { say, sayAfter, blip, animalSound } from '../lib/audio';
 
 export default function TypePage() {
   const { id } = useParams();
@@ -15,7 +15,8 @@ export default function TypePage() {
   const t = typeById(id);
   // «Вертелка»: карусель зверей этого типа — ребёнок крутит и слушает
   const [k, setK] = useState(0);
-  useEffect(() => { if (t) { setK(0); say(`t-${t.id}-kid`); } }, [t?.id]);
+  // не обрываем название домика, которое начало звучать на карте
+  useEffect(() => { if (t) { setK(0); sayAfter(`t-${t.id}-kid`); } }, [t?.id]);
   if (!t) return <div className="screen"><div className="wrap">Не нашли такой носик</div></div>;
   const pets = animalsOfType(t.id);
   const cur = pets[k % pets.length];

@@ -38,7 +38,12 @@ for (const id of ids) {
       const t = (p.title || '').replace(/^File:/, '');
       if (!/\.(jpe?g|png)$/i.test(t) || seen.has(t)) continue;
       seen.add(t);
-      if (!isSafe(t) || BAD.test(t)) continue;
+      const em0 = ii.extmetadata || {};
+      const who = (em0.Artist?.value || '').replace(/<[^>]+>/g, '');
+      const desc = (em0.ImageDescription?.value || '').replace(/<[^>]+>/g, '');
+      // Маркер нейросети бывает не в названии, а в авторе или описании:
+      // «Created with Stable Diffusion» в поле автора у файла прошло фильтр.
+      if (!isSafe(t) || BAD.test(t) || BAD.test(who) || BAD.test(desc)) continue;
       if ((ii.width || 0) < 900 || (ii.height || 0) < 650) continue;
       const em = ii.extmetadata || {};
       list.push({ title: t, url: ii.url.split('?')[0], thumb: ii.thumburl || ii.url,

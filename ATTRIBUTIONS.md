@@ -6,7 +6,7 @@
 
 | Животное | Файл | Автор | Лицензия |
 |---|---|---|---|
-| Собака | [Dog In The Snow](https://www.flickr.com/photos/51035655291@N01/131841577) | liber | by-sa |
+| Собака | [Avu su.jpg](https://commons.wikimedia.org/wiki/File:Avu_su.jpg) | Komavo | CC0 |
 | Кошка | [Stray cat full body portrait](https://www.flickr.com/photos/26344495@N05/28065058453) | Ivan Radic | by |
 | Корова | [A cow.jpg](https://commons.wikimedia.org/wiki/File:A_cow.jpg) | Arisepeter | CC BY-SA 4.0 |
 | Лошадка | [A cheval en estivage près de l'Ar du Tsan DSC 0766 (51406676097).jpg](https://commons.wikimedia.org/wiki/File:A_cheval_en_estivage_pr%C3%A8s_de_l%27Ar_du_Tsan_DSC_0766_(51406676097).jpg) | Pierre-Marie Epiney | CC BY-SA 2.0 |
@@ -22,7 +22,7 @@
 | Волк | [Wolves (53022772048).jpg](https://commons.wikimedia.org/wiki/File:Wolves_(53022772048).jpg) | Jennifer C. | CC BY 2.0 |
 | Лисичка | [Fox Den (47990408151).jpg](https://commons.wikimedia.org/wiki/File:Fox_Den_(47990408151).jpg) | Larry Lamsa | CC BY 2.0 |
 | Ёжик | [South_African_hedgehog_lying_close_up_-_DPLA_-_99f194ab3746fbc43835fd7d3a0616a6.jpg](https://commons.wikimedia.org/wiki/File:South_African_hedgehog_lying_close_up_-_DPLA_-_99f194ab3746fbc43835fd7d3a0616a6.jpg) | Garst, Warren, 1922-2016, photographer | CC BY-SA 4.0 |
-| Белочка | [Free squirrel standing dirt floor](https://www.rawpixel.com/image/5907298/photo-image-background-public-domain-nature) | unknown | cc0 |
+| Белочка | [Squirel in the University park (8162280023).jpg](https://commons.wikimedia.org/wiki/File:Squirel_in_the_University_park_(8162280023).jpg) | Guillaume Speurt from Vilnius, Lithuania | CC BY-SA 2.0 |
 | Оленёнок | [Formosan Sika at Beijing Wildlife Park image 4.jpg](https://commons.wikimedia.org/wiki/File:Formosan_Sika_at_Beijing_Wildlife_Park_image_4.jpg) | TarnishedPath | CC BY-SA 4.0 |
 | Лось | [Moose standing field](https://www.rawpixel.com/image/6040005/photo-image-background-public-domain-free) | unknown | cc0 |
 | Кабан | [Bachyně se selátky.jpg](https://commons.wikimedia.org/wiki/File:Bachyn%C4%9B_se_sel%C3%A1tky.jpg) | Luiseach94 | CC BY-SA 4.0 |
@@ -52,7 +52,7 @@
 | Дельфин | [Swimming Mates (Bottlenose Dolphin - Tursiops Truncatus)](https://www.flickr.com/photos/28647421@N04/8379105139) | MashiurR | by |
 | Тюлень | [Zeehondencreche Pieterburen-2.JPG](https://commons.wikimedia.org/wiki/File:Zeehondencreche_Pieterburen-2.JPG) | GerardM | CC BY-SA 3.0 |
 | Морж | [Close up of head of young bull walrus marine mammal in water odobenus rosmarus.jpg](https://commons.wikimedia.org/wiki/File:Close_up_of_head_of_young_bull_walrus_marine_mammal_in_water_odobenus_rosmarus.jpg) | Joel Garlich-Miller, U.S. Fish and Wildlife Service | Public domain |
-| Акула | [Bukangi.png](https://commons.wikimedia.org/wiki/File:Bukangi.png) | 수산자원연구부 | KOGL Type 1 |
+| Акула | [Reef1372 - Flickr - NOAA Photo Library.jpg](https://commons.wikimedia.org/wiki/File:Reef1372_-_Flickr_-_NOAA_Photo_Library.jpg) | David Burdick. | Public domain |
 | Рыбка | [Le Bugue - Aquarium du Périgord noir - Poissons - 008.jpg](https://commons.wikimedia.org/wiki/File:Le_Bugue_-_Aquarium_du_P%C3%A9rigord_noir_-_Poissons_-_008.jpg) | Thesupermat | CC BY-SA 4.0 |
 | Киви | [Apteryx_mantelli_-Rotorua,_North_Island,_New_Zealand-8a.jpg](https://commons.wikimedia.org/wiki/File:Apteryx_mantelli_-Rotorua,_North_Island,_New_Zealand-8a.jpg) | The.Rohit | CC BY 2.0 |
 | Змейка | [Elaphe anomala 5772392.jpg](https://commons.wikimedia.org/wiki/File:Elaphe_anomala_5772392.jpg) | Kim, Hyun-tae | CC BY 4.0 |

@@ -32,7 +32,7 @@ export default function AnimalPage() {
     const signal = { cancelled: false };
     // POP — это кнопка «Назад»: ребёнок уже слышал этого зверя, повтор сбивает.
     const auto = navType !== 'POP' && autoPlaysLeft() > 0;
-    if (auto) { noteAutoPlay(); introduce(a.id, signal); }
+    if (auto) { noteAutoPlay(); introduce(a.id, signal, { queued: true }); }
     const hint = auto
       ? setTimeout(() => { if (!poked.current) say('ui-tap-nose'); }, 9000)
       : undefined;
@@ -105,8 +105,10 @@ export default function AnimalPage() {
             </motion.button>
           </div>
 
-          <div>
-            <motion.h1 initial={{ x: 20, opacity: 0 }} animate={{ x: 0, opacity: 1 }}
+          <div className="animal-col">
+            <motion.h1 className="animal-name"
+              style={{ ['--len' as any]: a.ru.length }}
+              initial={{ x: 20, opacity: 0 }} animate={{ x: 0, opacity: 1 }}
               transition={{ delay: .1, type: 'spring', stiffness: 170, damping: 18 }}>
               {a.ru}
             </motion.h1>

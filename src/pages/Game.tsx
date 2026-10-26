@@ -5,7 +5,7 @@ import { Scene } from '../components/Scene';
 import { BlobPhoto } from '../components/BlobPhoto';
 import { Burst } from '../components/Burst';
 import { animals, tileUrl, hasCut, noseUrl, plural } from '../lib/content';
-import { say, blip, animalSound } from '../lib/audio';
+import { say, sayAfter, blip, animalSound } from '../lib/audio';
 import { useNavigate } from 'react-router-dom';
 
 const shuffle = <T,>(a: T[]) => [...a].sort(() => Math.random() - .5);
@@ -24,7 +24,7 @@ export default function Game() {
     return { answer, options: shuffle([answer, ...others]) };
   }, [round]);
 
-  useEffect(() => { say('ui-game'); setWrong(null); }, [round]);
+  useEffect(() => { sayAfter('ui-game'); setWrong(null); }, [round]);
 
   const choose = (id: string) => {
     if (id === answer.id) {
